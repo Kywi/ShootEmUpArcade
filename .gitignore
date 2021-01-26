@@ -1,0 +1,12 @@
+Saved/
+Intermediate/
+Build/
+Binaries/
+ipch/
+.vs/ProjectHobo/*
+.vs
+*.suo
+StreamArcade.VC.VC.opendb
+StreamArcade.VC.db
+StreamArcade.sln
+desktop.ini
