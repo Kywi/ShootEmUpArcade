@@ -1,23 +1,16 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "PlayerPawn.h"
 #include "Components/StaticMeshComponent.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/PlayerController.h"
-#include "Engine/World.h"
 #include "Kismet/GameplayStatics.h"
 #include "TimerManager.h"
-#include "Materials/MaterialInstanceDynamic.h"
 #include "EngineMinimal.h"
-#include "UnrealEngine.h"
 #include "Engine/Engine.h"
 
-// Sets default values
-APlayerPawn::APlayerPawn() : MoveLimit(FVector2D(500.f, 600.f)), TouchMoveSensivity(1.f)
+APlayerPawn::APlayerPawn() :  TouchMoveSensivity(1.f)
 {
     //  MoveLimit(FVector2D(500.f, 600.f))
-    // Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 
     PawnCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("PawnCollision"));
@@ -73,8 +66,6 @@ void APlayerPawn::RecoverPawn_Implementation()
         Component->Activate(true);
     }
 }
-
-
 // Called when the game starts or when spawned
 void APlayerPawn::BeginPlay()
 {
@@ -82,8 +73,8 @@ void APlayerPawn::BeginPlay()
     ShootComponent->StartShooting();
     PawnMaterial = PawnMesh->GetMaterial(0);
     MoveLimit = GetGameViewportSize();
-    MoveLimit.X -= 300;
-    MoveLimit.Y -= 300;
+    //MoveLimit.X -= 300;
+  //  MoveLimit.Y -= 300;
     UE_LOG(LogTemp, Log, TEXT("x:  %f, y:  %f"), MoveLimit.X, MoveLimit.Y);
 }
 
@@ -125,7 +116,6 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 }
 
 // Touch controls
-
 void APlayerPawn::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
 {
     FVector2D TouchDeltaMove = FVector2D(TouchLocation.X - Location.X, TouchLocation.Y - Location.Y);

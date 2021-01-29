@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -10,21 +8,6 @@
 #include "StreamArcadeGameModeBase.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameOverEvent);
-
-USTRUCT(BlueprintType)
-struct FShootInfoLevel
-{
-	GENERATED_BODY()
-
-public:
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-	TArray<FShootInfo> ShootInfos;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-	float ShootPeriod;
-
-};
 
 UCLASS()
 class STREAMARCADE_API AStreamArcadeGameModeBase : public AGameModeBase

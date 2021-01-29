@@ -3,29 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "StructsCollection.h"
 #include "Components/ActorComponent.h"
 #include "Actors/Projectiles/ShootProjectile.h"
 #include "ShootComponent.generated.h"
-
-USTRUCT(BlueprintType)
-struct FShootInfo
-{
-	GENERATED_BODY()
-
-public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-	TSubclassOf<AShootProjectile> ProjectileClass;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-	float Damage;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-	FVector Offset;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-	float Angle;
-
-};
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class STREAMARCADE_API UShootComponent : public UActorComponent

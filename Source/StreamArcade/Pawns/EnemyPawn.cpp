@@ -48,7 +48,8 @@ void AEnemyPawn::DestroyPawn()
 {
 	if (DestroyParticle)
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
-
+	UGameplayStatics::SpawnSound2D(GetWorld(),DestroySound);
+	
 	Destroy();
 }
 

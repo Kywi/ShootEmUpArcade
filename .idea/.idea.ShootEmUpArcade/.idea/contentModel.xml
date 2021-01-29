@@ -1,6 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\ShootEmUpArcade" t="IncludeFlat">
+      <e p=".gitattributes" t="Include" />
+      <e p=".gitignore" t="Include" />
+      <e p="Config" t="Include">
+        <e p="DefaultEditor.ini" t="Include" />
+        <e p="DefaultEngine.ini" t="Include" />
+        <e p="DefaultGame.ini" t="Include" />
+        <e p="DefaultInput.ini" t="Include" />
+      </e>
+      <e p="Engine" t="Include" />
+      <e p="Games" t="Include" />
+      <e p="Intermediate\Build\Unused" t="ExcludeRecursive" />
+      <e p="Intermediate\ProjectFiles" t="IncludeRecursive">
+        <e p="ShootEmUpArcade.vcxproj" t="IncludeRecursive" />
+        <e p="UE4.vcxproj" t="IncludeRecursive" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Plugins" t="Include">
+        <e p="AutoSettings" t="Include">
+          <e p="AutoSettings.uplugin" t="Include" />
+          <e p="Resources" t="Include">
+            <e p="Icon128.png" t="Include" />
+          </e>
+          <e p="Source" t="Include">
+            <e p="AutoSettings" t="Include">
+              <e p="AutoSettings.Build.cs" t="Include" />
+              <e p="Private" t="Include">
+                <e p="AutoSettings.cpp" t="Include" />
+                <e p="Console" t="Include">
+                  <e p="ConsoleUtils.cpp" t="Include" />
+                  <e p="CVarChangeListener.cpp" t="Include" />
+                  <e p="CVarChangeListenerManager.cpp" t="Include" />
+                </e>
+                <e p="InputMapping" t="Include">
+                  <e p="GlobalKeyIconTagManager.cpp" t="Include" />
+                  <e p="InputMappingManager.cpp" t="Include" />
+                  <e p="UI" t="Include">
+                    <e p="ActionLabel.cpp" t="Include" />
+                    <e p="ActionMapping.cpp" t="Include" />
+                    <e p="AxisLabel.cpp" t="Include" />
+                    <e p="AxisMapping.cpp" t="Include" />
+                    <e p="BindCaptureButton.cpp" t="Include" />
+                    <e p="BindCapturePrompt.cpp" t="Include" />
+                    <e p="InputLabel.cpp" t="Include" />
+                    <e p="InputMapping.cpp" t="Include" />
+                    <e p="KeyLabel.cpp" t="Include" />
+                  </e>
+                </e>
+                <e p="Misc" t="Include">
+                  <e p="AutoSettingsConfig.cpp" t="Include" />
+                  <e p="AutoSettingsPlayer.cpp" t="Include" />
+                  <e p="ResolutionOptionFactory.cpp" t="Include" />
+                  <e p="ResolutionStringUtils.cpp" t="Include" />
+                  <e p="ResolutionValueMask.cpp" t="Include" />
+                  <e p="SettingContainerUtils.cpp" t="Include" />
+                  <e p="SettingOptionFactory.cpp" t="Include" />
+                  <e p="SettingValueMask.cpp" t="Include" />
+                  <e p="WindowModeValueMask.cpp" t="Include" />
+                </e>
+                <e p="SettingsManager.cpp" t="Include" />
+                <e p="UI" t="Include">
+                  <e p="AutoSettingWidget.cpp" t="Include" />
+                  <e p="GenericControls" t="Include">
+                    <e p="RadioSelect" t="Include">
+                      <e p="RadioButton.cpp" t="Include" />
+                      <e p="RadioSelect.cpp" t="Include" />
+                    </e>
+                    <e p="Spinner.cpp" t="Include" />
+                  </e>
+                  <e p="SettingControls" t="Include">
+                    <e p="CheckBoxSetting.cpp" t="Include" />
+                    <e p="ComboBoxSetting.cpp" t="Include" />
+                    <e p="NativeSliderSetting.cpp" t="Include" />
+                    <e p="RadioSelectSetting.cpp" t="Include" />
+                    <e p="SelectSetting.cpp" t="Include" />
+                    <e p="SliderSetting.cpp" t="Include" />
+                    <e p="SpinnerSetting.cpp" t="Include" />
+                    <e p="ToggleSetting.cpp" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Public" t="Include">
+                <e p="AutoSettings.h" t="Include" />
+                <e p="Console" t="Include">
+                  <e p="ConsoleUtils.h" t="Include" />
+                  <e p="CVarChangeListener.h" t="Include" />
+                  <e p="CVarChangeListenerManager.h" t="Include" />
+                </e>
+                <e p="InputMapping" t="Include">
+                  <e p="GlobalKeyIconTagManager.h" t="Include" />
+                  <e p="InputMappingManager.h" t="Include" />
+                  <e p="UI" t="Include">
+                    <e p="ActionLabel.h" t="Include" />
+                    <e p="ActionMapping.h" t="Include" />
+                    <e p="AxisLabel.h" t="Include" />
+                    <e p="AxisMapping.h" t="Include" />
+                    <e p="BindCaptureButton.h" t="Include" />
+                    <e p="BindCapturePrompt.h" t="Include" />
+                    <e p="InputLabel.h" t="Include" />
+                    <e p="InputMapping.h" t="Include" />
+                    <e p="KeyLabel.h" t="Include" />
+                  </e>
+                </e>
+                <e p="Misc" t="Include">
+                  <e p="AutoSettingsConfig.h" t="Include" />
+                  <e p="AutoSettingsPlayer.h" t="Include" />
+                  <e p="ResolutionOptionFactory.h" t="Include" />
+                  <e p="ResolutionStringUtils.h" t="Include" />
+                  <e p="ResolutionValueMask.h" t="Include" />
+                  <e p="SettingContainerUtils.h" t="Include" />
+                  <e p="SettingOption.h" t="Include" />
+                  <e p="SettingOptionFactory.h" t="Include" />
+                  <e p="SettingValueMask.h" t="Include" />
+                  <e p="WindowModeValueMask.h" t="Include" />
+                </e>
+                <e p="SettingsManager.h" t="Include" />
+                <e p="UI" t="Include">
+                  <e p="AutoSettingWidget.h" t="Include" />
+                  <e p="GenericControls" t="Include">
+                    <e p="RadioSelect" t="Include">
+                      <e p="RadioButton.h" t="Include" />
+                      <e p="RadioSelect.h" t="Include" />
+                    </e>
+                    <e p="Spinner.h" t="Include" />
+                  </e>
+                  <e p="SettingControls" t="Include">
+                    <e p="CheckBoxSetting.h" t="Include" />
+                    <e p="ComboBoxSetting.h" t="Include" />
+                    <e p="NativeSliderSetting.h" t="Include" />
+                    <e p="RadioSelectSetting.h" t="Include" />
+                    <e p="SelectSetting.h" t="Include" />
+                    <e p="SliderSetting.h" t="Include" />
+                    <e p="SpinnerSetting.h" t="Include" />
+                    <e p="ToggleSetting.h" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="ShootEmUpArcade.png" t="Include" />
+      <e p="ShootEmUpArcade.sln" t="IncludeFlat" />
+      <e p="ShootEmUpArcade.uproject" t="Include" />
+      <e p="Source" t="Include">
+        <e p="StreamArcade" t="Include">
+          <e p="Actors" t="Include">
+            <e p="Bonuses" t="Include">
+              <e p="Bonus.cpp" t="Include" />
+              <e p="Bonus.h" t="Include" />
+              <e p="BonusPoints.cpp" t="Include" />
+              <e p="BonusPoints.h" t="Include" />
+              <e p="BonusShield.cpp" t="Include" />
+              <e p="BonusShield.h" t="Include" />
+              <e p="BonusShootLevelUp.cpp" t="Include" />
+              <e p="BonusShootLevelUp.h" t="Include" />
+            </e>
+            <e p="Other" t="Include">
+              <e p="PawnShield.cpp" t="Include" />
+              <e p="PawnShield.h" t="Include" />
+            </e>
+            <e p="PlaygroundBorder.cpp" t="Include" />
+            <e p="PlaygroundBorder.h" t="Include" />
+            <e p="Projectiles" t="Include">
+              <e p="ShootProjectile.cpp" t="Include" />
+              <e p="ShootProjectile.h" t="Include" />
+            </e>
+          </e>
+          <e p="Components" t="Include">
+            <e p="EnemySpawnController.cpp" t="Include" />
+            <e p="EnemySpawnController.h" t="Include" />
+            <e p="GameHealthComponent.cpp" t="Include" />
+            <e p="GameHealthComponent.h" t="Include" />
+            <e p="HealthComponent.cpp" t="Include" />
+            <e p="HealthComponent.h" t="Include" />
+            <e p="ShootComponent.cpp" t="Include" />
+            <e p="ShootComponent.h" t="Include" />
+          </e>
+          <e p="Pawns" t="Include">
+            <e p="EnemyPawn.cpp" t="Include" />
+            <e p="EnemyPawn.h" t="Include" />
+            <e p="PlayerPawn.cpp" t="Include" />
+            <e p="PlayerPawn.h" t="Include" />
+          </e>
+          <e p="Private" t="Include">
+            <e p="StructsCollection.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="StructsCollection.h" t="Include" />
+          </e>
+          <e p="StreamArcade.Build.cs" t="Include" />
+          <e p="StreamArcade.cpp" t="Include" />
+          <e p="StreamArcade.h" t="Include" />
+          <e p="StreamArcadeGameModeBase.cpp" t="Include" />
+          <e p="StreamArcadeGameModeBase.h" t="Include" />
+        </e>
+        <e p="StreamArcade.Target.cs" t="Include" />
+        <e p="StreamArcadeEditor.Target.cs" t="Include" />
+      </e>
+      <e p="Visualizers" t="Include" />
+    </e>
     <e p="C:\UnrealEngineVersions\UE_4.23\Engine\Config" t="Include">
       <e p="Android" t="Include">
         <e p="AndroidEngine.ini" t="Include" />
@@ -37028,77 +37229,6 @@
       <e p="UE4Game.Target.cs" t="Include" />
     </e>
     <e p="C:\Users\pypok\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\pypok\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ShootEmUpArcade.-2098968656.00" t="ExcludeRecursive" />
-    <e p="C:\Users\pypok\Desktop\ShootEmUpArcade" t="IncludeFlat">
-      <e p=".gitattributes" t="Include" />
-      <e p=".gitignore" t="Include" />
-      <e p="Config" t="Include">
-        <e p="DefaultEditor.ini" t="Include" />
-        <e p="DefaultEngine.ini" t="Include" />
-        <e p="DefaultGame.ini" t="Include" />
-        <e p="DefaultInput.ini" t="Include" />
-      </e>
-      <e p="Engine" t="Include" />
-      <e p="Games" t="Include" />
-      <e p="Intermediate\Build\Unused" t="ExcludeRecursive" />
-      <e p="Intermediate\ProjectFiles" t="IncludeRecursive">
-        <e p="ShootEmUpArcade.vcxproj" t="IncludeRecursive" />
-        <e p="UE4.vcxproj" t="IncludeRecursive" />
-      </e>
-      <e p="packages" t="ExcludeRecursive" />
-      <e p="ShootEmUpArcade.sln" t="IncludeFlat" />
-      <e p="ShootEmUpArcade.uproject" t="Include" />
-      <e p="Source" t="Include">
-        <e p="StreamArcade" t="Include">
-          <e p="Actors" t="Include">
-            <e p="Bonuses" t="Include">
-              <e p="Bonus.cpp" t="Include" />
-              <e p="Bonus.h" t="Include" />
-              <e p="BonusPoints.cpp" t="Include" />
-              <e p="BonusPoints.h" t="Include" />
-              <e p="BonusShield.cpp" t="Include" />
-              <e p="BonusShield.h" t="Include" />
-              <e p="BonusShootLevelUp.cpp" t="Include" />
-              <e p="BonusShootLevelUp.h" t="Include" />
-            </e>
-            <e p="Other" t="Include">
-              <e p="PawnShield.cpp" t="Include" />
-              <e p="PawnShield.h" t="Include" />
-            </e>
-            <e p="PlaygroundBorder.cpp" t="Include" />
-            <e p="PlaygroundBorder.h" t="Include" />
-            <e p="Projectiles" t="Include">
-              <e p="ShootProjectile.cpp" t="Include" />
-              <e p="ShootProjectile.h" t="Include" />
-            </e>
-          </e>
-          <e p="Components" t="Include">
-            <e p="EnemySpawnController.cpp" t="Include" />
-            <e p="EnemySpawnController.h" t="Include" />
-            <e p="GameHealthComponent.cpp" t="Include" />
-            <e p="GameHealthComponent.h" t="Include" />
-            <e p="HealthComponent.cpp" t="Include" />
-            <e p="HealthComponent.h" t="Include" />
-            <e p="ShootComponent.cpp" t="Include" />
-            <e p="ShootComponent.h" t="Include" />
-          </e>
-          <e p="Pawns" t="Include">
-            <e p="EnemyPawn.cpp" t="Include" />
-            <e p="EnemyPawn.h" t="Include" />
-            <e p="PlayerPawn.cpp" t="Include" />
-            <e p="PlayerPawn.h" t="Include" />
-          </e>
-          <e p="StreamArcade.Build.cs" t="Include" />
-          <e p="StreamArcade.cpp" t="Include" />
-          <e p="StreamArcade.h" t="Include" />
-          <e p="StreamArcadeGameModeBase.cpp" t="Include" />
-          <e p="StreamArcadeGameModeBase.h" t="Include" />
-        </e>
-        <e p="StreamArcade.Target.cs" t="Include" />
-        <e p="StreamArcadeEditor.Target.cs" t="Include" />
-      </e>
-      <e p="StreamArcade.png" t="Include" />
-      <e p="Visualizers" t="Include" />
-    </e>
+    <e p="C:\Users\pypok\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ShootEmUpArcade.1504613885.00" t="ExcludeRecursive" />
   </component>
 </project>

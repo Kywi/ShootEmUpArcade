@@ -8,6 +8,7 @@
 #include "Components/ShootComponent.h"
 #include "Components/HealthComponent.h"
 #include "Actors/Bonuses/Bonus.h"
+#include "Sound/SoundBase.h"
 #include "EnemyPawn.generated.h"
 
 USTRUCT(BlueprintType)
@@ -73,4 +74,7 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
 	UParticleSystem* DestroyParticle;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Audio")
+	USoundBase* DestroySound;
 };

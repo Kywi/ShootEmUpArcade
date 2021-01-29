@@ -14,85 +14,70 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPawnDamagedEvent);
 UCLASS()
 class STREAMARCADE_API APlayerPawn : public APawn
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
-	// Sets default values for this pawn's properties
-	APlayerPawn();
+    // Sets default values for this pawn's properties
+    APlayerPawn();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-	virtual float TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController * InstigatedBy, AActor * DamageCauser) override;
-
-	void OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location);
-
-	void OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location);
-
-	virtual void PossessedBy(AController* NewController) override;
-
-	APlayerController* PlayerController;
-
-	FVector2D MoveLimit;
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
+    virtual float TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController* InstigatedBy,
+                             AActor* DamageCauser) override;
+    void OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location);
+    void OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location);
+    virtual void PossessedBy(AController* NewController) override;
+    APlayerController* PlayerController;
+    FVector2D MoveLimit;
 
 private:
+    FVector2D TouchLocation;
+    bool Touching;
+    UMaterialInterface* PawnMaterial;
 
-	FVector2D TouchLocation;
+public:
+    // Called every frame
+    virtual void Tick(float DeltaTime) override;
+    // Called to bind functionality to input
+    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    
+    UFUNCTION(BlueprintPure, BlueprintNativeEvent, Category = "Healths")
+    bool CanBeDamaged();
+    bool CanBeDamaged_Implementation();
 
-	bool Touching;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Healths")
+    void ExplodePawn();
+    void ExplodePawn_Implementation();
 
-	UMaterialInterface* PawnMaterial;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Healths")
+    void RecoverPawn();
+    void RecoverPawn_Implementation();
 
-	
-	
+    UFUNCTION(BlueprintCallable, Category = "ScreeenRes")
+    FVector2D GetGameViewportSize();
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
+    UBoxComponent* PawnCollision;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category="Pawn")
+    UStaticMeshComponent* PawnMesh;
 
-	UFUNCTION(BlueprintPure, BlueprintNativeEvent, Category = "Healths")
-	bool CanBeDamaged();
-	bool CanBeDamaged_Implementation();
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
+    UCameraComponent* PawnCamera;
 
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Healths")
-	void ExplodePawn();
-	void ExplodePawn_Implementation();
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
+    UShootComponent* ShootComponent;
 
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Healths")
-	void RecoverPawn();
-	void RecoverPawn_Implementation();
-	
-	UFUNCTION(BlueprintCallable, Category = "ScreeenRes")
-	FVector2D GetGameViewportSize();
-//	void RecieveAnyDamage(float Damage, const UDamageType * DamageType, AController * InstigatedBy, AActor * DamageCauser);
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Controls")
+    float TouchMoveSensivity;
 
+    UPROPERTY(BlueprintAssignable, Category = "Healths")
+    FPawnDamagedEvent PawnDamaged;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-	UBoxComponent* PawnCollision;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
+    UMaterialInterface* RecoverMaterial;
 
-	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category="Pawn")
-	UStaticMeshComponent* PawnMesh;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-	UCameraComponent* PawnCamera;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
-	UShootComponent* ShootComponent;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Controls")
-	float TouchMoveSensivity;
-
-	UPROPERTY(BlueprintAssignable, Category = "Healths")
-	FPawnDamagedEvent PawnDamaged;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
-	UMaterialInterface* RecoverMaterial;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
-	UParticleSystem* DestroyParticle;
-
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
+    UParticleSystem* DestroyParticle;
 };
