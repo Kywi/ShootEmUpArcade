@@ -8,8 +8,8 @@
 
 AStreamArcadeGameModeBase::AStreamArcadeGameModeBase():
 	PlayerRecoverTime(3),
-	CurrentShootLevel(-1),
-	IncreaseDifficultyPeriod(4.f)
+	IncreaseDifficultyPeriod(4.f),
+	CurrentShootLevel(-1)
 {
 	EnemySpawnController = CreateDefaultSubobject<UEnemySpawnController>(TEXT("EnemySpawnController"));
 	HealthsComponent = CreateDefaultSubobject<UGameHealthComponent>(TEXT("HealthsComponent"));

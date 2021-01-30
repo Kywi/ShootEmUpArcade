@@ -21,7 +21,8 @@ public:
 protected:
     // Called when the game starts
     virtual void BeginPlay() override;
-
+    
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health")
     float Health;
 
     UFUNCTION()
