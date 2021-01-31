@@ -26,29 +26,22 @@
   <component name="ChangeListManager">
     <list default="true" id="7bfbe110-d1e9-4c3d-b732-98451ee62266" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Purple.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Purple.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Blue.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Blue.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Green.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Green.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Grey.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Grey.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship04.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow01.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GameInstace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_GameInstace.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerPawn.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Skin1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Skin2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Skin3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Skin4.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Gameplay_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Gameplay_BuiltData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/SM_GenericSpaceship01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/HUD/BP_GameHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/HUD/BP_GameHUD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Components/HealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Components/HealthComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShootEmUpArcade.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ShootEmUpArcade.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.h" />
-        <option value="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.cpp" />
         <option value="$PROJECT_DIR$/ShootEmUpArcade.uproject" />
         <option value="$PROJECT_DIR$/Source/StreamArcade/StreamArcade.Build.cs" />
         <option value="$PROJECT_DIR$/Source/StreamArcade/Pawns/PlayerPawn.h" />
@@ -74,6 +65,8 @@
         <option value="$PROJECT_DIR$/Source/StreamArcade/Components/HealthComponent.h" />
         <option value="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.cpp" />
         <option value="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.h" />
+        <option value="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.h" />
+        <option value="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.cpp" />
       </list>
     </option>
   </component>
@@ -680,6 +673,7 @@
       <workItem from="1611698952814" duration="2532000" />
       <workItem from="1611837128573" duration="5669000" />
       <workItem from="1612043160250" duration="2542000" />
+      <workItem from="1612090563951" duration="6944000" />
     </task>
     <servers />
   </component>

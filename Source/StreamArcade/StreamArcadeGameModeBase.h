@@ -68,7 +68,7 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Game")
 	int GamePoints;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Shooting")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
 	TArray<FShootInfoLevel> ShootInfoLevels;
 
 	UPROPERTY(BlueprintReadOnly, Category = "Shooting")

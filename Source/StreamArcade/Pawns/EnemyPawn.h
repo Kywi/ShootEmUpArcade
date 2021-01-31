@@ -8,6 +8,7 @@
 #include "Components/ShootComponent.h"
 #include "Components/HealthComponent.h"
 #include "Actors/Bonuses/Bonus.h"
+#include "Components/ArrowComponent.h"
 #include "Sound/SoundBase.h"
 #include "EnemyPawn.generated.h"
 
@@ -56,6 +57,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UBoxComponent* PawnCollision;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
+	UArrowComponent* ArrowComponent;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
 	UStaticMeshComponent* PawnMesh;
@@ -77,4 +81,6 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Audio")
 	USoundBase* DestroySound;
+
+	
 };

@@ -20,7 +20,10 @@ AEnemyPawn::AEnemyPawn()
 	PawnMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PawnMesh"));
 	PawnMesh->SetupAttachment(PawnCollision, NAME_None);
 	PawnMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-
+	
+	ArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("Arrow"));
+	ArrowComponent->SetupAttachment(PawnCollision, NAME_None);
+	
 	ShootComponent = CreateDefaultSubobject<UShootComponent>(TEXT("ShootComponent"));
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 }
@@ -49,7 +52,7 @@ void AEnemyPawn::DestroyPawn()
 	if (DestroyParticle)
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
 	UGameplayStatics::SpawnSound2D(GetWorld(),DestroySound);
-	
+
 	Destroy();
 }
 
