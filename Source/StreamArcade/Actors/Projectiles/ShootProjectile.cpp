@@ -56,7 +56,7 @@ void AShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, A
 	if (!GetOwner()) return;
 	APawn* PawnOwner = Cast<APawn>(GetOwner());
 	if (!PawnOwner) return;
-	AController* Instigator = PawnOwner->GetController();
+	AController* DamageInstigator = PawnOwner->GetController();
 
 	if (!PawnOwner->GetController() && !OtherPawn->GetController()) return;
 
@@ -64,7 +64,7 @@ void AShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, A
 	//AEnemyPawn* OwnerEnemy = Cast<AEnemyPawn>(GetOwner());
 	//if (OtherEnemy && OwnerEnemy) return;
 
-	UGameplayStatics::ApplyDamage(OtherActor, Damage, Instigator, this, UDamageType::StaticClass());
+	UGameplayStatics::ApplyDamage(OtherActor, Damage, DamageInstigator, this, UDamageType::StaticClass());
 
 	Destroy();
 }

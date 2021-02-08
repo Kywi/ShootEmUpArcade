@@ -5,26 +5,12 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Pawns/EnemyPawn.h"
+#include "StructsCollection/StructsCollection.h"
 #include "EnemySpawnController.generated.h"
 
-USTRUCT(BlueprintType)
-struct FEnemySpawnInfo
-{
-	GENERATED_BODY()
 
-public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Enemies")
-	TSubclassOf<AEnemyPawn> EnemyClass = AEnemyPawn::StaticClass();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Enemies")
-	FTransform SpawnTransform;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Enemies")
-	int NumOfEnemies;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Enemies")
-	float SpawnDelay;
-};
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class STREAMARCADE_API UEnemySpawnController : public UActorComponent

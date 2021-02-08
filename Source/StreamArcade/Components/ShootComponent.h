@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 
-#include "StructsCollection.h"
+#include "StructsCollection/StructsCollection.h"
 #include "Components/ActorComponent.h"
 #include "Actors/Projectiles/ShootProjectile.h"
 #include "ShootComponent.generated.h"

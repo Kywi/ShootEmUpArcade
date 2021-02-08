@@ -5,6 +5,8 @@
 #include "Components/EnemySpawnController.h"
 #include "Components/GameHealthComponent.h"
 #include "Components/ShootComponent.h"
+#include "StructsCollection/StructsCollection.h"
+
 #include "StreamArcadeGameModeBase.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameOverEvent);
@@ -12,66 +14,66 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameOverEvent);
 UCLASS()
 class STREAMARCADE_API AStreamArcadeGameModeBase : public AGameModeBase
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-	AStreamArcadeGameModeBase();
+    AStreamArcadeGameModeBase();
 
-	virtual void BeginPlay() override;
-
-protected:
-
-	UFUNCTION(BlueprintNativeEvent, Category = "Game")
-	void ExplodePawn();
-	void ExplodePawn_Implementation();
-
-	UFUNCTION(BlueprintNativeEvent, Category = "Game")
-	void RecoverPawn();
-	void RecoverPawn_Implementation();
-
-	FTimerHandle RecoverTimer;
-	FTimerHandle IncreaseDifficultyTimer;
-
-	bool IsGameOver;
+    virtual void BeginPlay() override;
 
 public:
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Enemies")
-	UEnemySpawnController* EnemySpawnController;
-	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game Health")
-	UGameHealthComponent* HealthsComponent;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Enemies")
+    UEnemySpawnController* EnemySpawnController;
 
-	UPROPERTY(BlueprintAssignable, Category = "Game")
-	FGameOverEvent GameOver;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game Health")
+    UGameHealthComponent* HealthsComponent;
 
-	UFUNCTION(BlueprintCallable, Category = "Game")
-	void EndGame();
+    UPROPERTY(BlueprintAssignable, Category = "Game")
+    FGameOverEvent GameOver;
 
-	UFUNCTION(BlueprintCallable, Category = "Game")
-	void IncreaseDifficulty();
+    UFUNCTION(BlueprintCallable, Category = "Game")
+    void EndGame();
 
-	UFUNCTION(BlueprintCallable, Category = "Game")
-	void AddPoints(int Points);
+    UFUNCTION(BlueprintCallable, Category = "Game")
+    void IncreaseDifficulty();
 
-	UFUNCTION(BlueprintCallable, Category = "Game")
-	bool ChangeShootLevel(bool Up);
+    UFUNCTION(BlueprintCallable, Category = "Game")
+    void AddPoints(int Points);
 
-	UPROPERTY(BlueprintReadWrite, Category = "Game")
-	float PlayerRecoverTime;
+    UFUNCTION(BlueprintCallable, Category = "Game")
+    bool ChangeShootLevel(bool Up);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
-	float IncreaseDifficultyPeriod;
+    UPROPERTY(BlueprintReadWrite, Category = "Game")
+    float PlayerRecoverTime;
 
-	UPROPERTY(BlueprintReadOnly, Category = "Game")
-	class APlayerPawn* PlayerPawn;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
+    float IncreaseDifficultyPeriod;
 
-	UPROPERTY(BlueprintReadOnly, Category = "Game")
-	int GamePoints;
+    UPROPERTY(BlueprintReadOnly, Category = "Game")
+    class APlayerPawn* PlayerPawn;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-	TArray<FShootInfoLevel> ShootInfoLevels;
+    UPROPERTY(BlueprintReadOnly, Category = "Game")
+    int GamePoints;
 
-	UPROPERTY(BlueprintReadOnly, Category = "Shooting")
-	int CurrentShootLevel;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
+    TArray<FShootInfoLevel> ShootInfoLevels;
 
+    UPROPERTY(BlueprintReadOnly, Category = "Shooting")
+    int CurrentShootLevel;
+
+
+protected:
+
+    UFUNCTION(BlueprintNativeEvent, Category = "Game")
+    void ExplodePawn();
+    void ExplodePawn_Implementation();
+
+    UFUNCTION(BlueprintNativeEvent, Category = "Game")
+    void RecoverPawn();
+    void RecoverPawn_Implementation();
+
+    FTimerHandle RecoverTimer;
+    FTimerHandle IncreaseDifficultyTimer;
+
+    bool IsGameOver;
 };

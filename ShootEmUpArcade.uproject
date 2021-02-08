@@ -27,6 +27,10 @@
 		{
 			"Name": "ApexDestruction",
 			"Enabled": true
+		},
+		{
+			"Name": "BlastPlugin",
+			"Enabled": true
 		}
 	]
 }

@@ -12,20 +12,6 @@
 #include "Sound/SoundBase.h"
 #include "EnemyPawn.generated.h"
 
-USTRUCT(BlueprintType)
-struct FBonusChance
-{
-	GENERATED_BODY()
-
-public:
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bonus")
-	TSubclassOf<ABonus> BonusClass;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bonus")
-	float Chance;
-
-};
 
 UCLASS()
 class STREAMARCADE_API AEnemyPawn : public APawn
