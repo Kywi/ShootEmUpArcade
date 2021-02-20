@@ -28,33 +28,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bfbe110-d1e9-4c3d-b732-98451ee62266" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ClassDiagram.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/NewBlueprint.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship04.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_DestroyedSheep_2021-01-31-14-33-07.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_DestroyedSheep_2021-01-31-14-33-07.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GameInstace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_GameInstace.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Gameplay_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Gameplay_BuiltData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/GameOverScreen/W_GameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/GameOverScreen/W_GameOver.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/HUD/BP_GameHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/HUD/BP_GameHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_Settings.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_Settings.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/PauseMenu/W_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/PauseMenu/W_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShootEmUpArcade.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ShootEmUpArcade.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Actors/Bonuses/Bonus.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Actors/Bonuses/Bonus.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Actors/Projectiles/ShootProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Actors/Projectiles/ShootProjectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Components/EnemySpawnController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Components/EnemySpawnController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Components/ShootComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Components/ShootComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/Pawns/EnemyPawn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Private/StructsCollection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/StructsCollection/StructsCollection.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/Public/StructsCollection.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/StructsCollection/StructsCollection.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Blueprints/BP_6DoFCamera.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Blueprints/BP_6DoFCamera.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Blueprints/BP_Planet.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Blueprints/BP_Planet.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Blueprints/BP_StarSphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Blueprints/BP_StarSphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MF_StarSphereDecal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MF_StarSphereDecal.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_PlanetVenusAtmosphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_PlanetVenusAtmosphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_PlanetVenusSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_PlanetVenusSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_StarSphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_StarSphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_StarSpherePlanet.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_StarSpherePlanet.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/M_PlanetAtmosphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/M_PlanetAtmosphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/M_PlanetSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/M_PlanetSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/M_StarSphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/M_StarSphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Meshes/SM_Planet.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Meshes/SM_Planet.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Meshes/SM_StarSphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Meshes/SM_StarSphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_Nebulas.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_Nebulas.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_PlanetVenusClouds.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_PlanetVenusClouds.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_PlanetVenusLights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_PlanetVenusLights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_PlanetVenusSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_PlanetVenusSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_Saturn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_Saturn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_StarsBig.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_StarsBig.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_StarsPoints.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_StarsPoints.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_Sun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Textures/T_Sun.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -719,6 +718,8 @@
       <workItem from="1612626575412" duration="1000" />
       <workItem from="1612626682845" duration="2071000" />
       <workItem from="1612717703996" duration="8526000" />
+      <workItem from="1612825287655" duration="1808000" />
+      <workItem from="1612865372255" duration="2511000" />
     </task>
     <servers />
   </component>
