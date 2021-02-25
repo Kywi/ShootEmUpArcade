@@ -28,94 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bfbe110-d1e9-4c3d-b732-98451ee62266" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Blue.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Green.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Grey.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Generic_Spaceships/M_GenericSpaceships_Purple.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Black.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Blue.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Cyan.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Green.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Orange.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Purple.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Red.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Materials/Star_Sparrow/M_StarSparrow_Yellow.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship02_DM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship03.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship03_DM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship04.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Generic_Spaceships/SM_GenericSpaceship04_DM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow03.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow04.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow05.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow06.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow07.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow08.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow09.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow10.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow11.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow12.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Meshes/Star_Sparrow/SM_StarSparrow13.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_AO_R_MT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_Blue_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_Green_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_Green_E.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_Grey_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_Orange_E.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_Purple_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Generic_Spaceships/T_GenericSpaceships_Purple_E.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_AO_R_MT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Black_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Blue_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Cyan_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_E.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Green_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Orange_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Purple_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Red_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/EbalStudiosFreeSample/Textures/Star_Sparrow/T_StarSparrow_Yellow_BC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Fonts/EvilEmpire-4BBVK_Font.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Fonts/Robus-BWqOd_Font.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/M_Stars.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/M_Stars.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/Enemies/EnemyShip.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/M_Pawn.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/M_Pawn_Blue.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/M_Pawn_Purple.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/M_Pawn_Red.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/PlayerPawn/M_Pawn_PlayerWhite.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/PlayerPawn/M_PlayerPawn.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Pawns/PlayerPawn/PlayerShip.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/T_Smoke_Tiled_D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/UI/Heart.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/UI/pause-button.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GameInstace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_GameInstace.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_DestroyedSheep.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Fury.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Fury.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerPelican.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerPelican.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerUtopia.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerUtopia.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_StarSpherePlanet.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StarSphere/Materials/MI_StarSpherePlanet.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/SmokeBuilder/Textures/T_NoiseFuzzy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/GameOverScreen/W_GameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/GameOverScreen/W_GameOver.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/HUD/BP_GameHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/HUD/BP_GameHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_Settings.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_Settings.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/PauseMenu/W_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/PauseMenu/W_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShootEmUpArcade.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ShootEmUpArcade.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -784,6 +697,7 @@
       <workItem from="1612865372255" duration="2511000" />
       <workItem from="1613857279136" duration="778000" />
       <workItem from="1613925457586" duration="680000" />
+      <workItem from="1614254753317" duration="278000" />
     </task>
     <servers />
   </component>
