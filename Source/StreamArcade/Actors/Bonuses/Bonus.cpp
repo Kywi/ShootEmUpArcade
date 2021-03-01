@@ -1,10 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Bonus.h"
+#include "Pawns/PlayerPawn.h"
+
 #include "Components/SphereComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Kismet/GameplayStatics.h"
-#include "Pawns/PlayerPawn.h"
 
 // Sets default values
 ABonus::ABonus()

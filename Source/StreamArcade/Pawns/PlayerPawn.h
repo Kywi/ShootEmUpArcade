@@ -3,10 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
 #include "GameFramework/Pawn.h"
 #include "Components/BoxComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/ShootComponent.h"
+
 #include "PlayerPawn.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPawnDamagedEvent);
@@ -45,6 +47,7 @@ public:
     UFUNCTION(BlueprintPure, BlueprintNativeEvent, Category = "Healths")
     bool CanBeDamaged();
     bool CanBeDamaged_Implementation();
+    
 
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Healths")
     void ExplodePawn();

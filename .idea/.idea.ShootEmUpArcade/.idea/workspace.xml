@@ -28,7 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bfbe110-d1e9-4c3d-b732-98451ee62266" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Fury.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_Fury.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootEmUpArcade/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/GameOverScreen/W_GameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/GameOverScreen/W_GameOver.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/PauseMenu/W_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/PauseMenu/W_PauseMenu.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -698,6 +701,7 @@
       <workItem from="1613857279136" duration="778000" />
       <workItem from="1613925457586" duration="680000" />
       <workItem from="1614254753317" duration="278000" />
+      <workItem from="1614419055518" duration="1253000" />
     </task>
     <servers />
   </component>
