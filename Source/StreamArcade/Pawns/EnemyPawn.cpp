@@ -60,7 +60,7 @@ void AEnemyPawn::OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor)
 {
     if (OtherActor != UGameplayStatics::GetPlayerPawn(this, 0)) return;
 
-    float AppliedDamage = UGameplayStatics::ApplyDamage(OtherActor, 100.f, GetController(), this, UDamageType::StaticClass());
+    const float AppliedDamage = UGameplayStatics::ApplyDamage(OtherActor, 100.f, GetController(), this, UDamageType::StaticClass());
 
     if (AppliedDamage > 0.f) DestroyPawn();
 }
@@ -79,6 +79,7 @@ void AEnemyPawn::SpawnBonuses()
         if (RandChance < Bonus.Chance) {
             UE_LOG(LogTemp, Log, TEXT("Bonus spawned"));
             GetWorld()->SpawnActor<ABonus>(Bonus.BonusClass, GetActorLocation(), FRotator(0.f), SpawnParameters);
+            break;
         }
     }
 }
@@ -88,7 +89,7 @@ void AEnemyPawn::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    float WorldMoveOffset = -200.f * DeltaTime;
+    const float WorldMoveOffset = -200.f * DeltaTime;
     AddActorWorldOffset(FVector(WorldMoveOffset, 0.f, 0.f));
 
 }

@@ -50,3 +50,9 @@ void UShootComponent::StopShooting()
     GetWorld()->GetTimerManager().ClearTimer(ShootingTimer);
 }
 
+void UShootComponent::RestartShooting()
+{
+    StartShooting();
+    StartShooting();
+}
+

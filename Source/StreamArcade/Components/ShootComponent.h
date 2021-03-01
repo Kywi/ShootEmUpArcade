@@ -34,6 +34,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Shooting")
 	void StopShooting();
 
+	UFUNCTION(BlueprintCallable, Category = "Shooting")
+	void RestartShooting();
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
 	float ShootPeriod;
 
