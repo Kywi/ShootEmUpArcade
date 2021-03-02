@@ -142,11 +142,12 @@
           </e>
         </e>
       </e>
+      <e p="Rocket Galaxy.png" t="Include" />
       <e p="Rocket Galaxy.sln" t="IncludeFlat" />
       <e p="Rocket Galaxy.uproject" t="Include" />
       <e p="ShootEmUpArcade.png" t="Include" />
       <e p="Source" t="Include">
-        <e p="StreamArcade" t="Include">
+        <e p="RocketGalaxy" t="Include">
           <e p="Actors" t="Include">
             <e p="Bonuses" t="Include">
               <e p="Bonus.cpp" t="Include" />
