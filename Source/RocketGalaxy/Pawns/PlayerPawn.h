@@ -19,35 +19,15 @@ class STREAMARCADE_API APlayerPawn : public APawn
     GENERATED_BODY()
 
 public:
-    // Sets default values for this pawn's properties
+
     APlayerPawn();
 
-protected:
-    // Called when the game starts or when spawned
-    virtual void BeginPlay() override;
-    virtual float TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController* InstigatedBy,
-                             AActor* DamageCauser) override;
-    void OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location);
-    void OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location);
-    virtual void PossessedBy(AController* NewController) override;
-    APlayerController* PlayerController;
-    FVector2D MoveLimit;
-
-private:
-    FVector2D TouchLocation;
-    bool Touching;
-    UMaterialInterface* PawnMaterial;
-
-public:
-    // Called every frame
     virtual void Tick(float DeltaTime) override;
-    // Called to bind functionality to input
     virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-    
+
     UFUNCTION(BlueprintPure, BlueprintNativeEvent, Category = "Healths")
     bool CanBeDamaged();
     bool CanBeDamaged_Implementation();
-    
 
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Healths")
     void ExplodePawn();
@@ -58,7 +38,7 @@ public:
     void RecoverPawn_Implementation();
 
     UFUNCTION(BlueprintCallable, Category = "ScreeenRes")
-    FVector2D GetGameViewportSize();
+    static FVector2D GetGameViewportSize();
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
     UBoxComponent* PawnCollision;
@@ -83,4 +63,39 @@ public:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
     UParticleSystem* DestroyParticle;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
+    float maxRotationAngle = 40;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
+    float targetInterp = 0;
+    
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
+    float delayTimerInterp = 0.05;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
+    float stepInterp = 0.05;
+    
+protected:
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
+    virtual float TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController* InstigatedBy,
+                             AActor* DamageCauser) override;
+    void OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location);
+    void OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location);
+    void OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location);
+    virtual void PossessedBy(AController* NewController) override;
+    void RotationAnimation(const FVector& NewLocation);
+    void RotateBack();
+    APlayerController* PlayerController;
+    FVector2D MoveLimit;
+    FTimerHandle rotateAnimTimer;
+    
+private:
+    FVector2D TouchLocation;
+    float fromInterp;
+    double currentRotation = 0;
+    UMaterialInterface* PawnMaterial;
 };
+
+
