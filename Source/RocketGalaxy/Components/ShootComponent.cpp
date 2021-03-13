@@ -8,11 +8,8 @@
 // Sets default values for this component's properties
 UShootComponent::UShootComponent() : ShootPeriod(1.f)
 {
-    // ...
 }
 
-
-// Called when the game starts
 void UShootComponent::BeginPlay()
 {
     Super::BeginPlay();
@@ -53,7 +50,6 @@ void UShootComponent::StopShooting()
 
 void UShootComponent::RestartShooting()
 {
-    StartShooting();
+    StopShooting();
     StartShooting();
 }
-

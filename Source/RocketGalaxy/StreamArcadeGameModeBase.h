@@ -64,7 +64,6 @@ public:
 
 
 protected:
-
     UFUNCTION(BlueprintNativeEvent, Category = "Game")
     void ExplodePawn();
     void ExplodePawn_Implementation();

@@ -90,7 +90,6 @@ void APlayerPawn::RecoverPawn_Implementation()
     }
 }
 
-
 float APlayerPawn::TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController* InstigatedBy,
                               AActor* DamageCauser)
 {
@@ -129,7 +128,6 @@ void APlayerPawn::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
     SetActorLocation(NewLocation);
     TouchLocation = FVector2D(Location.X, Location.Y);
 }
-
 
 void APlayerPawn::OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location)
 {

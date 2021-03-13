@@ -13,25 +13,20 @@ class APlayerPawn;
 UCLASS()
 class STREAMARCADE_API APawnShield : public AActor
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
+public:
+    APawnShield();
+
+    UFUNCTION(BlueprintCallable, Category = "Shield")
+    void ActivateShield(APlayerPawn* PlayerPawn);
+
+    UFUNCTION(BlueprintCallable, Category = "Shield")
+    void DeactivateShield();
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Shield")
+    float ShieldTime;
 
 protected:
-
-	FTimerHandle ShieldTimer;
-
-	class APlayerPawn* ShildForPawn;
-	
-public:	
-	// Sets default values for this actor's properties
-	APawnShield();
-
-	UFUNCTION(BlueprintCallable, Category = "Shield")
-	void ActivateShield(APlayerPawn* PlayerPawn);
-
-	UFUNCTION(BlueprintCallable, Category = "Shield")
-	void DeactivateShield();
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Shield")
-	float ShieldTime;
-	
+    FTimerHandle ShieldTimer;
+    class APlayerPawn* ShildForPawn;
 };

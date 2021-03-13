@@ -11,28 +11,23 @@
 UCLASS(Blueprintable)
 class STREAMARCADE_API ABonus : public AActor
 {
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ABonus();
+    GENERATED_BODY()
+
+public:
+    // Sets default values for this actor's properties
+    ABonus();
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
+    class USphereComponent* Collision;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
+    UParticleSystem* CollectParticle;
 
 protected:
+    virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+    virtual void Tick(float DeltaTime) override;
 
-	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
-
-	UFUNCTION(BlueprintNativeEvent)
-	void BonusCollected();
-	virtual void BonusCollected_Implementation();
-
-	virtual void Tick(float DeltaTime) override;
-
-public:	
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
-	class USphereComponent* Collision;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
-	UParticleSystem* CollectParticle;
-	
+    UFUNCTION(BlueprintNativeEvent)
+    void BonusCollected();
+    virtual void BonusCollected_Implementation();
 };

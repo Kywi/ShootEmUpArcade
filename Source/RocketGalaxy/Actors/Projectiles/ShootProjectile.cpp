@@ -8,73 +8,61 @@
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Particles/ParticleSystemComponent.h"
-//#include "Pawns/EnemyPawn.h"
 
 // Sets default values
 AShootProjectile::AShootProjectile()
-	:
-	ProjectileSpeed(1000.f)
+    :
+    ProjectileSpeed(1000.f)
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+    // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+    PrimaryActorTick.bCanEverTick = true;
 
-	Collision = CreateDefaultSubobject<USphereComponent>(TEXT("ProjectileCollision"));
-	RootComponent = Collision;
-	Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    Collision = CreateDefaultSubobject<USphereComponent>(TEXT("ProjectileCollision"));
+    RootComponent = Collision;
+    Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
-	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	Mesh->SetupAttachment(Collision);
-	Mesh->SetCollisionProfileName("NoCollision");
+    Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+    Mesh->SetupAttachment(Collision);
+    Mesh->SetCollisionProfileName("NoCollision");
 
-	Particle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Particle"));
-	Particle->SetupAttachment(Collision);
-
+    Particle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Particle"));
+    Particle->SetupAttachment(Collision);
 }
 
-// Called when the game starts or when spawned
 void AShootProjectile::BeginPlay()
 {
-	Super::BeginPlay();
+    Super::BeginPlay();
 
-	if (GetOwner())
-	{
-		UBoxComponent* OwnerCollision = GetOwner()->FindComponentByClass<UBoxComponent>();
-		Collision->IgnoreComponentWhenMoving(OwnerCollision, true);
-		OwnerCollision->IgnoreComponentWhenMoving(Collision, true);
+    if (GetOwner())
+    {
+        UBoxComponent* OwnerCollision = GetOwner()->FindComponentByClass<UBoxComponent>();
+        Collision->IgnoreComponentWhenMoving(OwnerCollision, true);
+        OwnerCollision->IgnoreComponentWhenMoving(Collision, true);
 
-		Collision->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	}
-
-	Collision->OnComponentBeginOverlap.AddDynamic(this, &AShootProjectile::OnProjectileOverlap);
-	
+        Collision->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+    }
+    Collision->OnComponentBeginOverlap.AddDynamic(this, &AShootProjectile::OnProjectileOverlap);
 }
 
-void AShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 BodyIndex, bool Sweep, const FHitResult& Hit)
+void AShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, AActor* OtherActor,
+                                           UPrimitiveComponent* OtherComp, int32 BodyIndex, bool Sweep,
+                                           const FHitResult& Hit)
 {
-	APawn* OtherPawn = Cast<APawn>(OtherActor);
-	if (!OtherActor || !OtherPawn) return; // If no overlapped actor or it is not a pawn
+    APawn* OtherPawn = Cast<APawn>(OtherActor);
+    if (!OtherActor || !OtherPawn) return; // If no overlapped actor or it is not a pawn
 
-	if (!GetOwner()) return;
-	APawn* PawnOwner = Cast<APawn>(GetOwner());
-	if (!PawnOwner) return;
-	AController* DamageInstigator = PawnOwner->GetController();
+    if (!GetOwner()) return;
+    APawn* PawnOwner = Cast<APawn>(GetOwner());
+    if (!PawnOwner) return;
+    AController* DamageInstigator = PawnOwner->GetController();
 
-	if (!PawnOwner->GetController() && !OtherPawn->GetController()) return;
-
-	//AEnemyPawn* OtherEnemy = Cast<AEnemyPawn>(OtherActor);
-	//AEnemyPawn* OwnerEnemy = Cast<AEnemyPawn>(GetOwner());
-	//if (OtherEnemy && OwnerEnemy) return;
-
-	UGameplayStatics::ApplyDamage(OtherActor, Damage, DamageInstigator, this, UDamageType::StaticClass());
-
-	Destroy();
+    if (!PawnOwner->GetController() && !OtherPawn->GetController()) return;
+    UGameplayStatics::ApplyDamage(OtherActor, Damage, DamageInstigator, this, UDamageType::StaticClass());
+    Destroy();
 }
 
-// Called every frame
 void AShootProjectile::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-
-	AddActorLocalOffset(FVector(ProjectileSpeed*DeltaTime, 0.f, 0.f));
+    Super::Tick(DeltaTime);
+    AddActorLocalOffset(FVector(ProjectileSpeed * DeltaTime, 0.f, 0.f));
 }
-

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{525D8D9B-820E-4D97-B420-1D93D5F1F20B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{DECEA427-3367-4D84-950E-14ED8192F6CD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{A11BDADB-E273-4ABA-8A22-64B92D2C7AA9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{A069D5C5-D867-4A58-95A8-44287FFB24DB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rocket Galaxy", "Intermediate\ProjectFiles\Rocket Galaxy.vcxproj", "{77A2D62C-BCC7-46BB-9C64-44D92FC9DB83}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{024FE491-A4C2-4340-8020-D01CF0E92D92}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{C30A315F-A0DD-440D-9DCE-04F329A5D00F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{01434CC0-79A5-4739-9D93-6AE72EF5BBC1}"
 	ProjectSection(SolutionItems) = preProject
 		..\UnrealEngineVersions\UE_4.23\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\UnrealEngineVersions\UE_4.23\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
@@ -99,7 +99,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{024FE491-A4C2-4340-8020-D01CF0E92D92} = {525D8D9B-820E-4D97-B420-1D93D5F1F20B}
-		{77A2D62C-BCC7-46BB-9C64-44D92FC9DB83} = {A11BDADB-E273-4ABA-8A22-64B92D2C7AA9}
+		{024FE491-A4C2-4340-8020-D01CF0E92D92} = {DECEA427-3367-4D84-950E-14ED8192F6CD}
+		{77A2D62C-BCC7-46BB-9C64-44D92FC9DB83} = {A069D5C5-D867-4A58-95A8-44287FFB24DB}
 	EndGlobalSection
 EndGlobal

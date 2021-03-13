@@ -22,7 +22,6 @@ void UGameHealthComponent::BeginPlay()
 		UE_LOG(LogTemp, Error, TEXT("No playerPawn!!!"));
 		return;
 	}
-
 }
 
 void UGameHealthComponent::ChangeHealths(int ByValue)
@@ -38,7 +37,7 @@ void UGameHealthComponent::ChangeHealths(int ByValue)
 	UE_LOG(LogTemp, Log, TEXT("Health changed: %i"), Healths);
 }
 
-int UGameHealthComponent::GetHealths()
+int UGameHealthComponent::GetHealths() const
 {
 	return Healths;
 }

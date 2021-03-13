@@ -11,14 +11,13 @@
 UCLASS()
 class STREAMARCADE_API APlaygroundBorder : public AActor
 {
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	APlaygroundBorder();
+    GENERATED_BODY()
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	class UBoxComponent* Trigger;
+public:
+    APlaygroundBorder();
 
-	virtual void NotifyActorEndOverlap(AActor* OtherActor) override;
+    virtual void NotifyActorEndOverlap(AActor* OtherActor) override;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+    class UBoxComponent* Trigger;
 };

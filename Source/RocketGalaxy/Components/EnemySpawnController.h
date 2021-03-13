@@ -15,25 +15,6 @@ UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class STREAMARCADE_API UEnemySpawnController : public UActorComponent
 {
 	GENERATED_BODY()
-
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-	virtual void Deactivate() override;
-
-	void StartSpawnStage();
-
-	void SpawnEnemy();
-
-	FEnemySpawnInfo SpawnStage;
-	int EnemiesSpawned;
-
-	FTimerHandle ChangeStageTimer;
-	FTimerHandle EnemySpawnTimer;
-
-	FRandomStream Random;
-
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Enemies")
@@ -47,4 +28,16 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Enemies")
 	float ChangeStageTimeMultiplier;
+	
+protected:
+	virtual void BeginPlay() override;
+	virtual void Deactivate() override;
+	void StartSpawnStage();
+	void SpawnEnemy();
+
+	FEnemySpawnInfo SpawnStage;
+	int EnemiesSpawned;
+	FTimerHandle ChangeStageTimer;
+	FTimerHandle EnemySpawnTimer;
+	FRandomStream Random;
 };

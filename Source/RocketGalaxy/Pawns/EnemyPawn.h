@@ -67,6 +67,4 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Audio")
 	USoundBase* DestroySound;
-
-	
 };

@@ -27,14 +27,14 @@ void UEnemySpawnController::StartSpawnStage()
     EnemiesSpawned = 0;
     SpawnEnemy();
 
-    float ChangeStageTime = Random.RandRange(StageMinDelay, StageMaxDelay) * ChangeStageTimeMultiplier;
+    const float ChangeStageTime = Random.RandRange(StageMinDelay, StageMaxDelay) * ChangeStageTimeMultiplier;
     GetWorld()->GetTimerManager().SetTimer(ChangeStageTimer, this, &UEnemySpawnController::StartSpawnStage,
                                            ChangeStageTime, false);
 }
 
 void UEnemySpawnController::SpawnEnemy()
 {
-    FActorSpawnParameters SpawnParameters;
+    const FActorSpawnParameters SpawnParameters;
     GetWorld()->SpawnActor<AEnemyPawn>(SpawnStage.EnemyClass, SpawnStage.SpawnTransform, SpawnParameters);
 
     EnemiesSpawned++;

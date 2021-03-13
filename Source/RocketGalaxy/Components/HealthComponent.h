@@ -17,11 +17,18 @@ class STREAMARCADE_API UHealthComponent : public UActorComponent
     GENERATED_BODY()
 
 public:
-    // Sets default values for this component's properties
     UHealthComponent();
 
+    UFUNCTION(BlueprintCallable, Category = "Health")
+        void ChangeHealth(float Value);
+
+    UFUNCTION(BlueprintPure, Category = "Health")
+        float GetHealth() const;
+
+    UPROPERTY(BlueprintAssignable, Category = "Health")
+    FHealthEndedEvent OnHealthEnded;
+    
 protected:
-    // Called when the game starts
     virtual void BeginPlay() override;
     
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health")
@@ -29,15 +36,4 @@ protected:
 
     UFUNCTION()
         void OnOwnerDamaged(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* Instigator, AActor* DamageCauser);
-
-public:
-
-    UFUNCTION(BlueprintCallable, Category = "Health")
-        void ChangeHealth(float Value);
-
-    UFUNCTION(BlueprintPure, Category = "Health")
-        float GetHealth();
-
-    UPROPERTY(BlueprintAssignable, Category = "Health")
-        FHealthEndedEvent OnHealthEnded;
 };

@@ -23,13 +23,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df4e6d8a-4550-44bd-9b05-ca0c0a1410b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Galaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Galaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Galaxy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/Generic_Spaceships/M_GenericSpaceships_Purple.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/Generic_Spaceships/M_GenericSpaceships_Purple.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/M_PawnRecover.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/M_PawnRecover.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/M_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/M_Shield.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/M_Stars.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/M_Stars.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/StarSphere/BP_6DoFCamera.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Gameplay_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Gameplay_BuiltData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_ChooseMainSpaceSheep.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rocket Galaxy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Rocket Galaxy.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/Bonus.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/Bonus.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/Bonus.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/Bonus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusPoints.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusPoints.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShield.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShield.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,32 +78,33 @@
         <option value="$PROJECT_DIR$/Source/StreamArcade/Components/ShootComponent.h" />
         <option value="$PROJECT_DIR$/Source/StreamArcade/Components/ShootComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/StreamArcade/StreamArcadeGameModeBase.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/Bonus.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusPoints.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusPoints.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShield.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/HealthComponent.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Components/EnemySpawnController.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Other/PawnShield.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/Bonus.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/Bonus.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusPoints.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShield.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.h" />
       </list>
     </option>
   </component>
@@ -313,7 +346,10 @@
       <workItem from="1614667947881" duration="230000" />
       <workItem from="1614668406297" duration="5012000" />
       <workItem from="1614702013320" duration="640000" />
-      <workItem from="1614755656448" duration="17738000" />
+      <workItem from="1614755656448" duration="18928000" />
+      <workItem from="1614858468371" duration="1080000" />
+      <workItem from="1615667953623" duration="4319000" />
+      <workItem from="1615672580038" duration="141000" />
     </task>
     <servers />
   </component>

@@ -8,9 +8,7 @@
 
 #include "BonusShootLevelUp.generated.h"
 
-/**
- * 
- */
+
 UCLASS()
 class STREAMARCADE_API ABonusShootLevelUp : public ABonus
 {
@@ -18,7 +16,5 @@ class STREAMARCADE_API ABonusShootLevelUp : public ABonus
 	
 protected:
 
-	virtual void BonusCollected_Implementation() override;
-	
-	
+	virtual void BonusCollected_Implementation() override;	
 };

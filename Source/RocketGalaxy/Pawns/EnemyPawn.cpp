@@ -94,5 +94,4 @@ void AEnemyPawn::Tick(float DeltaTime)
 
     const float WorldMoveOffset = -200.f * DeltaTime;
     AddActorWorldOffset(FVector(WorldMoveOffset, 0.f, 0.f));
-
 }

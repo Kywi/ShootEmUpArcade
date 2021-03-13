@@ -35,7 +35,6 @@ void ABonus::BonusCollected_Implementation()
 {
     if (CollectParticle)
         UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), CollectParticle, GetActorTransform(), true);
-
     Destroy();
 }
 
@@ -46,5 +45,4 @@ void ABonus::Tick(float DeltaTime)
 
     float WorldMoveOffset = -200.f * DeltaTime;
     AddActorWorldOffset(FVector(WorldMoveOffset, 0.f, 0.f));
-
 }

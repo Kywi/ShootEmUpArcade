@@ -17,32 +17,26 @@ class STREAMARCADE_API UShootComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:	
-	// Sets default values for this component's properties
 	UShootComponent();
 
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-	void Shoot();
-
-	FTimerHandle ShootingTimer;
-
-public:	
+	UFUNCTION(BlueprintCallable, Category = "Shooting")
+    void StartShooting();
 
 	UFUNCTION(BlueprintCallable, Category = "Shooting")
-	void StartShooting();
+    void StopShooting();
 
 	UFUNCTION(BlueprintCallable, Category = "Shooting")
-	void StopShooting();
-
-	UFUNCTION(BlueprintCallable, Category = "Shooting")
-	void RestartShooting();
+    void RestartShooting();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
 	float ShootPeriod;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
 	TArray<FShootInfo> ShootInfos;
+	
+protected:
+	virtual void BeginPlay() override;
+	void Shoot();
+	FTimerHandle ShootingTimer;
 	
 };

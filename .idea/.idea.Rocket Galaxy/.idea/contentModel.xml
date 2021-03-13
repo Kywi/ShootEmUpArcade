@@ -5,6 +5,7 @@
       <e p=".gitattributes" t="Include" />
       <e p=".gitignore" t="Include" />
       <e p="Config" t="Include">
+        <e p="DefaultCrypto.ini" t="Include" />
         <e p="DefaultEditor.ini" t="Include" />
         <e p="DefaultEngine.ini" t="Include" />
         <e p="DefaultGame.ini" t="Include" />

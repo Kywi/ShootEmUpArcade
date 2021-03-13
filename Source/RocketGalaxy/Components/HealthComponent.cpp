@@ -11,13 +11,10 @@ UHealthComponent::UHealthComponent():
 {
 }
 
-
 // Called when the game starts
 void UHealthComponent::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
 	
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::OnOwnerDamaged);
 }
@@ -30,15 +27,14 @@ void UHealthComponent::OnOwnerDamaged(AActor * DamagedActor, float Damage, const
 void UHealthComponent::ChangeHealth(float Value)
 {
 	Health += Value;
-
+	
 	if (Health <= 0.f) {
 		GetOwner()->OnTakeAnyDamage.RemoveDynamic(this, &UHealthComponent::OnOwnerDamaged);
-
 		OnHealthEnded.Broadcast();
 	}
 }
 
-float UHealthComponent::GetHealth()
+float UHealthComponent::GetHealth() const
 {
 	return Health;
 }

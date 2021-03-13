@@ -20,25 +20,22 @@ class STREAMARCADE_API UGameHealthComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UGameHealthComponent();
-
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-	UPROPERTY(EditAnywhere, Category = "Game Health")
-	int Healths;
-
-public:	
 		
 	UFUNCTION(BlueprintCallable, Category = "Game Health")
-	void ChangeHealths(int ByValue);
+    void ChangeHealths(int ByValue);
 
 	UFUNCTION(BlueprintPure, Category = "Game Health")
-	int GetHealths();
+    int GetHealths() const;
 
 	UPROPERTY(BlueprintAssignable, Category = "Game Health")
 	FHealthsEndedEvent HealthsEnded;
 
 	UPROPERTY(BlueprintAssignable, Category = "Game Health")
 	FHealthsChangedEvent HealthsChanged;
+	
+protected:
+	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, Category = "Game Health")
+	int Healths;
 };

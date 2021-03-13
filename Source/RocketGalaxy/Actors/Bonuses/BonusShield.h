@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -9,21 +7,16 @@
 #include "BonusShield.generated.h"
 
 class APawnShield;
-/**
- * 
- */
+
 UCLASS()
 class STREAMARCADE_API ABonusShield : public ABonus
 {
-	GENERATED_BODY()
-	
-protected:
-
-	virtual void BonusCollected_Implementation() override;
+    GENERATED_BODY()
 
 public:
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shield")
+    TSubclassOf<APawnShield> ShieldClass;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shield")
-	TSubclassOf<APawnShield> ShieldClass;
-	
+protected:
+    virtual void BonusCollected_Implementation() override;
 };
