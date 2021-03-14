@@ -56,13 +56,11 @@ struct FBonusChance
 	GENERATED_BODY()
 
 public:
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bonus")
 	TSubclassOf<ABonus> BonusClass;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bonus")
 	float Chance;
-
 };
 
 
