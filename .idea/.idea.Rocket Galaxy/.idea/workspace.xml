@@ -23,8 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df4e6d8a-4550-44bd-9b05-ca0c0a1410b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_Connect.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_FindedServer.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_Host.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_MultiplayerChooseMenu.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Galaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Galaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/StructsCollection/StructsCollection.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/StructsCollection/StructsCollection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/Generic_Spaceships/M_GenericSpaceships_Purple.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/Generic_Spaceships/M_GenericSpaceships_Purple.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerPelican.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerPelican.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcade.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcade.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +80,7 @@
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.cpp" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Bonuses/BonusShootLevelUp.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/StructsCollection/StructsCollection.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcade.Build.cs" />
       </list>
     </option>
   </component>
@@ -315,6 +327,8 @@
       <workItem from="1615667953623" duration="4319000" />
       <workItem from="1615672580038" duration="141000" />
       <workItem from="1615739880045" duration="4812000" />
+      <workItem from="1615975427218" duration="1393000" />
+      <workItem from="1617181859351" duration="892000" />
     </task>
     <servers />
   </component>
