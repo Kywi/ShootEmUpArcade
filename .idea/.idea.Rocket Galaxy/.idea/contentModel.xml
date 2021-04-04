@@ -181,6 +181,14 @@
             <e p="ShootComponent.cpp" t="Include" />
             <e p="ShootComponent.h" t="Include" />
           </e>
+          <e p="NetworkGamemode.cpp" t="Include" />
+          <e p="NetworkGamemode.h" t="Include" />
+          <e p="NWGameInstance.cpp" t="Include" />
+          <e p="NWGameInstance.h" t="Include" />
+          <e p="NWGameMode.cpp" t="Include" />
+          <e p="NWGameMode.h" t="Include" />
+          <e p="NWGameState.cpp" t="Include" />
+          <e p="NWGameState.h" t="Include" />
           <e p="Pawns" t="Include">
             <e p="EnemyPawn.cpp" t="Include" />
             <e p="EnemyPawn.h" t="Include" />
@@ -6806,6 +6814,957 @@
           <e p="RiderSourceCodeAccess.Build.cs" t="Include" />
         </e>
       </e>
+    </e>
+    <e p="C:\UnrealEngineVersions\UE_4.23\Engine\Plugins\Marketplace\VoxelFree" t="Include">
+      <e p="Config" t="Include">
+        <e p="BaseVoxelFree.ini" t="Include" />
+        <e p="DefaultVoxelFree.ini" t="Include" />
+        <e p="FilterPlugin.ini" t="Include" />
+      </e>
+      <e p="Resources" t="Include">
+        <e p="Icon128.png" t="Include" />
+      </e>
+      <e p="Shaders" t="Include">
+        <e p="Private" t="Include">
+          <e p="DistanceField.usf" t="Include" />
+          <e p="Erosion.usf" t="Include" />
+        </e>
+      </e>
+      <e p="Source" t="Include">
+        <e p="Voxel" t="Include">
+          <e p="Private" t="Include">
+            <e p="FastNoise" t="Include">
+              <e p="LICENSE" t="Include" />
+              <e p="VoxelFastNoiseLUT.cpp" t="Include" />
+            </e>
+            <e p="IVoxelPool.cpp" t="Include" />
+            <e p="VoxelAssets" t="Include">
+              <e p="VoxelDataAsset.cpp" t="Include" />
+              <e p="VoxelDataAssetData.cpp" t="Include" />
+              <e p="VoxelHeightmapAsset.cpp" t="Include" />
+            </e>
+            <e p="VoxelAsyncWork.cpp" t="Include" />
+            <e p="VoxelComponents" t="Include">
+              <e p="VoxelInvokerComponent.cpp" t="Include" />
+              <e p="VoxelNoClippingComponent.cpp" t="Include" />
+              <e p="VoxelPhysicsRelevancyComponent.cpp" t="Include" />
+            </e>
+            <e p="VoxelCooking" t="Include">
+              <e p="VoxelCookedData.cpp" t="Include" />
+              <e p="VoxelCookingLibrary.cpp" t="Include" />
+            </e>
+            <e p="VoxelData" t="Include">
+              <e p="VoxelData.cpp" t="Include" />
+              <e p="VoxelDataAccelerator.cpp" t="Include" />
+              <e p="VoxelDataOctree.cpp" t="Include" />
+              <e p="VoxelDataOctreeLeafUndoRedo.cpp" t="Include" />
+              <e p="VoxelSave.cpp" t="Include" />
+              <e p="VoxelSaveUtilities.cpp" t="Include" />
+            </e>
+            <e p="VoxelDebug" t="Include">
+              <e p="VoxelDebugManager.cpp" t="Include" />
+              <e p="VoxelDebugUtilities.cpp" t="Include" />
+              <e p="VoxelLineBatchComponent.cpp" t="Include" />
+            </e>
+            <e p="VoxelDefaultPool.cpp" t="Include" />
+            <e p="VoxelDefinitions.cpp" t="Include" />
+            <e p="VoxelEvents" t="Include">
+              <e p="VoxelEventManager.cpp" t="Include" />
+            </e>
+            <e p="VoxelGenerators" t="Include">
+              <e p="VoxelGenerator.cpp" t="Include" />
+              <e p="VoxelGeneratorCache.cpp" t="Include" />
+              <e p="VoxelGeneratorParameters.cpp" t="Include" />
+              <e p="VoxelGeneratorPicker.cpp" t="Include" />
+              <e p="VoxelGeneratorTools.cpp" t="Include" />
+            </e>
+            <e p="VoxelImporters" t="Include">
+              <e p="SDFGen" t="Include">
+                <e p="README.md" t="Include" />
+              </e>
+              <e p="VoxelLandscapeImporter.cpp" t="Include" />
+              <e p="VoxelMeshImporter.cpp" t="Include" />
+            </e>
+            <e p="VoxelMaterialBuilder.cpp" t="Include" />
+            <e p="VoxelMaterialInterface.cpp" t="Include" />
+            <e p="VoxelMaterialUtilities.cpp" t="Include" />
+            <e p="VoxelMessages.cpp" t="Include" />
+            <e p="VoxelModule.cpp" t="Include" />
+            <e p="VoxelMultiplayer" t="Include">
+              <e p="VoxelMultiplayerTcp.cpp" t="Include" />
+            </e>
+            <e p="VoxelObjectArchive.cpp" t="Include" />
+            <e p="VoxelPlaceableItems" t="Include">
+              <e p="Actors" t="Include">
+                <e p="VoxelAssetActor.cpp" t="Include" />
+                <e p="VoxelDataItemActor.cpp" t="Include" />
+                <e p="VoxelDisableEditsBox.cpp" t="Include" />
+                <e p="VoxelPlaceableItemActorHelper.cpp" t="Include" />
+              </e>
+              <e p="VoxelPlaceableItem.cpp" t="Include" />
+              <e p="VoxelPlaceableItemManager.cpp" t="Include" />
+              <e p="VoxelPlaceableItemsUtilities.cpp" t="Include" />
+            </e>
+            <e p="VoxelRender" t="Include">
+              <e p="IVoxelLODManager.cpp" t="Include" />
+              <e p="IVoxelRenderer.cpp" t="Include" />
+              <e p="LODManager" t="Include">
+                <e p="VoxelDefaultLODManager.cpp" t="Include" />
+                <e p="VoxelDefaultLODManager.h" t="Include" />
+                <e p="VoxelFixedResolutionLODManager.cpp" t="Include" />
+                <e p="VoxelFixedResolutionLODManager.h" t="Include" />
+                <e p="VoxelRenderOctree.cpp" t="Include" />
+                <e p="VoxelRenderOctree.h" t="Include" />
+              </e>
+              <e p="MaterialCollections" t="Include">
+                <e p="VoxelBasicMaterialCollection.cpp" t="Include" />
+                <e p="VoxelCachedMaterialCollection.cpp" t="Include" />
+                <e p="VoxelInstancedMaterialCollection.cpp" t="Include" />
+                <e p="VoxelLandscapeMaterialCollection.cpp" t="Include" />
+              </e>
+              <e p="Meshers" t="Include">
+                <e p="Transvoxel.h" t="Include" />
+                <e p="VoxelCubicMesher.cpp" t="Include" />
+                <e p="VoxelCubicMesher.h" t="Include" />
+                <e p="VoxelMarchingCubeMesher.cpp" t="Include" />
+                <e p="VoxelMarchingCubeMesher.h" t="Include" />
+                <e p="VoxelMesher.cpp" t="Include" />
+                <e p="VoxelMesher.h" t="Include" />
+                <e p="VoxelMesherUtilities.cpp" t="Include" />
+                <e p="VoxelMesherUtilities.h" t="Include" />
+                <e p="VoxelSurfaceNetMesher.cpp" t="Include" />
+                <e p="VoxelSurfaceNetMesher.h" t="Include" />
+              </e>
+              <e p="PhysicsCooker" t="Include">
+                <e p="VoxelAsyncPhysicsCooker.cpp" t="Include" />
+                <e p="VoxelAsyncPhysicsCooker.h" t="Include" />
+                <e p="VoxelAsyncPhysicsCooker_Chaos.cpp" t="Include" />
+                <e p="VoxelAsyncPhysicsCooker_Chaos.h" t="Include" />
+                <e p="VoxelAsyncPhysicsCooker_PhysX.cpp" t="Include" />
+                <e p="VoxelAsyncPhysicsCooker_PhysX.h" t="Include" />
+                <e p="VoxelPhysXHelpers.h" t="Include" />
+              </e>
+              <e p="Renderers" t="Include">
+                <e p="VoxelDefaultRenderer.cpp" t="Include" />
+                <e p="VoxelDefaultRenderer.h" t="Include" />
+                <e p="VoxelMesherAsyncWork.cpp" t="Include" />
+                <e p="VoxelRendererBasicMeshHandler.cpp" t="Include" />
+                <e p="VoxelRendererBasicMeshHandler.h" t="Include" />
+                <e p="VoxelRendererClusteredMeshHandler.cpp" t="Include" />
+                <e p="VoxelRendererClusteredMeshHandler.h" t="Include" />
+                <e p="VoxelRendererMeshHandler.cpp" t="Include" />
+                <e p="VoxelRendererMeshHandler.h" t="Include" />
+                <e p="VoxelRendererMixedMeshHandler.cpp" t="Include" />
+                <e p="VoxelRendererMixedMeshHandler.h" t="Include" />
+              </e>
+              <e p="VoxelChunkMesh.cpp" t="Include" />
+              <e p="VoxelMaterialExpressions.cpp" t="Include" />
+              <e p="VoxelProceduralMeshComponent.cpp" t="Include" />
+              <e p="VoxelProceduralMeshSceneProxy.cpp" t="Include" />
+              <e p="VoxelProceduralMeshSceneProxy.h" t="Include" />
+              <e p="VoxelProcMeshBuffers.cpp" t="Include" />
+              <e p="VoxelRawStaticIndexBuffer.cpp" t="Include" />
+              <e p="VoxelRenderUtilities.cpp" t="Include" />
+              <e p="VoxelRenderUtilities.h" t="Include" />
+            </e>
+            <e p="VoxelSerializationUtilities.cpp" t="Include" />
+            <e p="VoxelSettings.cpp" t="Include" />
+            <e p="VoxelShaders" t="Include">
+              <e p="VoxelDistanceFieldShader.cpp" t="Include" />
+              <e p="VoxelErosion.cpp" t="Include" />
+              <e p="VoxelErosionShader.cpp" t="Include" />
+              <e p="VoxelErosionShader.h" t="Include" />
+            </e>
+            <e p="VoxelSpawners" t="Include">
+              <e p="VoxelInstancedMeshSettings.cpp" t="Include" />
+              <e p="VoxelMeshSpawner.cpp" t="Include" />
+              <e p="VoxelSpawner.cpp" t="Include" />
+              <e p="VoxelSpawnerActor.cpp" t="Include" />
+              <e p="VoxelSpawnerConfig.cpp" t="Include" />
+              <e p="VoxelSpawnerGroup.cpp" t="Include" />
+            </e>
+            <e p="VoxelStaticWorld.cpp" t="Include" />
+            <e p="VoxelTexture.cpp" t="Include" />
+            <e p="VoxelTextureUtilities.cpp" t="Include" />
+            <e p="VoxelThreadPool.cpp" t="Include" />
+            <e p="VoxelTools" t="Include">
+              <e p="Gen" t="Include">
+                <e p="VoxelBoxTools.cpp" t="Include" />
+                <e p="VoxelGeneratedTools.h" t="Include" />
+                <e p="VoxelLevelTools.cpp" t="Include" />
+                <e p="VoxelSphereTools.cpp" t="Include" />
+                <e p="VoxelSurfaceEditTools.cpp" t="Include" />
+              </e>
+              <e p="Impl" t="Include">
+                <e p="VoxelToolsBaseImpl.cpp" t="Include" />
+              </e>
+              <e p="Tools" t="Include">
+                <e p="VoxelFlattenTool.cpp" t="Include" />
+                <e p="VoxelLevelTool.cpp" t="Include" />
+                <e p="VoxelMeshTool.cpp" t="Include" />
+                <e p="VoxelRevertTool.cpp" t="Include" />
+                <e p="VoxelSmoothTool.cpp" t="Include" />
+                <e p="VoxelSphereTool.cpp" t="Include" />
+                <e p="VoxelSphereToolBase.cpp" t="Include" />
+                <e p="VoxelSurfaceTool.cpp" t="Include" />
+                <e p="VoxelTool.cpp" t="Include" />
+                <e p="VoxelToolBase.cpp" t="Include" />
+                <e p="VoxelToolLibrary.cpp" t="Include" />
+                <e p="VoxelTrimTool.cpp" t="Include" />
+              </e>
+              <e p="VoxelAssetTools.cpp" t="Include" />
+              <e p="VoxelBlueprintLibrary.cpp" t="Include" />
+              <e p="VoxelDataTools.cpp" t="Include" />
+              <e p="VoxelHardnessHandler.cpp" t="Include" />
+              <e p="VoxelMathLibrary.cpp" t="Include" />
+              <e p="VoxelPaintMaterial.cpp" t="Include" />
+              <e p="VoxelPhysics.cpp" t="Include" />
+              <e p="VoxelPhysicsPartSpawner.cpp" t="Include" />
+              <e p="VoxelProjectionTools.cpp" t="Include" />
+              <e p="VoxelSurfaceTools.cpp" t="Include" />
+              <e p="VoxelTestLibrary.cpp" t="Include" />
+              <e p="VoxelTextureTools.cpp" t="Include" />
+              <e p="VoxelToolHelpers.cpp" t="Include" />
+              <e p="VoxelToolManager.cpp" t="Include" />
+              <e p="VoxelToolsBase.cpp" t="Include" />
+            </e>
+            <e p="VoxelUtilities" t="Include">
+              <e p="VoxelConfigUtilities.cpp" t="Include" />
+              <e p="VoxelDistanceFieldUtilities.cpp" t="Include" />
+            </e>
+            <e p="VoxelWorld.cpp" t="Include" />
+            <e p="VoxelWorldRootComponent.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="FastNoise" t="Include">
+              <e p="CrossPlatformSTD.h" t="Include" />
+              <e p="VoxelFastNoise.h" t="Include" />
+              <e p="VoxelFastNoise.inl" t="Include" />
+              <e p="VoxelFastNoise_CellularNoise.h" t="Include" />
+              <e p="VoxelFastNoise_CellularNoise.inl" t="Include" />
+              <e p="VoxelFastNoise_CubicNoise.h" t="Include" />
+              <e p="VoxelFastNoise_CubicNoise.inl" t="Include" />
+              <e p="VoxelFastNoise_GradientPerturb.h" t="Include" />
+              <e p="VoxelFastNoise_GradientPerturb.inl" t="Include" />
+              <e p="VoxelFastNoise_PerlinNoise.h" t="Include" />
+              <e p="VoxelFastNoise_PerlinNoise.inl" t="Include" />
+              <e p="VoxelFastNoise_SimplexNoise.h" t="Include" />
+              <e p="VoxelFastNoise_SimplexNoise.inl" t="Include" />
+              <e p="VoxelFastNoise_ValueNoise.h" t="Include" />
+              <e p="VoxelFastNoise_ValueNoise.inl" t="Include" />
+              <e p="VoxelFastNoise_WhiteNoise.h" t="Include" />
+              <e p="VoxelFastNoise_WhiteNoise.inl" t="Include" />
+              <e p="VoxelFastNoiseBase.h" t="Include" />
+              <e p="VoxelFastNoiseBase.inl" t="Include" />
+              <e p="VoxelFastNoiseLUT.h" t="Include" />
+              <e p="VoxelFastNoiseLUT.inl" t="Include" />
+              <e p="VoxelFastNoiseMath.h" t="Include" />
+              <e p="VoxelFastNoiseMath.inl" t="Include" />
+              <e p="VoxelFastNoiseTest.h" t="Include" />
+            </e>
+            <e p="FastNoise.h" t="Include" />
+            <e p="IVoxelPool.h" t="Include" />
+            <e p="VoxelAssets" t="Include">
+              <e p="VoxelDataAsset.h" t="Include" />
+              <e p="VoxelDataAssetData.h" t="Include" />
+              <e p="VoxelDataAssetData.inl" t="Include" />
+              <e p="VoxelDataAssetInstance.h" t="Include" />
+              <e p="VoxelHeightmapAsset.h" t="Include" />
+              <e p="VoxelHeightmapAssetData.h" t="Include" />
+              <e p="VoxelHeightmapAssetData.inl" t="Include" />
+              <e p="VoxelHeightmapAssetInstance.h" t="Include" />
+              <e p="VoxelHeightmapAssetSamplerWrapper.h" t="Include" />
+            </e>
+            <e p="VoxelAsyncWork.h" t="Include" />
+            <e p="VoxelBoolVector.h" t="Include" />
+            <e p="VoxelCancelCounter.h" t="Include" />
+            <e p="VoxelCharacter.h" t="Include" />
+            <e p="VoxelComponents" t="Include">
+              <e p="VoxelInvokerComponent.h" t="Include" />
+              <e p="VoxelNoClippingComponent.h" t="Include" />
+              <e p="VoxelPhysicsRelevancyComponent.h" t="Include" />
+            </e>
+            <e p="VoxelContainers" t="Include">
+              <e p="NoGrowArray.h" t="Include" />
+              <e p="VoxelArray3.h" t="Include" />
+              <e p="VoxelArrayView.h" t="Include" />
+              <e p="VoxelSparseArray.h" t="Include" />
+              <e p="VoxelStaticArray.h" t="Include" />
+            </e>
+            <e p="VoxelCooking" t="Include">
+              <e p="VoxelCookedData.h" t="Include" />
+              <e p="VoxelCookingLibrary.h" t="Include" />
+            </e>
+            <e p="VoxelData" t="Include">
+              <e p="IVoxelData.h" t="Include" />
+              <e p="VoxelData.h" t="Include" />
+              <e p="VoxelData.inl" t="Include" />
+              <e p="VoxelDataAccelerator.h" t="Include" />
+              <e p="VoxelDataAccelerator.inl" t="Include" />
+              <e p="VoxelDataImpl.h" t="Include" />
+              <e p="VoxelDataImpl.inl" t="Include" />
+              <e p="VoxelDataIncludes.h" t="Include" />
+              <e p="VoxelDataLock.h" t="Include" />
+              <e p="VoxelDataOctree.h" t="Include" />
+              <e p="VoxelDataOctreeLeafData.h" t="Include" />
+              <e p="VoxelDataOctreeLeafMultiplayer.h" t="Include" />
+              <e p="VoxelDataOctreeLeafUndoRedo.h" t="Include" />
+              <e p="VoxelDataUtilities.h" t="Include" />
+              <e p="VoxelDataUtilities.inl" t="Include" />
+              <e p="VoxelSave.h" t="Include" />
+              <e p="VoxelSaveUtilities.h" t="Include" />
+            </e>
+            <e p="VoxelDebug" t="Include">
+              <e p="VoxelDebugManager.h" t="Include" />
+              <e p="VoxelDebugUtilities.h" t="Include" />
+              <e p="VoxelLineBatchComponent.h" t="Include" />
+            </e>
+            <e p="VoxelDebug.h" t="Include" />
+            <e p="VoxelDefaultPool.h" t="Include" />
+            <e p="VoxelDefinitions.h" t="Include" />
+            <e p="VoxelDelegateHelpers.h" t="Include" />
+            <e p="VoxelDiff.h" t="Include" />
+            <e p="VoxelDirection.h" t="Include" />
+            <e p="VoxelEditorDelegates.h" t="Include" />
+            <e p="VoxelEditorDelegatesInterface.h" t="Include" />
+            <e p="VoxelEngineVersionHelpers.h" t="Include" />
+            <e p="VoxelEnums.h" t="Include" />
+            <e p="VoxelEvents" t="Include">
+              <e p="VoxelEventManager.h" t="Include" />
+            </e>
+            <e p="VoxelFeedbackContext.h" t="Include" />
+            <e p="VoxelGenerators" t="Include">
+              <e p="VoxelEmptyGenerator.h" t="Include" />
+              <e p="VoxelFlatGenerator.h" t="Include" />
+              <e p="VoxelGenerator.h" t="Include" />
+              <e p="VoxelGeneratorCache.h" t="Include" />
+              <e p="VoxelGeneratorHelpers.h" t="Include" />
+              <e p="VoxelGeneratorInit.h" t="Include" />
+              <e p="VoxelGeneratorInstance.h" t="Include" />
+              <e p="VoxelGeneratorInstance.inl" t="Include" />
+              <e p="VoxelGeneratorInstanceWrapper.h" t="Include" />
+              <e p="VoxelGeneratorParameters.h" t="Include" />
+              <e p="VoxelGeneratorPicker.h" t="Include" />
+              <e p="VoxelGeneratorTools.h" t="Include" />
+              <e p="VoxelTransformableGeneratorHelper.h" t="Include" />
+            </e>
+            <e p="VoxelImporters" t="Include">
+              <e p="VoxelLandscapeImporter.h" t="Include" />
+              <e p="VoxelMeshImporter.h" t="Include" />
+            </e>
+            <e p="VoxelIntBox.h" t="Include" />
+            <e p="VoxelIntBoxLibrary.h" t="Include" />
+            <e p="VoxelInterpolator.h" t="Include" />
+            <e p="VoxelInvokerSettings.h" t="Include" />
+            <e p="VoxelItemStack.h" t="Include" />
+            <e p="VoxelLog.h" t="Include" />
+            <e p="VoxelMacros.h" t="Include" />
+            <e p="VoxelMaterial.h" t="Include" />
+            <e p="VoxelMaterialBuilder.h" t="Include" />
+            <e p="VoxelMessages.h" t="Include" />
+            <e p="VoxelMinimal.h" t="Include" />
+            <e p="VoxelModule.h" t="Include" />
+            <e p="VoxelMultiplayer" t="Include">
+              <e p="VoxelMultiplayerInterface.h" t="Include" />
+              <e p="VoxelMultiplayerInterfaceWithSocket.h" t="Include" />
+              <e p="VoxelMultiplayerTcp.h" t="Include" />
+            </e>
+            <e p="VoxelObjectArchive.h" t="Include" />
+            <e p="VoxelOctree.h" t="Include" />
+            <e p="VoxelOctreeId.h" t="Include" />
+            <e p="VoxelPlaceableItems" t="Include">
+              <e p="Actors" t="Include">
+                <e p="VoxelAssetActor.h" t="Include" />
+                <e p="VoxelDataItemActor.h" t="Include" />
+                <e p="VoxelDisableEditsBox.h" t="Include" />
+                <e p="VoxelPlaceableItemActor.h" t="Include" />
+                <e p="VoxelPlaceableItemActorHelper.h" t="Include" />
+              </e>
+              <e p="VoxelPlaceableItem.h" t="Include" />
+              <e p="VoxelPlaceableItemManager.h" t="Include" />
+              <e p="VoxelPlaceableItemsUtilities.h" t="Include" />
+            </e>
+            <e p="VoxelPriorityHandler.h" t="Include" />
+            <e p="VoxelQueryZone.h" t="Include" />
+            <e p="VoxelQueuedWork.h" t="Include" />
+            <e p="VoxelQueueWithNum.h" t="Include" />
+            <e p="VoxelRange.h" t="Include" />
+            <e p="VoxelRender" t="Include">
+              <e p="IVoxelLODManager.h" t="Include" />
+              <e p="IVoxelProceduralMeshComponent_PhysicsCallbackHandler.h" t="Include" />
+              <e p="IVoxelRenderer.h" t="Include" />
+              <e p="MaterialCollections" t="Include">
+                <e p="VoxelBasicMaterialCollection.h" t="Include" />
+                <e p="VoxelCachedMaterialCollection.h" t="Include" />
+                <e p="VoxelInstancedMaterialCollection.h" t="Include" />
+                <e p="VoxelLandscapeMaterialCollection.h" t="Include" />
+                <e p="VoxelMaterialCollectionBase.h" t="Include" />
+              </e>
+              <e p="VoxelChunkMaterials.h" t="Include" />
+              <e p="VoxelChunkMesh.h" t="Include" />
+              <e p="VoxelChunkToUpdate.h" t="Include" />
+              <e p="VoxelLODMaterials.h" t="Include" />
+              <e p="VoxelMaterialExpressions.h" t="Include" />
+              <e p="VoxelMaterialIndices.h" t="Include" />
+              <e p="VoxelMaterialInterface.h" t="Include" />
+              <e p="VoxelMeshConfig.h" t="Include" />
+              <e p="VoxelMesherAsyncWork.h" t="Include" />
+              <e p="VoxelProceduralMeshComponent.h" t="Include" />
+              <e p="VoxelProcMeshBuffers.h" t="Include" />
+              <e p="VoxelProcMeshSectionSettings.h" t="Include" />
+              <e p="VoxelProcMeshTangent.h" t="Include" />
+              <e p="VoxelRawStaticIndexBuffer.h" t="Include" />
+              <e p="VoxelToolRendering.h" t="Include" />
+            </e>
+            <e p="VoxelSaveStruct.h" t="Include" />
+            <e p="VoxelSettings.h" t="Include" />
+            <e p="VoxelShaders" t="Include">
+              <e p="VoxelDistanceFieldShader.h" t="Include" />
+              <e p="VoxelErosion.h" t="Include" />
+            </e>
+            <e p="VoxelSharedMutex.h" t="Include" />
+            <e p="VoxelSharedPtr.h" t="Include" />
+            <e p="VoxelSimpleOctree.h" t="Include" />
+            <e p="VoxelSpawners" t="Include">
+              <e p="VoxelAssetSpawner.h" t="Include" />
+              <e p="VoxelBasicSpawner.h" t="Include" />
+              <e p="VoxelHierarchicalInstancedStaticMeshComponent.h" t="Include" />
+              <e p="VoxelInstancedMeshSettings.h" t="Include" />
+              <e p="VoxelMeshSpawner.h" t="Include" />
+              <e p="VoxelSpawner.h" t="Include" />
+              <e p="VoxelSpawnerActor.h" t="Include" />
+              <e p="VoxelSpawnerConfig.h" t="Include" />
+              <e p="VoxelSpawnerGroup.h" t="Include" />
+              <e p="VoxelSpawnerOutputsConfig.h" t="Include" />
+            </e>
+            <e p="VoxelStaticWorld.h" t="Include" />
+            <e p="VoxelStats.h" t="Include" />
+            <e p="VoxelTexture.h" t="Include" />
+            <e p="VoxelThreadPool.h" t="Include" />
+            <e p="VoxelTickable.h" t="Include" />
+            <e p="VoxelTools" t="Include">
+              <e p="Gen" t="Include">
+                <e p="VoxelBoxTools.h" t="Include" />
+                <e p="VoxelLevelTools.h" t="Include" />
+                <e p="VoxelSphereTools.h" t="Include" />
+                <e p="VoxelSurfaceEditTools.h" t="Include" />
+                <e p="VoxelToolsBase.h" t="Include" />
+              </e>
+              <e p="Impl" t="Include">
+                <e p="VoxelBoxToolsImpl.h" t="Include" />
+                <e p="VoxelBoxToolsImpl.inl" t="Include" />
+                <e p="VoxelLevelToolsImpl.h" t="Include" />
+                <e p="VoxelLevelToolsImpl.inl" t="Include" />
+                <e p="VoxelSphereToolsImpl.h" t="Include" />
+                <e p="VoxelSphereToolsImpl.inl" t="Include" />
+                <e p="VoxelSurfaceEditToolsImpl.h" t="Include" />
+                <e p="VoxelSurfaceEditToolsImpl.inl" t="Include" />
+                <e p="VoxelToolsBaseImpl.h" t="Include" />
+                <e p="VoxelToolsBaseImpl.inl" t="Include" />
+              </e>
+              <e p="Tools" t="Include">
+                <e p="VoxelFlattenTool.h" t="Include" />
+                <e p="VoxelLevelTool.h" t="Include" />
+                <e p="VoxelMeshTool.h" t="Include" />
+                <e p="VoxelRevertTool.h" t="Include" />
+                <e p="VoxelSmoothTool.h" t="Include" />
+                <e p="VoxelSphereTool.h" t="Include" />
+                <e p="VoxelSphereToolBase.h" t="Include" />
+                <e p="VoxelSurfaceTool.h" t="Include" />
+                <e p="VoxelTool.h" t="Include" />
+                <e p="VoxelToolBase.h" t="Include" />
+                <e p="VoxelToolLibary.h" t="Include" />
+                <e p="VoxelToolWithAlignment.h" t="Include" />
+                <e p="VoxelTrimTool.h" t="Include" />
+              </e>
+              <e p="VoxelAssetTools.h" t="Include" />
+              <e p="VoxelAssetTools.inl" t="Include" />
+              <e p="VoxelBlueprintLibrary.h" t="Include" />
+              <e p="VoxelDataTools.h" t="Include" />
+              <e p="VoxelDataTools.inl" t="Include" />
+              <e p="VoxelHardnessHandler.h" t="Include" />
+              <e p="VoxelMathLibrary.h" t="Include" />
+              <e p="VoxelPaintMaterial.h" t="Include" />
+              <e p="VoxelPhysics.h" t="Include" />
+              <e p="VoxelPhysicsPartSpawner.h" t="Include" />
+              <e p="VoxelPhysicsPartSpawnerInterface.h" t="Include" />
+              <e p="VoxelProjectionTools.h" t="Include" />
+              <e p="VoxelSurfaceEdits.h" t="Include" />
+              <e p="VoxelSurfaceTools.h" t="Include" />
+              <e p="VoxelSurfaceToolsImpl.h" t="Include" />
+              <e p="VoxelTestLibrary.h" t="Include" />
+              <e p="VoxelTextureTools.h" t="Include" />
+              <e p="VoxelToolHelpers.h" t="Include" />
+              <e p="VoxelToolManager.h" t="Include" />
+            </e>
+            <e p="VoxelUniqueError.h" t="Include" />
+            <e p="VoxelUserDefinitions.h" t="Include" />
+            <e p="VoxelUtilities" t="Include">
+              <e p="VoxelBaseUtilities.h" t="Include" />
+              <e p="VoxelConfigUtilities.h" t="Include" />
+              <e p="VoxelDataItemUtilities.h" t="Include" />
+              <e p="VoxelDistanceFieldUtilities.h" t="Include" />
+              <e p="VoxelDistanceFieldUtilities.inl" t="Include" />
+              <e p="VoxelExampleUtilities.h" t="Include" />
+              <e p="VoxelGeneratorUtilities.h" t="Include" />
+              <e p="VoxelIntVectorUtilities.h" t="Include" />
+              <e p="VoxelLambdaUtilities.h" t="Include" />
+              <e p="VoxelMaterialUtilities.h" t="Include" />
+              <e p="VoxelMathUtilities.h" t="Include" />
+              <e p="VoxelMiscUtilities.h" t="Include" />
+              <e p="VoxelOctreeUtilities.h" t="Include" />
+              <e p="VoxelRangeUtilities.h" t="Include" />
+              <e p="VoxelRichCurveUtilities.h" t="Include" />
+              <e p="VoxelSDFRangeUtilities.h" t="Include" />
+              <e p="VoxelSDFUtilities.h" t="Include" />
+              <e p="VoxelSDFUtilitiesImpl.inl" t="Include" />
+              <e p="VoxelSerializationUtilities.h" t="Include" />
+              <e p="VoxelStatsUtilities.h" t="Include" />
+              <e p="VoxelTextureUtilities.h" t="Include" />
+              <e p="VoxelThreadingUtilities.h" t="Include" />
+              <e p="VoxelVectorUtilities.h" t="Include" />
+            </e>
+            <e p="VoxelValue.h" t="Include" />
+            <e p="VoxelVector.h" t="Include" />
+            <e p="VoxelWorld.h" t="Include" />
+            <e p="VoxelWorldCreateInfo.h" t="Include" />
+            <e p="VoxelWorldInterface.h" t="Include" />
+            <e p="VoxelWorldRootComponent.h" t="Include" />
+          </e>
+          <e p="Voxel.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelEditor" t="Include">
+          <e p="Private" t="Include">
+            <e p="AssetTools" t="Include">
+              <e p="AssetTypeActions_VoxelBase.h" t="Include" />
+              <e p="AssetTypeActions_VoxelDataAsset.cpp" t="Include" />
+              <e p="AssetTypeActions_VoxelDataAsset.h" t="Include" />
+              <e p="AssetTypeActions_VoxelGraphDataItemConfig.h" t="Include" />
+              <e p="AssetTypeActions_VoxelGraphGenerator.cpp" t="Include" />
+              <e p="AssetTypeActions_VoxelGraphGenerator.h" t="Include" />
+              <e p="AssetTypeActions_VoxelGraphMacro.cpp" t="Include" />
+              <e p="AssetTypeActions_VoxelGraphMacro.h" t="Include" />
+              <e p="AssetTypeActions_VoxelGraphOutputsConfig.h" t="Include" />
+              <e p="AssetTypeActions_VoxelHeightmapAsset.cpp" t="Include" />
+              <e p="AssetTypeActions_VoxelHeightmapAsset.h" t="Include" />
+              <e p="AssetTypeActions_VoxelMaterialCollection.h" t="Include" />
+              <e p="AssetTypeActions_VoxelSpawnerConfig.h" t="Include" />
+              <e p="AssetTypeActions_VoxelSpawners.h" t="Include" />
+              <e p="AssetTypeActions_VoxelWorldSaveObject.h" t="Include" />
+            </e>
+            <e p="DataAssetEditor" t="Include">
+              <e p="IVoxelDataAssetEditor.h" t="Include" />
+              <e p="SVoxelDataAssetEditorViewport.cpp" t="Include" />
+              <e p="SVoxelDataAssetEditorViewport.h" t="Include" />
+              <e p="VoxelDataAssetEditorCommands.h" t="Include" />
+              <e p="VoxelDataAssetEditorManager.cpp" t="Include" />
+              <e p="VoxelDataAssetEditorManager.h" t="Include" />
+              <e p="VoxelDataAssetEditorToolkit.cpp" t="Include" />
+              <e p="VoxelDataAssetEditorToolkit.h" t="Include" />
+              <e p="VoxelDataAssetEditorViewportClient.cpp" t="Include" />
+              <e p="VoxelDataAssetEditorViewportClient.h" t="Include" />
+            </e>
+            <e p="Details" t="Include">
+              <e p="RangeAnalysisDebuggerDetails.cpp" t="Include" />
+              <e p="RangeAnalysisDebuggerDetails.h" t="Include" />
+              <e p="VoxelAssetActorDetails.cpp" t="Include" />
+              <e p="VoxelAssetActorDetails.h" t="Include" />
+              <e p="VoxelBasicSpawnerScaleSettingsCustomization.cpp" t="Include" />
+              <e p="VoxelBasicSpawnerScaleSettingsCustomization.h" t="Include" />
+              <e p="VoxelBoolVectorCustomization.cpp" t="Include" />
+              <e p="VoxelBoolVectorCustomization.h" t="Include" />
+              <e p="VoxelGeneratorPickerCustomization.cpp" t="Include" />
+              <e p="VoxelGeneratorPickerCustomization.h" t="Include" />
+              <e p="VoxelGraphOutputCustomization.cpp" t="Include" />
+              <e p="VoxelGraphOutputCustomization.h" t="Include" />
+              <e p="VoxelInt32IntervalCustomization.cpp" t="Include" />
+              <e p="VoxelInt32IntervalCustomization.h" t="Include" />
+              <e p="VoxelLandscapeImporterDetails.cpp" t="Include" />
+              <e p="VoxelLandscapeImporterDetails.h" t="Include" />
+              <e p="VoxelMeshImporterDetails.cpp" t="Include" />
+              <e p="VoxelMeshImporterDetails.h" t="Include" />
+              <e p="VoxelMeshSpawnerBaseDetails.cpp" t="Include" />
+              <e p="VoxelMeshSpawnerBaseDetails.h" t="Include" />
+              <e p="VoxelPaintMaterialCustomization.cpp" t="Include" />
+              <e p="VoxelPaintMaterialCustomization.h" t="Include" />
+              <e p="VoxelSpawnerConfigSpawnerCustomization.cpp" t="Include" />
+              <e p="VoxelSpawnerConfigSpawnerCustomization.h" t="Include" />
+              <e p="VoxelSpawnerDensityCustomization.cpp" t="Include" />
+              <e p="VoxelSpawnerDensityCustomization.h" t="Include" />
+              <e p="VoxelSpawnerOutputNameCustomization.cpp" t="Include" />
+              <e p="VoxelSpawnerOutputNameCustomization.h" t="Include" />
+              <e p="VoxelWorldDetails.cpp" t="Include" />
+              <e p="VoxelWorldDetails.h" t="Include" />
+            </e>
+            <e p="EdMode" t="Include">
+              <e p="VoxelEdMode.cpp" t="Include" />
+              <e p="VoxelEdMode.h" t="Include" />
+              <e p="VoxelEdModeToolkit.cpp" t="Include" />
+              <e p="VoxelEdModeToolkit.h" t="Include" />
+            </e>
+            <e p="Factories" t="Include">
+              <e p="VoxelDataAssetFactory.cpp" t="Include" />
+              <e p="VoxelDataAssetFactory.h" t="Include" />
+              <e p="VoxelGraphDataItemConfigFactory.h" t="Include" />
+              <e p="VoxelGraphGeneratorAssetFactory.h" t="Include" />
+              <e p="VoxelGraphMacroAssetFactory.h" t="Include" />
+              <e p="VoxelGraphOutputsConfigFactory.h" t="Include" />
+              <e p="VoxelHeightmapAssetFactory.cpp" t="Include" />
+              <e p="VoxelHeightmapAssetFactory.h" t="Include" />
+              <e p="VoxelMaterialCollectionFactory.h" t="Include" />
+              <e p="VoxelSpawnerConfigFactory.h" t="Include" />
+              <e p="VoxelSpawnersFactories.h" t="Include" />
+              <e p="VoxelWorldSaveObjectFactory.h" t="Include" />
+            </e>
+            <e p="K2Nodes" t="Include">
+              <e p="K2Node_AddDataItem.cpp" t="Include" />
+              <e p="K2Node_AddDataItem.h" t="Include" />
+            </e>
+            <e p="Thumbnails" t="Include">
+              <e p="VoxelDataAssetThumbnailRenderer.h" t="Include" />
+              <e p="VoxelGraphGeneratorThumbnailRenderer.h" t="Include" />
+              <e p="VoxelHeightmapAssetThumbnailRenderer.h" t="Include" />
+              <e p="VoxelSpawnersThumbnailRenderer.cpp" t="Include" />
+              <e p="VoxelSpawnersThumbnailRenderer.h" t="Include" />
+            </e>
+            <e p="VoxelConvertLandscapeMaterial.cpp" t="Include" />
+            <e p="VoxelConvertLandscapeMaterial.h" t="Include" />
+            <e p="VoxelDebugEditor.cpp" t="Include" />
+            <e p="VoxelDebugEditor.h" t="Include" />
+            <e p="VoxelEditorDetailsIncludes.cpp" t="Include" />
+            <e p="VoxelEditorDetailsIncludes.h" t="Include" />
+            <e p="VoxelEditorDetailsUtilities.cpp" t="Include" />
+            <e p="VoxelEditorDetailsUtilities.h" t="Include" />
+            <e p="VoxelEditorModule.cpp" t="Include" />
+            <e p="VoxelEditorToolsPanel.cpp" t="Include" />
+            <e p="VoxelEditorToolsPanel.h" t="Include" />
+            <e p="VoxelMessagesEditor.cpp" t="Include" />
+            <e p="VoxelMessagesEditor.h" t="Include" />
+            <e p="VoxelOpenAssetsOnStartup.cpp" t="Include" />
+            <e p="VoxelOpenAssetsOnStartup.h" t="Include" />
+            <e p="VoxelScopedTransaction.cpp" t="Include" />
+            <e p="VoxelToolsCommands.cpp" t="Include" />
+            <e p="VoxelToolsCommands.h" t="Include" />
+            <e p="VoxelWorldEditorControls.cpp" t="Include" />
+            <e p="VoxelWorldEditorControls.h" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="VoxelEditorModule.h" t="Include" />
+            <e p="VoxelScopedTransaction.h" t="Include" />
+          </e>
+          <e p="VoxelEditor.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelEditorDefault" t="Include">
+          <e p="Private" t="Include">
+            <e p="ActorFactoryVoxelPlaceableItems.cpp" t="Include" />
+            <e p="ActorFactoryVoxelWorld.cpp" t="Include" />
+            <e p="VoxelEditorDefaultModule.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="ActorFactoryVoxelMeshImporter.h" t="Include" />
+            <e p="ActorFactoryVoxelPlaceableItems.h" t="Include" />
+            <e p="ActorFactoryVoxelWorld.h" t="Include" />
+            <e p="VoxelEditorDefaultModule.h" t="Include" />
+          </e>
+          <e p="VoxelEditorDefault.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelExamples" t="Include">
+          <e p="Private" t="Include">
+            <e p="VoxelExamplesModule.cpp" t="Include" />
+            <e p="VoxelGeneratorExample.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="VoxelExamplesModule.h" t="Include" />
+            <e p="VoxelGeneratorExample.h" t="Include" />
+          </e>
+          <e p="VoxelExamples.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelGraph" t="Include">
+          <e p="Private" t="Include">
+            <e p="CppTranslation" t="Include">
+              <e p="VoxelVariables.cpp" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="VDI_Capsule_Graph.cpp" t="Include" />
+              <e p="VDI_Capsule_Graph.h" t="Include" />
+              <e p="VDI_Example_Crater_Graph.cpp" t="Include" />
+              <e p="VDI_Example_Crater_Graph.h" t="Include" />
+              <e p="VDI_Ravine_Graph.cpp" t="Include" />
+              <e p="VDI_Ravine_Graph.h" t="Include" />
+              <e p="VDI_Sphere_Graph.cpp" t="Include" />
+              <e p="VDI_Sphere_Graph.h" t="Include" />
+              <e p="VG_Example_Craters.cpp" t="Include" />
+              <e p="VG_Example_Craters.h" t="Include" />
+              <e p="VG_Example_Dunes.cpp" t="Include" />
+              <e p="VG_Example_Dunes.h" t="Include" />
+              <e p="VG_Example_Erosion.cpp" t="Include" />
+              <e p="VG_Example_Erosion.h" t="Include" />
+              <e p="VG_Example_FastCraters.cpp" t="Include" />
+              <e p="VG_Example_FastCraters.h" t="Include" />
+              <e p="VG_Example_MultiIndex.cpp" t="Include" />
+              <e p="VG_Example_MultiIndex.h" t="Include" />
+              <e p="VoxelExample_Cave.cpp" t="Include" />
+              <e p="VoxelExample_Cave.h" t="Include" />
+              <e p="VoxelExample_Cliffs.cpp" t="Include" />
+              <e p="VoxelExample_Cliffs.h" t="Include" />
+              <e p="VoxelExample_FloatingIslandOnion.cpp" t="Include" />
+              <e p="VoxelExample_FloatingIslandOnion.h" t="Include" />
+              <e p="VoxelExample_HeightmapComposition.cpp" t="Include" />
+              <e p="VoxelExample_HeightmapComposition.h" t="Include" />
+              <e p="VoxelExample_HollowPlanet.cpp" t="Include" />
+              <e p="VoxelExample_HollowPlanet.h" t="Include" />
+              <e p="VoxelExample_IQNoise.cpp" t="Include" />
+              <e p="VoxelExample_IQNoise.h" t="Include" />
+              <e p="VoxelExample_LayeredPlanet.cpp" t="Include" />
+              <e p="VoxelExample_LayeredPlanet.h" t="Include" />
+              <e p="VoxelExample_LayeredWorld.cpp" t="Include" />
+              <e p="VoxelExample_LayeredWorld.h" t="Include" />
+              <e p="VoxelExample_Planet.cpp" t="Include" />
+              <e p="VoxelExample_Planet.h" t="Include" />
+              <e p="VoxelExample_Ravines.cpp" t="Include" />
+              <e p="VoxelExample_Ravines.h" t="Include" />
+              <e p="VoxelExample_RingWorld.cpp" t="Include" />
+              <e p="VoxelExample_RingWorld.h" t="Include" />
+              <e p="VoxelExample_Tool_NoisyColors.cpp" t="Include" />
+              <e p="VoxelExample_Tool_NoisyColors.h" t="Include" />
+            </e>
+            <e p="NodeFunctions" t="Include">
+              <e p="VoxelNodeFunctions.cpp" t="Include" />
+            </e>
+            <e p="VoxelAxisDependencies.cpp" t="Include" />
+            <e p="VoxelContext.cpp" t="Include" />
+            <e p="VoxelGraphErrorReporter.cpp" t="Include" />
+            <e p="VoxelGraphGenerator.cpp" t="Include" />
+            <e p="VoxelGraphModule.cpp" t="Include" />
+            <e p="VoxelGraphOutputs.cpp" t="Include" />
+            <e p="VoxelGraphOutputsConfig.cpp" t="Include" />
+            <e p="VoxelGraphPreviewSettings.cpp" t="Include" />
+            <e p="VoxelNode.cpp" t="Include" />
+            <e p="VoxelNodes" t="Include">
+              <e p="VoxelBinaryNodes.cpp" t="Include" />
+              <e p="VoxelBiomeMapNode.cpp" t="Include" />
+              <e p="VoxelBiomeMergeNode.cpp" t="Include" />
+              <e p="VoxelConstantNodes.cpp" t="Include" />
+              <e p="VoxelCoordinatesNodes.cpp" t="Include" />
+              <e p="VoxelCurveNodes.cpp" t="Include" />
+              <e p="VoxelDataAssetSamplerNode.cpp" t="Include" />
+              <e p="VoxelExecNodes.cpp" t="Include" />
+              <e p="VoxelExposedNodes.cpp" t="Include" />
+              <e p="VoxelGavoronoiNoiseNode.cpp" t="Include" />
+              <e p="VoxelGeneratorMergeNode.cpp" t="Include" />
+              <e p="VoxelGeneratorSamplerNodes.cpp" t="Include" />
+              <e p="VoxelGetMaterialCollectionIndexNode.cpp" t="Include" />
+              <e p="VoxelGradientPerturbNodes.cpp" t="Include" />
+              <e p="VoxelGraphAssetNodes.cpp" t="Include" />
+              <e p="VoxelGraphMacro.cpp" t="Include" />
+              <e p="VoxelHeightmapSamplerNode.cpp" t="Include" />
+              <e p="VoxelHeightSplitterNode.cpp" t="Include" />
+              <e p="VoxelIfNode.cpp" t="Include" />
+              <e p="VoxelLocalVariables.cpp" t="Include" />
+              <e p="VoxelMaterialNodes.cpp" t="Include" />
+              <e p="VoxelMathNodes.cpp" t="Include" />
+              <e p="VoxelNodeColors.cpp" t="Include" />
+              <e p="VoxelNodeHelper.cpp" t="Include" />
+              <e p="VoxelNoiseNodes.cpp" t="Include" />
+              <e p="VoxelOptimizationNodes.cpp" t="Include" />
+              <e p="VoxelParameterNodes.cpp" t="Include" />
+              <e p="VoxelPlaceableItemsNodes.cpp" t="Include" />
+              <e p="VoxelRandomNodes.cpp" t="Include" />
+              <e p="VoxelSDFNodes.cpp" t="Include" />
+              <e p="VoxelSeedNodes.cpp" t="Include" />
+              <e p="VoxelTextureSamplerNode.cpp" t="Include" />
+              <e p="VoxelVoronoiNoiseNodes.cpp" t="Include" />
+              <e p="VoxelWhiteNoiseNodes.cpp" t="Include" />
+            </e>
+            <e p="VoxelPinCategory.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="Compilation" t="Include">
+              <e p="VoxelCompilationEnums.h" t="Include" />
+            </e>
+            <e p="CppTranslation" t="Include">
+              <e p="VoxelVariables.h" t="Include" />
+            </e>
+            <e p="IVoxelGraphEditor.h" t="Include" />
+            <e p="NodeFunctions" t="Include">
+              <e p="VoxelDeprecatedNodeFunctions.h" t="Include" />
+              <e p="VoxelMathNodeFunctions.h" t="Include" />
+              <e p="VoxelNodeFunctions.h" t="Include" />
+              <e p="VoxelPlaceableItemsNodeFunctions.h" t="Include" />
+              <e p="VoxelSDFNodeFunctions.h" t="Include" />
+            </e>
+            <e p="Runtime" t="Include">
+              <e p="VoxelNodeType.h" t="Include" />
+            </e>
+            <e p="VoxelAxisDependencies.h" t="Include" />
+            <e p="VoxelContext.h" t="Include" />
+            <e p="VoxelGeneratedWorldGeneratorsDefinitions.h" t="Include" />
+            <e p="VoxelGeneratedWorldGeneratorsIncludes.h" t="Include" />
+            <e p="VoxelGeneratedWorldGeneratorsPCH.h" t="Include" />
+            <e p="VoxelGraphConstants.h" t="Include" />
+            <e p="VoxelGraphDataItemConfig.h" t="Include" />
+            <e p="VoxelGraphErrorReporter.h" t="Include" />
+            <e p="VoxelGraphGenerator.h" t="Include" />
+            <e p="VoxelGraphGeneratorHelpers.h" t="Include" />
+            <e p="VoxelGraphGlobals.h" t="Include" />
+            <e p="VoxelGraphModule.h" t="Include" />
+            <e p="VoxelGraphOutputs.h" t="Include" />
+            <e p="VoxelGraphOutputsConfig.h" t="Include" />
+            <e p="VoxelGraphPreviewSettings.h" t="Include" />
+            <e p="VoxelNode.h" t="Include" />
+            <e p="VoxelNodes" t="Include">
+              <e p="VoxelAssetPickerNode.h" t="Include" />
+              <e p="VoxelBinaryNodes.h" t="Include" />
+              <e p="VoxelBiomeMapNode.h" t="Include" />
+              <e p="VoxelBiomeMergeNode.h" t="Include" />
+              <e p="VoxelConstantNodes.h" t="Include" />
+              <e p="VoxelCoordinatesNodes.h" t="Include" />
+              <e p="VoxelCurveNodes.h" t="Include" />
+              <e p="VoxelDataAssetSamplerNode.h" t="Include" />
+              <e p="VoxelDeprecatedNodes.h" t="Include" />
+              <e p="VoxelExecNodes.h" t="Include" />
+              <e p="VoxelExposedNodes.h" t="Include" />
+              <e p="VoxelGavoronoiNoiseNode.h" t="Include" />
+              <e p="VoxelGeneratorMergeNode.h" t="Include" />
+              <e p="VoxelGeneratorSamplerNodes.h" t="Include" />
+              <e p="VoxelGetMaterialCollectionIndexNode.h" t="Include" />
+              <e p="VoxelGradientPerturbNodes.h" t="Include" />
+              <e p="VoxelGraphAssetNodes.h" t="Include" />
+              <e p="VoxelGraphMacro.h" t="Include" />
+              <e p="VoxelHeightmapSamplerNode.h" t="Include" />
+              <e p="VoxelHeightSplitterNode.h" t="Include" />
+              <e p="VoxelIfNode.h" t="Include" />
+              <e p="VoxelLocalVariables.h" t="Include" />
+              <e p="VoxelMaterialNodes.h" t="Include" />
+              <e p="VoxelMathNodes.h" t="Include" />
+              <e p="VoxelNodeColors.h" t="Include" />
+              <e p="VoxelNodeHelper.h" t="Include" />
+              <e p="VoxelNodeHelperMacros.h" t="Include" />
+              <e p="VoxelNodeStructs.h" t="Include" />
+              <e p="VoxelNoiseNodes.h" t="Include" />
+              <e p="VoxelNoiseNodesBase.h" t="Include" />
+              <e p="VoxelNoiseNodesMacros.h" t="Include" />
+              <e p="VoxelOptimizationNodes.h" t="Include" />
+              <e p="VoxelParameterNodes.h" t="Include" />
+              <e p="VoxelPlaceableItemsNodes.h" t="Include" />
+              <e p="VoxelRandomNodes.h" t="Include" />
+              <e p="VoxelSDFNodes.h" t="Include" />
+              <e p="VoxelSeedNodes.h" t="Include" />
+              <e p="VoxelTextureSamplerNode.h" t="Include" />
+              <e p="VoxelVoronoiNoiseNodes.h" t="Include" />
+              <e p="VoxelWhiteNoiseNodes.h" t="Include" />
+            </e>
+            <e p="VoxelPinCategory.h" t="Include" />
+          </e>
+          <e p="VoxelGraph.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelGraphEditor" t="Include">
+          <e p="Private" t="Include">
+            <e p="DummyObject.h" t="Include" />
+            <e p="Preview" t="Include">
+              <e p="SVoxelGraphPreview.cpp" t="Include" />
+              <e p="SVoxelGraphPreview.h" t="Include" />
+              <e p="SVoxelGraphPreviewViewport.cpp" t="Include" />
+              <e p="SVoxelGraphPreviewViewport.h" t="Include" />
+              <e p="VoxelGraphPreview.cpp" t="Include" />
+              <e p="VoxelGraphPreview.h" t="Include" />
+            </e>
+            <e p="SVoxelPalette.cpp" t="Include" />
+            <e p="SVoxelPalette.h" t="Include" />
+            <e p="VoxelDebugGraphUtils.h" t="Include" />
+            <e p="VoxelEdGraph.cpp" t="Include" />
+            <e p="VoxelEdGraph.h" t="Include" />
+            <e p="VoxelGraphConnectionDrawingPolicy.cpp" t="Include" />
+            <e p="VoxelGraphConnectionDrawingPolicy.h" t="Include" />
+            <e p="VoxelGraphEditor.cpp" t="Include" />
+            <e p="VoxelGraphEditor.h" t="Include" />
+            <e p="VoxelGraphEditorCommands.h" t="Include" />
+            <e p="VoxelGraphEditorModule.cpp" t="Include" />
+            <e p="VoxelGraphEditorToolkit.cpp" t="Include" />
+            <e p="VoxelGraphEditorToolkit.h" t="Include" />
+            <e p="VoxelGraphEditorUtilities.cpp" t="Include" />
+            <e p="VoxelGraphEditorUtilities.h" t="Include" />
+            <e p="VoxelGraphNodes" t="Include">
+              <e p="SGraphNodeDefaultVoxel.h" t="Include" />
+              <e p="SVoxelGraphNode.cpp" t="Include" />
+              <e p="SVoxelGraphNode.h" t="Include" />
+              <e p="VoxelGraphNode.cpp" t="Include" />
+              <e p="VoxelGraphNode.h" t="Include" />
+              <e p="VoxelGraphNode_Base.cpp" t="Include" />
+              <e p="VoxelGraphNode_Base.h" t="Include" />
+              <e p="VoxelGraphNode_Knot.cpp" t="Include" />
+              <e p="VoxelGraphNode_Knot.h" t="Include" />
+              <e p="VoxelGraphNode_Root.h" t="Include" />
+              <e p="VoxelGraphNodeFactory.h" t="Include" />
+            </e>
+            <e p="VoxelGraphPanelPinFactory.h" t="Include" />
+            <e p="VoxelGraphSchema.cpp" t="Include" />
+            <e p="VoxelGraphSchema.h" t="Include" />
+            <e p="VoxelGraphShortcuts.cpp" t="Include" />
+            <e p="VoxelGraphShortcuts.h" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="IVoxelGraphEditorToolkit.h" t="Include" />
+            <e p="VoxelGraphEditorModule.h" t="Include" />
+          </e>
+          <e p="VoxelGraphEditor.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelHelpers" t="Include">
+          <e p="Private" t="Include">
+            <e p="MaterialExpressionBlendMaterialAttributesBarycentric.cpp" t="Include" />
+            <e p="MaterialExpressionPack.cpp" t="Include" />
+            <e p="VoxelColorWheel.cpp" t="Include" />
+            <e p="VoxelHelpersLibrary.cpp" t="Include" />
+            <e p="VoxelHelpersModule.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="MaterialExpressionBlendMaterialAttributesBarycentric.h" t="Include" />
+            <e p="MaterialExpressionPack.h" t="Include" />
+            <e p="VoxelColorWheel.h" t="Include" />
+            <e p="VoxelHelpersLibrary.h" t="Include" />
+            <e p="VoxelHelpersModule.h" t="Include" />
+          </e>
+          <e p="VoxelHelpers.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelNiagara" t="Include">
+          <e p="Private" t="Include">
+            <e p="NiagaraDataInterfaceVoxelDataAsset.cpp" t="Include" />
+            <e p="VoxelNiagaraModule.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="NiagaraDataInterfaceVoxelDataAsset.h" t="Include" />
+            <e p="VoxelNiagaraModule.h" t="Include" />
+          </e>
+          <e p="VoxelNiagara.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelVDB" t="Include">
+          <e p="Private" t="Include">
+            <e p="OpenVDB7" t="Include">
+              <e p="FindActiveValues.h" t="Include" />
+            </e>
+            <e p="VoxelVDBAsset.cpp" t="Include" />
+            <e p="VoxelVDBInclude.h" t="Include" />
+            <e p="VoxelVDBModule.cpp" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="VoxelVDBAsset.h" t="Include" />
+            <e p="VoxelVDBModule.h" t="Include" />
+          </e>
+          <e p="VoxelVDB.Build.cs" t="Include" />
+        </e>
+        <e p="VoxelVDBEditor" t="Include">
+          <e p="Private" t="Include">
+            <e p="VoxelVDBEditorModule.cpp" t="Include" />
+            <e p="VoxelVDBFactory.cpp" t="Include" />
+            <e p="VoxelVDBFactory.h" t="Include" />
+          </e>
+          <e p="Public" t="Include">
+            <e p="VoxelVDBEditorModule.h" t="Include" />
+          </e>
+          <e p="VoxelVDBEditor.Build.cs" t="Include" />
+        </e>
+      </e>
+      <e p="VoxelFree.uplugin" t="Include" />
     </e>
     <e p="C:\UnrealEngineVersions\UE_4.23\Engine\Plugins\Media\AndroidCamera" t="Include">
       <e p="AndroidCamera.uplugin" t="Include" />

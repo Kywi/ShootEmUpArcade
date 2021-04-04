@@ -102,6 +102,7 @@
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UE_4.23/Engine/Plugins/Lumin/MagicLeapScreens" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UE_4.23/Engine/Plugins/Marketplace/AutoSettings" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UE_4.23/Engine/Plugins/Marketplace/RiderSourceCodeAccess" />
+    <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UE_4.23/Engine/Plugins/Marketplace/VoxelFree" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UE_4.23/Engine/Plugins/Media/AndroidCamera" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UE_4.23/Engine/Plugins/Media/AndroidMedia" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UE_4.23/Engine/Plugins/Media/AppleProResMedia" />

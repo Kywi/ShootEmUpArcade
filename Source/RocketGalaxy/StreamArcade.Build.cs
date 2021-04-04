@@ -9,7 +9,15 @@ public class StreamArcade : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(new string[]
-            {"Core", "CoreUObject", "UMG", "Engine", "InputCore"});
+            {
+                "Core", 
+                "CoreUObject",
+                "UMG",
+                "Engine", 
+                "InputCore",
+                "OnlineSubsystem",
+                "OnlineSubsystemUtils"
+            });
 
         PrivateDependencyModuleNames.AddRange(new string[] { });
 
