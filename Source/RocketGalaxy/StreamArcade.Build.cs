@@ -16,7 +16,9 @@ public class StreamArcade : ModuleRules
                 "Engine", 
                 "InputCore",
                 "OnlineSubsystem",
-                "OnlineSubsystemUtils"
+                "OnlineSubsystemUtils",
+                "Networking",
+                "Sockets"
             });
 
         PrivateDependencyModuleNames.AddRange(new string[] { });

@@ -28,6 +28,9 @@ public:
     UFUNCTION(BlueprintCallable)
         void TravelToAnotherMap();
 
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Actor to posses")
+        TSubclassOf<APawn> ActorToPosses;
+
     virtual void PostLogin(APlayerController* NewPlayer);
 
     int loginedUsers = 0;

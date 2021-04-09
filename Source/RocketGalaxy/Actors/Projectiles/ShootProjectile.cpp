@@ -49,14 +49,21 @@ void AShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, A
                                            const FHitResult& Hit)
 {
     APawn* OtherPawn = Cast<APawn>(OtherActor);
-    if (!OtherActor || !OtherPawn) return; // If no overlapped actor or it is not a pawn
+    if (!OtherActor || !OtherPawn)
+        return; // If no overlapped actor or it is not a pawn
 
-    if (!GetOwner()) return;
+    if (!GetOwner())
+        return;
+    
     APawn* PawnOwner = Cast<APawn>(GetOwner());
-    if (!PawnOwner) return;
+    if (!PawnOwner)
+        return;
+    
     AController* DamageInstigator = PawnOwner->GetController();
 
-    if (!PawnOwner->GetController() && !OtherPawn->GetController()) return;
+    if (!PawnOwner->GetController() && !OtherPawn->GetController())
+        return;
+    
     UGameplayStatics::ApplyDamage(OtherActor, Damage, DamageInstigator, this, UDamageType::StaticClass());
     Destroy();
 }
