@@ -61,94 +61,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f259940-fdc6-4e47-aeae-525d25c8a5ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Maps/M_Multiplayer_2.umap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWPlayerPawn.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerUtopia.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerUtopia.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Projectiles/Player/BP_ShootProjectile_Pelican.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Projectiles/Player/BP_ShootProjectile_Pelican.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyMyPlayerController.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/AdvancedSessions.uplugin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Resources/Icon128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/AdvancedSessions.Build.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedExternalUILibrary.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedFriendsGameInstance.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedFriendsInterface.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedFriendsLibrary.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedIdentityLibrary.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedSessions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedSessionsLibrary.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/AdvancedVoiceLibrary.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/BlueprintDataDefinitions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/CancelFindSessionsCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/CreateSessionCallbackProxyAdvanced.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/EndSessionCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/FindFriendSessionCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/FindSessionsCallbackProxyAdvanced.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/GetFriendsCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/GetRecentPlayersCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/GetUserPrivilegeCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/LoginUserCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/LogoutUserCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/OnlineSubSystemHeader.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/SendFriendInviteCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Classes/UpdateSessionCallbackProxyAdvanced.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedExternalUILibrary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedFriendsGameInstance.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedFriendsInterface.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedFriendsLibrary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedIdentityLibrary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedSessions.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedSessionsLibrary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/AdvancedVoiceLibrary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/CancelFindSessionsCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/CreateSessionCallbackProxyAdvanced.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/EndSessionCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/FindFriendSessionCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/FindSessionsCallbackProxyAdvanced.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/GetFriendsCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/GetRecentPlayersCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/GetUserPrivilegeCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/LoginUserCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/LogoutUserCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/SendFriendInviteCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSessions/Source/AdvancedSessions/Private/UpdateSessionCallbackProxyAdvanced.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/AdvancedSteamSessions.uplugin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Resources/Icon128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/AdvancedSteamSessions.Build.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Classes/AdvancedSteamFriendsLibrary.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Classes/AdvancedSteamSessions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Classes/AdvancedSteamWorkshopLibrary.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Classes/SteamRequestGroupOfficersCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Classes/SteamWSRequestUGCDetailsCallbackProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Private/AdvancedSteamFriendsLibrary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Private/AdvancedSteamSessions.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Private/AdvancedSteamWorkshopLibrary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Private/SteamRequestGroupOfficersCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/AdvancedSteamSessions/Source/AdvancedSteamSessions/Private/SteamWSRequestUGCDetailsCallbackProxy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/AdvancedSessions/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rocket Galaxy.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rocket Galaxy.uproject" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/Projectiles/ShootProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWPlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWPlayerPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NVShootProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NVShootProjectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" beforeDir="false" afterPath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketGalaxy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RocketGalaxy.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWEnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWEnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPlayerPawn.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPlayerPawn.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcade.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcade.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StreamArcadeEditor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StreamArcadeEditor.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30811,13 +30749,16 @@
       <option name="presentableId" value="Default" />
       <updated>1617888819973</updated>
       <workItem from="1617888874568" duration="27349000" />
+      <workItem from="1618137994993" duration="595000" />
+      <workItem from="1618170596245" duration="242000" />
+      <workItem from="1618171002264" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -30829,6 +30770,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

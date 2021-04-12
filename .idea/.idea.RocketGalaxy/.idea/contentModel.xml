@@ -214,8 +214,12 @@
           <e p="MyPlayerController.h" t="Include" />
           <e p="NetworkBasedCode" t="Include">
             <e p="NWComponents" t="Include">
+              <e p="MainPlayerHealthComponent.cpp" t="Include" />
+              <e p="MainPlayerHealthComponent.h" t="Include" />
               <e p="NVShootComponent.cpp" t="Include" />
               <e p="NVShootComponent.h" t="Include" />
+              <e p="NWEnemiesSpawnController.cpp" t="Include" />
+              <e p="NWEnemiesSpawnController.h" t="Include" />
             </e>
             <e p="NWPawn" t="Include">
               <e p="NWEnemyPawn.cpp" t="Include" />

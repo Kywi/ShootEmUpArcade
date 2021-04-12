@@ -27,7 +27,7 @@ APlayerPawn::APlayerPawn() : TouchMoveSensivity(1.f)
 
     PawnCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PawnCamera"));
 
-    ShootComponent = CreateDefaultSubobject<UShootComponent>(TEXT("ShootComponent"));
+    ShootComponent = CreateDefaultSubobject<UShootComponent>(TEXT("shootComponent"));
 }
 
 // Called when the game starts or when spawned

@@ -17,59 +17,59 @@ class STREAMARCADE_API AStreamArcadeGameModeBase : public AGameModeBase
 {
     GENERATED_BODY()
 
-    AStreamArcadeGameModeBase();
+        AStreamArcadeGameModeBase();
 
     virtual void BeginPlay() override;
 
 public:
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Enemies")
-    UEnemySpawnController* EnemySpawnController;
+        UEnemySpawnController* EnemySpawnController;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game Health")
-    UGameHealthComponent* HealthsComponent;
+        UGameHealthComponent* HealthsComponent;
 
     UPROPERTY(BlueprintAssignable, Category = "Game")
-    FGameOverEvent GameOver;
+        FGameOverEvent GameOver;
 
     UFUNCTION(BlueprintCallable, Category = "Game")
-    void EndGame();
+        void EndGame();
 
     UFUNCTION(BlueprintCallable, Category = "Game")
-    void IncreaseDifficulty();
+        void IncreaseDifficulty();
 
     UFUNCTION(BlueprintCallable, Category = "Game")
-    void AddPoints(int Points);
+        void AddPoints(int Points);
 
     UFUNCTION(BlueprintCallable, Category = "Game")
-    bool ChangeShootLevel(bool Up);
+        bool ChangeShootLevel(bool Up);
 
     UPROPERTY(BlueprintReadWrite, Category = "Game")
-    float PlayerRecoverTime;
+        float PlayerRecoverTime;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
-    float IncreaseDifficultyPeriod;
+        float IncreaseDifficultyPeriod;
 
     UPROPERTY(BlueprintReadOnly, Category = "Game")
-    class APlayerPawn* PlayerPawn;
+        class APlayerPawn* PlayerPawn;
 
     UPROPERTY(BlueprintReadOnly, Category = "Game")
-    int GamePoints;
+        int GamePoints;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-    TArray<FShootInfoLevel> ShootInfoLevels;
+        TArray<FShootInfoLevel> ShootInfoLevels;
 
     UPROPERTY(BlueprintReadOnly, Category = "Shooting")
-    int CurrentShootLevel;
+        int CurrentShootLevel;
 
 
 protected:
     UFUNCTION(BlueprintNativeEvent, Category = "Game")
-    void ExplodePawn();
+        void ExplodePawn();
     void ExplodePawn_Implementation();
 
     UFUNCTION(BlueprintNativeEvent, Category = "Game")
-    void RecoverPawn();
+        void RecoverPawn();
     void RecoverPawn_Implementation();
 
     FTimerHandle RecoverTimer;

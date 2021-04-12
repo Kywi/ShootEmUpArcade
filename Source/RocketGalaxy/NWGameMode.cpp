@@ -3,12 +3,16 @@
 
 #include "NWGameMode.h"
 
+#include "Engine/World.h"
 #include "Engine/Engine.h"
+#include "TimerManager.h"
 
 
 ANWGameMode::ANWGameMode()
 {
+    EnemySpawnController = CreateDefaultSubobject<UNWEnemiesSpawnController>(TEXT("EnemySpawnController"));
 
+    playerConnnected.AddDynamic(this, &ANWGameMode::StartSpawnEnemies);
 }
 
 void ANWGameMode::TravelToAnotherMap()
@@ -16,23 +20,34 @@ void ANWGameMode::TravelToAnotherMap()
     GetWorld()->ServerTravel("M_MainMenu", true);
 }
 
-void ANWGameMode::PostLogin(APlayerController* NewPlayer)
+void ANWGameMode::IncreaseDifficulty()
 {
-    Super::PostLogin(NewPlayer);
-    //FTransform transform;
-    //transform.SetLocation(FVector(100, 100, 0));
-    if(HasAuthority())
-    {
-       // auto actor =  GetWorld()->SpawnActor<APawn>(ActorToPosses, transform);
-       // NewPlayer->Possess(actor);
-        //actor->SetOwner(NewPlayer);
-        
-    }
-   // NewPlayer->ReceivedPlayer();
-    
-    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Connected users , %d"), ++loginedUsers));
-    if (loginedUsers == 2) playerConnnected.Broadcast();
+    EnemySpawnController->ChangeStageTimeMultiplier = FMath::Max(EnemySpawnController->ChangeStageTimeMultiplier * 0.95,
+        0.4);
+    UE_LOG(LogTemp, Log, TEXT("Difficulty increased: %f"), EnemySpawnController->ChangeStageTimeMultiplier);
 }
+
+void ANWGameMode::BeginPlay()
+{
+}
+
+APawn* ANWGameMode::SpawnDefaultPawnFor_Implementation(AController* NewPlayer, AActor* StartSpot)
+{
+    const auto actor = GetWorld()->SpawnActor<APawn>(ActorToPosses, StartSpot->GetTransform());
+    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Connected users , %d"), ++loginedUsers));
+    if (loginedUsers == 2) 
+        playerConnnected.Broadcast();
+    return actor;
+}
+
+void ANWGameMode::StartSpawnEnemies()
+{
+    EnemySpawnController->StartSpawnStage();
+    GetWorld()->GetTimerManager().SetTimer(IncreaseDifficultyTimer, this,
+        &ANWGameMode::IncreaseDifficulty, IncreaseDifficultyPeriod,
+        true);
+}
+
 
 
 

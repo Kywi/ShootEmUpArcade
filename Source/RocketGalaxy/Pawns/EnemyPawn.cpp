@@ -27,7 +27,8 @@ AEnemyPawn::AEnemyPawn()
     ArrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("Arrow"));
     ArrowComponent->SetupAttachment(PawnCollision, NAME_None);
 
-    ShootComponent = CreateDefaultSubobject<UShootComponent>(TEXT("ShootComponent"));
+    ShootComponent = CreateDefaultSubobject<UShootComponent>(TEXT("shootComponent"));
+
     HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 }
 

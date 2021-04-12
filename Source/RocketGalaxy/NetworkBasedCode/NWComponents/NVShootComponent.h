@@ -6,6 +6,7 @@
 
 #include "Components/ActorComponent.h"
 #include "../Projectiles/NVShootProjectile.h"
+
 #include "NVShootComponent.generated.h"
 
 USTRUCT(BlueprintType)
@@ -15,20 +16,20 @@ struct FNVShootInfo
 
 public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-    TSubclassOf<ANVShootProjectile> ProjectileClass;
+        TSubclassOf<ANVShootProjectile> ProjectileClass;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-    float Damage;
+        float Damage;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-    FVector Offset;
+        FVector Offset;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
-    float Angle;
+        float Angle;
 };
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class STREAMARCADE_API UNVShootComponent : public UActorComponent
 {
     GENERATED_BODY()
@@ -37,20 +38,23 @@ public:
     // Sets default values for this component's properties
     UNVShootComponent();
 
-    UFUNCTION(BlueprintCallable, Category = "Shooting")
-    void StartShooting();
+    UFUNCTION(NetMulticast, Reliable)
+        void SpawnProjectile(FNVShootInfo projectilesToShoot);
 
     UFUNCTION(BlueprintCallable, Category = "Shooting")
-    void StopShooting();
+        void StartShooting();
 
     UFUNCTION(BlueprintCallable, Category = "Shooting")
-    void RestartShooting();
+        void StopShooting();
+
+    UFUNCTION(BlueprintCallable, Category = "Shooting")
+        void RestartShooting();
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
-    float ShootPeriod;
+        float ShootPeriod;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
-    TArray<FNVShootInfo> ShootInfos;
+        TArray<FNVShootInfo> ShootInfos;
 
 protected:
     virtual void BeginPlay() override;

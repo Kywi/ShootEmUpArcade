@@ -6,7 +6,7 @@
 
 #include "OnlineSessionInterface.h"
 #include "GameFramework/GameMode.h"
-
+#include "NetworkBasedCode/NWComponents/NWEnemiesSpawnController.h"
 #include "NWGameMode.generated.h"
 
 /**
@@ -25,14 +25,30 @@ public:
     UPROPERTY(BlueprintCallable, BlueprintAssignable)
         FPlayerConnnected playerConnnected;
 
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Enemies")
+        UNWEnemiesSpawnController* EnemySpawnController;
+
     UFUNCTION(BlueprintCallable)
         void TravelToAnotherMap();
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Actor to posses")
         TSubclassOf<APawn> ActorToPosses;
 
-    virtual void PostLogin(APlayerController* NewPlayer);
+    UFUNCTION(BlueprintCallable, Category = "Game")
+        void IncreaseDifficulty();
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
+        float IncreaseDifficultyPeriod;
+
+protected:
+    virtual void BeginPlay() override;
+    virtual APawn* SpawnDefaultPawnFor_Implementation(AController* NewPlayer, AActor* StartSpot) override;
+
+private:
+    UFUNCTION()
+        void StartSpawnEnemies();
 
     int loginedUsers = 0;
-
+    FTimerHandle RecoverTimer;
+    FTimerHandle IncreaseDifficultyTimer;
 };

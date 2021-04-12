@@ -1,57 +1,38 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "NVShootComponent.h"
 
 #include "Engine/World.h"
 #include "TimerManager.h"
+
 #include "../NWPawn/NWPlayerPawn.h"
 #include "../../MyPlayerController.h"
+#include "../Projectiles/NVShootProjectile.h"
 
-// Sets default values for this component's properties
 UNVShootComponent::UNVShootComponent()
 {
-    // Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-    // off to improve performance if you don't need them.
     PrimaryComponentTick.bCanEverTick = true;
-
-    // ...
 }
 
 void UNVShootComponent::BeginPlay()
 {
     Super::BeginPlay();
 
-    StartShooting();
+    bReplicates = true;
+    if (GetOwnerRole() == ROLE_Authority)
+        StartShooting();
 }
 
 void UNVShootComponent::Shoot()
 {
     for (auto ShootInfo : ShootInfos)
     {
-      //  FActorSpawnParameters SpawnParameters;
-      //  SpawnParameters.Owner = GetOwner();
-      //  SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-
-        FVector SpawnLocation =
-            GetOwner()->GetActorLocation()
-            +
-            GetOwner()->GetActorRotation().RotateVector(ShootInfo.Offset);
-
-        FRotator SpawnRotation = GetOwner()->GetActorRotation();
-        SpawnRotation.Add(0.f, ShootInfo.Angle, 0.f);
-
-        AMyPlayerController* playerController = (Cast<AMyPlayerController>(
-            Cast<ANWPlayerPawn>(GetOwner())->GetController()));
-        playerController->SpawnProjectile(ShootInfo.ProjectileClass, SpawnLocation, SpawnRotation, GetOwner(),
-                                          ShootInfo.Damage);
+        SpawnProjectile(ShootInfo);
     }
 }
 
 void UNVShootComponent::StartShooting()
 {
     GetWorld()->GetTimerManager().SetTimer(ShootingTimer, this, &UNVShootComponent::Shoot, ShootPeriod, true,
-                                           ShootPeriod);
+        ShootPeriod);
 }
 
 void UNVShootComponent::StopShooting()
@@ -63,4 +44,22 @@ void UNVShootComponent::RestartShooting()
 {
     StopShooting();
     StartShooting();
+}
+
+void UNVShootComponent::SpawnProjectile_Implementation(FNVShootInfo projectilesToShoot)
+{
+    FActorSpawnParameters SpawnParameters;
+    SpawnParameters.Owner = GetOwner();
+    SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+    const FVector SpawnLocation =
+        GetOwner()->GetActorLocation()
+        +
+        GetOwner()->GetActorRotation().RotateVector(projectilesToShoot.Offset);
+
+    FRotator SpawnRotation = GetOwner()->GetActorRotation();
+    SpawnRotation.Add(0.f, projectilesToShoot.Angle, 0.f);
+
+    ANVShootProjectile* Projectile = GetWorld()->SpawnActor<ANVShootProjectile>(projectilesToShoot.ProjectileClass, SpawnLocation, SpawnRotation, SpawnParameters);
+    if (Projectile) Projectile->Damage = projectilesToShoot.Damage;
 }
