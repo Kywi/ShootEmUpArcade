@@ -24,15 +24,22 @@ public:
     void OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location);
     void OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location);
 
-    UFUNCTION(Server, Reliable)
-    void SpawnProjectile(TSubclassOf<ANVShootProjectile> actorToSpawn, FVector location, FRotator rotation,
-                         AActor* Towner,
-                         float damage);
+    UFUNCTION(BlueprintCallable)
+        void SetPlayerID(int playerID);
 
-    UPROPERTY(EditAnywhere,BlueprintReadWrite)
-    ANWPlayerPawn* possessedPawn;
+    UFUNCTION(BlueprintCallable)
+        int GetPlayerID();
+    
 
-    virtual void SetupInputComponent() override;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+        ANWPlayerPawn* possessedPawn;
+
 protected:
     virtual void OnPossess(APawn* InPawn) override;
+    virtual void SetupInputComponent() override;
+    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+ 
+private:
+    UPROPERTY(Replicated)
+    int playerID;
 };

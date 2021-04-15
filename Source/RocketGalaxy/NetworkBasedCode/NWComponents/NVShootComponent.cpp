@@ -16,8 +16,7 @@ void UNVShootComponent::BeginPlay()
 {
     Super::BeginPlay();
 
-    bReplicates = true;
-    if (GetOwnerRole() == ROLE_Authority)
+    if (GetNetMode() == NM_ListenServer)
         StartShooting();
 }
 

@@ -12,30 +12,30 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FHealthsEndedEvent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FHealthsChangedEvent, int, ChangeValue);
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class STREAMARCADE_API UGameHealthComponent : public UActorComponent
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
-	UGameHealthComponent();
-		
-	UFUNCTION(BlueprintCallable, Category = "Game Health")
-    void ChangeHealths(int ByValue);
+public:
+    // Sets default values for this component's properties
+    UGameHealthComponent();
 
-	UFUNCTION(BlueprintPure, Category = "Game Health")
-    int GetHealths() const;
+    UFUNCTION(BlueprintCallable, Category = "Game Health")
+        void ChangeHealths(int ByValue);
 
-	UPROPERTY(BlueprintAssignable, Category = "Game Health")
-	FHealthsEndedEvent HealthsEnded;
+    UFUNCTION(BlueprintPure, Category = "Game Health")
+        int GetHealths() const;
 
-	UPROPERTY(BlueprintAssignable, Category = "Game Health")
-	FHealthsChangedEvent HealthsChanged;
-	
+    UPROPERTY(BlueprintAssignable, Category = "Game Health")
+        FHealthsEndedEvent HealthsEnded;
+
+    UPROPERTY(BlueprintAssignable, Category = "Game Health")
+        FHealthsChangedEvent HealthsChanged;
+
 protected:
-	virtual void BeginPlay() override;
+    virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, Category = "Game Health")
-	int Healths;
+    UPROPERTY(EditDefaultsOnly, Category = "Game Health")
+        int Healths;
 };

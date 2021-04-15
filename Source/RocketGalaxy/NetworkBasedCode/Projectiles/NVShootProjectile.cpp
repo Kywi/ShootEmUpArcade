@@ -19,7 +19,7 @@ ANVShootProjectile::ANVShootProjectile() :
 {
     // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
-    bReplicates = true;
+    
     Collision = CreateDefaultSubobject<USphereComponent>(TEXT("ProjectileCollision"));
     RootComponent = Collision;
     Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);

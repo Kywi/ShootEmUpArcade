@@ -4,31 +4,32 @@
 #include "MainPlayerHealthComponent.h"
 
 // Sets default values for this component's properties
-UMainPlayerHealthComponent::UMainPlayerHealthComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
-}
-
+UMainPlayerHealthComponent::UMainPlayerHealthComponent() :
+    Healths(3)
+{}
 
 // Called when the game starts
 void UMainPlayerHealthComponent::BeginPlay()
 {
-	Super::BeginPlay();
-
-	// ...
-	
+    Super::BeginPlay();
+    bReplicates = true;
+    if (GetOwner())
+        UE_LOG(LogTemp, Error, TEXT("No playerPawn!!!"));
 }
 
 
-// Called every frame
-void UMainPlayerHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UMainPlayerHealthComponent::ChangeHealths(int ByValue)
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+    Healths += ByValue;
+    if (Healths <= 0)
+        HealthsEnded.Broadcast();
+    UE_LOG(LogTemp, Log, TEXT("Health changed: %i"), Healths);
 }
+
+int UMainPlayerHealthComponent::GetHealths() const
+{
+    return Healths;
+}
+
+
 

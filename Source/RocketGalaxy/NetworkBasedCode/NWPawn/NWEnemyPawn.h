@@ -24,34 +24,42 @@ public:
 
     virtual void Tick(float DeltaTime) override;
 
-    UFUNCTION(BlueprintCallable, Category = "Pawn")
-        void DestroyPawn();
+    UFUNCTION(NetMulticast, Reliable)
+    void DestroyPawn();
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-        UBoxComponent* pawnCollision;
+    UBoxComponent* pawnCollision;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-        UArrowComponent* arrowComponent;
+    UArrowComponent* arrowComponent;
 
     UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
-        UStaticMeshComponent* pawnMesh;
+    UStaticMeshComponent* pawnMesh;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
-        UNVShootComponent* shootComponent;
+    UNVShootComponent* shootComponent;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
-        UCreaturesHealthComponent* healthComponent;
+    UCreaturesHealthComponent* healthComponent;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
+    UParticleSystem* DestroyParticle;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
+    FVector ScaleDestroyParticle;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
+    int DestroyPoints;
 
 protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
 
-   // void SpawnBonuses();
+    // void SpawnBonuses();
 
     UFUNCTION()
-        void KillPawn();
+    void KillPawn(int playerID);
 
     UFUNCTION()
-        void OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor);
-
+    void OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor);
 };

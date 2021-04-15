@@ -8,7 +8,7 @@
 
 #include "CreaturesHealthComponent.generated.h"
 
-//DECLARE_DYNAMIC_MULTICAST_DELEGATE(FNWHealthEndedEvent);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FNWHealthEndedEvent, int, playerID);
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class STREAMARCADE_API UCreaturesHealthComponent : public UActorComponent
@@ -20,21 +20,22 @@ public:
     UCreaturesHealthComponent();
 
     UFUNCTION(BlueprintCallable, Category = "Health")
-        void ChangeHealth(float value);
+    void ChangeHealth(float value,AController* Instigator);
 
     UFUNCTION(BlueprintPure, Category = "Health")
-        float GetHealth() const;
+    float GetHealth() const;
 
     UPROPERTY(BlueprintAssignable, Category = "Health")
-        FHealthEndedEvent OnHealthEnded;
+    FNWHealthEndedEvent OnHealthEnded;
 
 protected:
 
     virtual void BeginPlay() override;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health")
-        float Health;
+    float Health;
 
     UFUNCTION()
-        void OnOwnerDamaged(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* Instigator, AActor* DamageCauser);
+    void OnOwnerDamaged(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* Instigator,
+                        AActor* DamageCauser);
 };

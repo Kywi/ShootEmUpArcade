@@ -3,26 +3,40 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
 #include "Components/ActorComponent.h"
+
+#include "Components/GameHealthComponent.h"
+
 #include "MainPlayerHealthComponent.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class STREAMARCADE_API UMainPlayerHealthComponent : public UActorComponent
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
-	UMainPlayerHealthComponent();
+public:
+    // Sets default values for this component's properties
+    UMainPlayerHealthComponent();
+
+
+    UFUNCTION(BlueprintCallable, Category = "Game Health")
+        void ChangeHealths(int ByValue);
+
+    UFUNCTION(BlueprintPure, Category = "Game Health")
+        int GetHealths() const;
+
+    UPROPERTY(BlueprintAssignable, Category = "Game Health")
+        FHealthsEndedEvent HealthsEnded;
+
+    UPROPERTY(BlueprintAssignable, Category = "Game Health")
+        FHealthsChangedEvent HealthsChanged;
 
 protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
+    virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+    UPROPERTY(EditDefaultsOnly, Category = "Game Health")
+        int Healths;
 
-		
 };

@@ -48,7 +48,7 @@ private:
     UFUNCTION()
         void StartSpawnEnemies();
 
-    int loginedUsers = 0;
+    int32 loginedUsers = -1;
     FTimerHandle RecoverTimer;
     FTimerHandle IncreaseDifficultyTimer;
 };

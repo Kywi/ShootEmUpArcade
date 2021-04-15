@@ -63,30 +63,39 @@
     <list default="true" id="9f259940-fdc6-4e47-aeae-525d25c8a5ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/BP_PlayerColossus.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/UI/Heart.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Textures/UI/Heart.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/UI/PauseButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Textures/UI/PauseButton.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameState.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameState.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWPlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWPlayerPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyPlayerController.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NVShootProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NVShootProjectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWEnemyPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWEnemyPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_Connect.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_Connect.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_MultiplayerChooseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_MultiplayerChooseMenu.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" beforeDir="false" afterPath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RocketGalaxy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RocketGalaxy.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Actors/PlaygroundBorder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/ShootComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Components/GameHealthComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameState.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/CreaturesHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/CreaturesHealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/CreaturesHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/CreaturesHealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/MainPlayerHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/MainPlayerHealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/MainPlayerHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/MainPlayerHealthComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/StreamArcadeGameModeBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,13 +115,21 @@
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NVComponents/NVShootComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/PlayerPawn.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.cpp" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Projectiles/NVShootProjectile.cpp" />
+        <option value="$PROJECT_DIR$/Config/DefaultGame.ini" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/CreaturesHealthComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NVShootComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/CreaturesHealthComponent.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWEnemyPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/MyPlayerController.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameState.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameState.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" />
       </list>
     </option>
   </component>
@@ -130,6 +147,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="C++ Project.RocketGalaxy">
@@ -30752,6 +30771,12 @@
       <workItem from="1618137994993" duration="595000" />
       <workItem from="1618170596245" duration="242000" />
       <workItem from="1618171002264" duration="2000" />
+      <workItem from="1618436610601" duration="573000" />
+      <workItem from="1618474599984" duration="3139000" />
+      <workItem from="1618496388980" duration="3313000" />
+      <workItem from="1618502068976" duration="263000" />
+      <workItem from="1618502921651" duration="7744000" />
+      <workItem from="1618516516276" duration="1338000" />
     </task>
     <servers />
   </component>
@@ -30776,25 +30801,41 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1617920302691">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1618520767096">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617912615965" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617920302691" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1617920302691">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618506581408" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618520767096" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618498458585" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1618520767095">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617912615964" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617920302691" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1617920302691">
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618506581408" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618520767095" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618498458585" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1618520767095">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617912615964" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617920302691" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1617920302691">
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618506581408" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618520767095" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618498458584" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1618520767095">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617912615964" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617920302691" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618506581408" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618520767095" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618498458585" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1618503276145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618503276145" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1618516405251">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618516405251" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618503269801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618503269801" />
   </component>
 </project>

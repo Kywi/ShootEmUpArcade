@@ -16,33 +16,49 @@
 
 ANWPlayerPawn::ANWPlayerPawn()
 {
-    PawnCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("PawnCollision"));
-    RootComponent = PawnCollision;
-    PawnCollision->SetCollisionProfileName("Pawn");
-    PawnCollision->SetCollisionResponseToChannel(ECC_PhysicsBody, ECR_Ignore);
+    pawnCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("PawnCollision"));
+    RootComponent = pawnCollision;
+    pawnCollision->SetCollisionProfileName("Pawn");
+    pawnCollision->SetCollisionResponseToChannel(ECC_PhysicsBody, ECR_Ignore);
 
-    PawnMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PawnMesh"));
-    PawnMesh->SetupAttachment(PawnCollision, NAME_None);
+    pawnMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PawnMesh"));
+    pawnMesh->SetupAttachment(pawnCollision, NAME_None);
 
-    PawnCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PawnCamera"));
+    pawnCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PawnCamera"));
 
-    ShootComponent = CreateDefaultSubobject<UNVShootComponent>(TEXT("shootComponent"));
+    shootComponent = CreateDefaultSubobject<UNVShootComponent>(TEXT("shootComponent"));
+
+    healtComponent = CreateDefaultSubobject<UMainPlayerHealthComponent>(TEXT("HealtComponent"));
 }
 
 void ANWPlayerPawn::BeginPlay()
 {
     Super::BeginPlay();
-    MoveLimit.X = 1000;
-    MoveLimit.Y = 1000;
-    if (HasAuthority())
-        SetReplicates(true);
+  //  if (HasAuthority())
+   //     SetReplicates(true);
+    PawnMaterial = pawnMesh->GetMaterial(0);
 }
 
 void ANWPlayerPawn::PossessedBy(AController* NewController)
 {
     Super::PossessedBy(NewController);
-    PlayerController = Cast<AMyPlayerController>(NewController);
-    PlayerController->possessedPawn = this;
+    playerController = Cast<AMyPlayerController>(NewController);
+    playerController->possessedPawn = this;
+    healtComponent->HealthsEnded.AddDynamic(this, &ANWPlayerPawn::DestroyPlayer);
+}
+
+float ANWPlayerPawn::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+    if (!(GetNetMode() == ENetMode::NM_ListenServer && CanBeDamaged()))
+        return 0.f;
+
+    Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+    healtComponent->ChangeHealths(DamageAmount);
+
+    ExplodePawn();
+    GetWorld()->GetTimerManager().SetTimer(recoverTimer, this, &ANWPlayerPawn::RecoverPawn, pawnRecoverTime, false);
+    return DamageAmount;
 }
 
 #pragma endregion overriding engine events
@@ -52,7 +68,7 @@ void ANWPlayerPawn::PossessedBy(AController* NewController)
 void ANWPlayerPawn::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
 {
     GetWorld()->GetTimerManager().ClearTimer(rotateAnimTimer);
-    FVector2D TouchDeltaMove = FVector2D(TouchLocation.X - Location.X, TouchLocation.Y - Location.Y);
+    FVector2D TouchDeltaMove = FVector2D(touchLocation.X - Location.X, touchLocation.Y - Location.Y);
 
     TouchDeltaMove = TouchDeltaMove * TouchMoveSensivity;
 
@@ -63,16 +79,16 @@ void ANWPlayerPawn::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
     if (IsValid(InputComponent))
     {
         RotationAnimation(NewLocation);
-        moveOnlineRPC(NewLocation);
+        MoveOnline(NewLocation);
     }
 
     SetActorLocation(NewLocation);
-    TouchLocation = FVector2D(Location.X, Location.Y);
+    touchLocation = FVector2D(Location.X, Location.Y);
 }
 
 void ANWPlayerPawn::OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location)
 {
-    TouchLocation = FVector2D(Location.X, Location.Y);
+    touchLocation = FVector2D(Location.X, Location.Y);
 }
 
 void ANWPlayerPawn::OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location)
@@ -90,13 +106,13 @@ void ANWPlayerPawn::RotationAnimation(const FVector& NewLocation)
     const auto forwardVector = UKismetMathLibrary::GetDirectionUnitVector(NewLocation, GetActorLocation());
     const auto forwardY = (forwardVector.Y < 0) ? 1 : (forwardVector.Y == 0) ? 0 : -1;
 
-    currentRotation = PawnMesh->GetComponentRotation().Roll + 1.01 * forwardY;
+    currentRotation = pawnMesh->GetComponentRotation().Roll + 1.01 * forwardY;
     if (UKismetMathLibrary::Abs(currentRotation) <= maxRotationAngle)
     {
         const FRotator rotator(0, 0, currentRotation);
         if (!HasAuthority())
-            PawnMesh->SetWorldRotation(rotator);
-        RotateMesh(rotator);
+            pawnMesh->SetWorldRotation(rotator);
+        RotateMeshOnline(rotator);
     }
 }
 
@@ -105,25 +121,69 @@ void ANWPlayerPawn::RotateBack()
     fromInterp = FMath::FInterpTo(fromInterp, targetInterp, 3, stepInterp);
 
     const FRotator rotator(0, 0, fromInterp);
-    PawnMesh->SetWorldRotation(rotator);
-    RotateMesh(rotator);
+    pawnMesh->SetWorldRotation(rotator);
+    RotateMeshOnline(rotator);
 
     if (fromInterp == targetInterp)
         GetWorld()->GetTimerManager().ClearTimer(rotateAnimTimer);
 }
 
+
 #pragma endregion Rotation pawn animation implementation
 
 #pragma region RPC
 
-void ANWPlayerPawn::RotateMesh_Implementation(FRotator Rotation)
+void ANWPlayerPawn::RotateMeshOnline_Implementation(FRotator Rotation)
 {
-    PawnMesh->SetWorldRotation(Rotation);
+    pawnMesh->SetWorldRotation(Rotation);
 }
 
-void ANWPlayerPawn::moveOnlineRPC_Implementation(FVector Location)
+void ANWPlayerPawn::MoveOnline_Implementation(FVector Location)
 {
     SetActorLocation(Location);
 }
 
 #pragma endregion RPC methods
+
+bool ANWPlayerPawn::CanBeDamaged_Implementation()
+{
+    return bCanBeDamaged;
+}
+
+void ANWPlayerPawn::RecoverPawn_Implementation()
+{
+    SetActorEnableCollision(true);
+
+    shootComponent->StartShooting();
+
+    pawnMesh->SetMaterial(0, PawnMaterial);
+
+    //  for (UActorComponent* Component : GetComponentsByClass(UParticleSystemComponent::StaticClass()))
+     // {
+      //    Component->Activate(true);
+     // }
+}
+
+void ANWPlayerPawn::ExplodePawn_Implementation()
+{
+    SetActorEnableCollision(false);
+
+    shootComponent->StopShooting();
+
+    pawnMesh->SetMaterial(0, RecoverMaterial);
+
+    if (DestroyParticle)
+        UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
+
+    // for (UActorComponent* Component : GetComponentsByClass(UParticleSystemComponent::StaticClass()))
+    // {
+     //    Component->Deactivate();
+    // }
+}
+
+void ANWPlayerPawn::DestroyPlayer()
+{
+    if (DestroyParticle)
+        UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
+    Destroy();
+}

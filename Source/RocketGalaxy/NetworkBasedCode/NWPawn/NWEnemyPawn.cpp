@@ -1,11 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "NWEnemyPawn.h"
 
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/DamageType.h"
 #include "NWGameMode.h"
+#include "NWGameState.h"
 #include "NWPlayerPawn.h"
 
 ANWEnemyPawn::ANWEnemyPawn()
@@ -31,34 +29,37 @@ ANWEnemyPawn::ANWEnemyPawn()
 void ANWEnemyPawn::BeginPlay()
 {
     Super::BeginPlay();
-    if (HasAuthority())
-        SetReplicates(true);
 
     OnActorBeginOverlap.AddDynamic(this, &ANWEnemyPawn::OnEnemyOverlap);
     healthComponent->OnHealthEnded.AddDynamic(this, &ANWEnemyPawn::KillPawn);
 }
 
-void ANWEnemyPawn::KillPawn()
+void ANWEnemyPawn::KillPawn(int playerID)
 {
-    if (HasAuthority())
+    if (GetNetMode() == NM_ListenServer)
     {
-        ANWGameMode* Gamemode = Cast<ANWGameMode>(UGameplayStatics::GetGameMode(this));
+        auto gameState = GetWorld()->GetGameState<ANWGameState>();
+        //  gameState->gamePoints[playerID] += DestroyPoints;
+        UE_LOG(LogTemp, Log, TEXT("Player ID: %i"), playerID);
+        gameState->gamePoints[playerID] += DestroyPoints;
+        gameState->OnRep_gamePoints();
         //if (Gamemode) Gamemode->AddPoints(DestroyPoints);
 
         //SpawnBonuses();
 
         DestroyPawn();
     }
-
 }
 
 void ANWEnemyPawn::OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor)
 {
+    // UE_LOG(LogTemp, Error, TEXT("Overlap cast result: %p"), OtherActor->GetClass());
     if (!Cast<ANWPlayerPawn>(OtherActor))
         return;
 
-    const float AppliedDamage = UGameplayStatics::ApplyDamage(OtherActor, 100.f, GetController(), this, UDamageType::StaticClass());
-    if (AppliedDamage > 0.f)
+    const float AppliedDamage = UGameplayStatics::ApplyDamage(OtherActor, -1.f, GetController(), this,
+                                                              UDamageType::StaticClass());
+    if (AppliedDamage != 0.f)
         DestroyPawn();
 }
 
@@ -69,14 +70,15 @@ void ANWEnemyPawn::Tick(float DeltaTime)
     AddActorWorldOffset(FVector(WorldMoveOffset, 0.f, 0.f));
 }
 
-void ANWEnemyPawn::DestroyPawn()
+void ANWEnemyPawn::DestroyPawn_Implementation()
 {
-    //  if (DestroyParticle)
-     //     UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
-      //UGameplayStatics::SpawnSound2D(GetWorld(), DestroySound);
+    if (DestroyParticle)
+    {
+        auto transform = GetActorTransform();
+        transform.SetScale3D(ScaleDestroyParticle);
+        UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, transform, true);
+    }
+    //UGameplayStatics::SpawnSound2D(GetWorld(), DestroySound);
 
     Destroy();
 }
-
-
-

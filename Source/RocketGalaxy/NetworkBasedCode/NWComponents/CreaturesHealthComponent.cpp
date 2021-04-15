@@ -3,26 +3,29 @@
 
 #include "CreaturesHealthComponent.h"
 
+#include "MyPlayerController.h"
+
 // Sets default values for this component's properties
 UCreaturesHealthComponent::UCreaturesHealthComponent()
 {
 }
 
 
-
 void UCreaturesHealthComponent::OnOwnerDamaged(AActor* DamagedActor, float Damage, const UDamageType* DamageType,
-    AController* Instigator, AActor* DamageCauser)
+                                               AController* Instigator, AActor* DamageCauser)
 {
-    ChangeHealth(-Damage);
+    ChangeHealth(-Damage, Instigator);
 }
 
-void UCreaturesHealthComponent::ChangeHealth(float value)
+void UCreaturesHealthComponent::ChangeHealth(float value, AController* Instigator)
 {
     Health += value;
 
-    if (Health <= 0.f) {
+    if (Health <= 0.f)
+    {
         GetOwner()->OnTakeAnyDamage.RemoveDynamic(this, &UCreaturesHealthComponent::OnOwnerDamaged);
-        OnHealthEnded.Broadcast();
+      //  UE_LOG(LogTemp, Log, TEXT("PlayerID : %s"), *Cast<AMyPlayerController>(Instigator)->GetPlayerID());
+        OnHealthEnded.Broadcast(Cast<AMyPlayerController>(Instigator)->GetPlayerID());
     }
 }
 
@@ -36,5 +39,3 @@ void UCreaturesHealthComponent::BeginPlay()
     Super::BeginPlay();
     GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UCreaturesHealthComponent::OnOwnerDamaged);
 }
-
-

@@ -8,6 +8,7 @@
 #include "Components/BoxComponent.h"
 #include "Camera/CameraComponent.h"
 #include "../NWComponents/NVShootComponent.h"
+#include "../NWComponents/MainPlayerHealthComponent.h"
 
 #include "NWPlayerPawn.generated.h"
 
@@ -19,36 +20,50 @@ class STREAMARCADE_API ANWPlayerPawn : public APawn
     GENERATED_BODY()
 
 public:
-    // Sets default values for this pawn's properties
     ANWPlayerPawn();
-    // Called every frame
 
     void OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location);
     void OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location);
     void OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location);
-    void RotationAnimation(const FVector& NewLocation);
-    void RotateBack();
 
     UFUNCTION(Server, Reliable)
-        void moveOnlineRPC(FVector Location);
+        void MoveOnline(FVector Location);
 
     UFUNCTION(Server, Reliable)
-        void RotateMesh(FRotator Rotation);
+        void RotateMeshOnline(FRotator Rotation);
+
+    UFUNCTION(NetMulticast, Reliable)
+        void ExplodePawn();
+
+    UFUNCTION(NetMulticast, Reliable)
+        void RecoverPawn();
+
+    UFUNCTION(BlueprintPure, BlueprintNativeEvent, Category = "Healths")
+        bool CanBeDamaged();
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-        UBoxComponent* PawnCollision;
+        UBoxComponent* pawnCollision;
 
     UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
-        UStaticMeshComponent* PawnMesh;
+        UStaticMeshComponent* pawnMesh;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-        UCameraComponent* PawnCamera;
+        UCameraComponent* pawnCamera;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
+        UNVShootComponent* shootComponent;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Health")
+        UMainPlayerHealthComponent* healtComponent;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
+        UMaterialInterface* RecoverMaterial;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
+        UParticleSystem* DestroyParticle;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Controls")
         float TouchMoveSensivity;
-
-    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
-        UNVShootComponent* ShootComponent;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
         FVector2D MoveLimit;
@@ -65,17 +80,26 @@ public:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
         float stepInterp = 0.05;
 
-    AMyPlayerController* PlayerController;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health")
+        float pawnRecoverTime = 2;
 
 protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
     virtual void PossessedBy(AController* NewController) override;
+    virtual float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
+    void RotationAnimation(const FVector& NewLocation);
+    void RotateBack();
+    UFUNCTION()
+        void DestroyPlayer();
+
+    AMyPlayerController* playerController;
     FTimerHandle rotateAnimTimer;
+    FTimerHandle recoverTimer;
 
 private:
-    FVector2D TouchLocation;
+    FVector2D touchLocation;
     float fromInterp;
     double currentRotation = 0;
     UMaterialInterface* PawnMaterial;

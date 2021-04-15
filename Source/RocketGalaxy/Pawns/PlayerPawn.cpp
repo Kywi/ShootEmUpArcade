@@ -89,8 +89,7 @@ void APlayerPawn::RecoverPawn_Implementation()
     }
 }
 
-float APlayerPawn::TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController* InstigatedBy,
-                              AActor* DamageCauser)
+float APlayerPawn::TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController* InstigatedBy, AActor* DamageCauser)
 {
     if (!CanBeDamaged()) return 0.f;
 

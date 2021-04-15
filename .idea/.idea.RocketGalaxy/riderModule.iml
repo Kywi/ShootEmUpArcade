@@ -32,6 +32,7 @@
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UnrealEngine-4.23/Engine/Plugins/Developer/OneSkyLocalizationService" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UnrealEngine-4.23/Engine/Plugins/Developer/PerforceSourceControl" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UnrealEngine-4.23/Engine/Plugins/Developer/RenderDocPlugin" />
+    <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UnrealEngine-4.23/Engine/Plugins/Developer/RiderLink" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UnrealEngine-4.23/Engine/Plugins/Developer/SubversionSourceControl" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UnrealEngine-4.23/Engine/Plugins/Developer/UObjectPlugin" />
     <content url="file://$MODULE_DIR$/../../../UnrealEngineVersions/UnrealEngine-4.23/Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess" />

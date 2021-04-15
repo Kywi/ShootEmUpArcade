@@ -3,22 +3,12 @@
 
 #include "MyPlayerController.h"
 
+
+#include "UnrealNetwork.h"
 #include "NetworkBasedCode/NWPawn/NWPlayerPawn.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/World.h"
 
-
-
-void AMyPlayerController::SpawnProjectile_Implementation(TSubclassOf<ANVShootProjectile> actorToSpawn, FVector location,
-    FRotator rotation, AActor* Towner, float damage)
-{
-    FActorSpawnParameters spawnParameters;
-    spawnParameters.Owner = Towner;
-    spawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-    auto projectile = GetWorld()->SpawnActor<ANVShootProjectile>(actorToSpawn, location, rotation, spawnParameters);
-    projectile->Damage = damage;
-    //GetWorld()->SpawnActor<AShootProjectile>(ShootInfo.ProjectileClass, SpawnLocation, SpawnRotation, SpawnParameters);
-}
 
 void AMyPlayerController::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
 {
@@ -26,7 +16,6 @@ void AMyPlayerController::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Loc
         possessedPawn->OnTouchMove(FingerIndex, Location);
     else
         possessedPawn = Cast<ANWPlayerPawn>(GetPawn());
-
 }
 
 void AMyPlayerController::OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location)
@@ -39,11 +28,20 @@ void AMyPlayerController::OnTouchPress(ETouchIndex::Type FingerIndex, FVector Lo
 
 void AMyPlayerController::OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location)
 {
-
     if (possessedPawn)
         possessedPawn->OnTouchReleased(FingerIndex, Location);
     else
         possessedPawn = Cast<ANWPlayerPawn>(GetPawn());
+}
+
+void AMyPlayerController::SetPlayerID(int playerId)
+{
+    this->playerID = playerId;
+}
+
+int AMyPlayerController::GetPlayerID()
+{
+    return playerID;
 }
 
 void AMyPlayerController::SetupInputComponent()
@@ -55,11 +53,13 @@ void AMyPlayerController::SetupInputComponent()
     InputComponent->BindTouch(IE_Repeat, this, &AMyPlayerController::OnTouchMove);
 }
 
+void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+    DOREPLIFETIME(AMyPlayerController, playerID);
+}
+
 void AMyPlayerController::OnPossess(APawn* InPawn)
 {
     Super::OnPossess(InPawn);
-    //  possessedPawn = Cast<ANWPlayerPawn>(InPawn);
-     // possessedPawn->SetOwner(this);
-      //possessedPawn->SetupPlayerInputComponent(InputComponent);
 }
-
