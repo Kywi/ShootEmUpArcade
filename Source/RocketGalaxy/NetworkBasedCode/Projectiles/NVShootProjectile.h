@@ -37,6 +37,7 @@ public:
 protected:
     virtual void BeginPlay() override;
 
+    int playerID;
     UFUNCTION()
         void OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
             int32 BodyIndex, bool Sweep, const FHitResult& Hit);

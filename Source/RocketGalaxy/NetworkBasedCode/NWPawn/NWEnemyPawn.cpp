@@ -26,6 +26,16 @@ ANWEnemyPawn::ANWEnemyPawn()
     healthComponent = CreateDefaultSubobject<UCreaturesHealthComponent>(TEXT("HealthComponent"));
 }
 
+void ANWEnemyPawn::SetPlayerID(int TplayerID)
+{
+    this->playerID = TplayerID;
+}
+
+int ANWEnemyPawn::GetPlayerID()
+{
+    return playerID;
+}
+
 void ANWEnemyPawn::BeginPlay()
 {
     Super::BeginPlay();
@@ -34,18 +44,32 @@ void ANWEnemyPawn::BeginPlay()
     healthComponent->OnHealthEnded.AddDynamic(this, &ANWEnemyPawn::KillPawn);
 }
 
-void ANWEnemyPawn::KillPawn(int playerID)
+void ANWEnemyPawn::KillPawn(int TplayerID)
 {
     if (GetNetMode() == NM_ListenServer)
     {
         auto gameState = GetWorld()->GetGameState<ANWGameState>();
-        //  gameState->gamePoints[playerID] += DestroyPoints;
-        UE_LOG(LogTemp, Log, TEXT("Player ID: %i"), playerID);
-        gameState->gamePoints[playerID] += DestroyPoints;
+        UE_LOG(LogTemp, Log, TEXT("Player ID: %i"), TplayerID);
+        gameState->gamePoints[TplayerID] += DestroyPoints;
         gameState->OnRep_gamePoints();
-        //if (Gamemode) Gamemode->AddPoints(DestroyPoints);
 
-        //SpawnBonuses();
+        FRandomStream Random;
+        Random.GenerateNewSeed();
+
+
+        for (FNWBonusChance Bonus : possibleBonuses)
+        {
+            float RandChance = Random.RandRange(0.f, 100.f);
+            UE_LOG(LogTemp, Log, TEXT("Bonus: %s, Chance needed: %f, Chance random: %f"), *Bonus.BonusClass->GetName(),
+                   Bonus.Chance, RandChance);
+            if (RandChance < Bonus.Chance)
+            {
+                SpawnBonuses(Bonus.BonusClass);
+
+                UE_LOG(LogTemp, Log, TEXT("Bonus spawned"));
+                break;
+            }
+        }
 
         DestroyPawn();
     }
@@ -68,6 +92,13 @@ void ANWEnemyPawn::Tick(float DeltaTime)
     Super::Tick(DeltaTime);
     const float WorldMoveOffset = -200.f * DeltaTime;
     AddActorWorldOffset(FVector(WorldMoveOffset, 0.f, 0.f));
+}
+
+void ANWEnemyPawn::SpawnBonuses_Implementation(TSubclassOf<ANWBonus> BonusClass)
+{
+    FActorSpawnParameters SpawnParameters;
+    SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+    GetWorld()->SpawnActor<ANWBonus>(BonusClass, GetActorLocation(), FRotator(0.f), SpawnParameters);
 }
 
 void ANWEnemyPawn::DestroyPawn_Implementation()

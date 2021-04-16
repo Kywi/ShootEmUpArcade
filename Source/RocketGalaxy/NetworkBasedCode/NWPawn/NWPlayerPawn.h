@@ -12,6 +12,20 @@
 
 #include "NWPlayerPawn.generated.h"
 
+USTRUCT(BlueprintType)
+struct FNWShootInfoLevel
+{
+    GENERATED_BODY()
+
+public:
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
+    TArray<FNVShootInfo> ShootInfos;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
+    float ShootPeriod;
+};
+
+
 class AMyPlayerController;
 
 UCLASS()
@@ -27,78 +41,87 @@ public:
     void OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location);
 
     UFUNCTION(Server, Reliable)
-        void MoveOnline(FVector Location);
+    void MoveOnline(FVector Location);
 
     UFUNCTION(Server, Reliable)
-        void RotateMeshOnline(FRotator Rotation);
+    void RotateMeshOnline(FRotator Rotation);
 
     UFUNCTION(NetMulticast, Reliable)
-        void ExplodePawn();
+    void ExplodePawn();
 
     UFUNCTION(NetMulticast, Reliable)
-        void RecoverPawn();
+    void RecoverPawn();
+
+    UFUNCTION(NetMulticast, Reliable)
+    void ChangeEvolutionLvl(bool up);
 
     UFUNCTION(BlueprintPure, BlueprintNativeEvent, Category = "Healths")
-        bool CanBeDamaged();
+    bool CanBeDamaged();
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-        UBoxComponent* pawnCollision;
+    UBoxComponent* pawnCollision;
 
     UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
-        UStaticMeshComponent* pawnMesh;
+    UStaticMeshComponent* pawnMesh;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-        UCameraComponent* pawnCamera;
+    UCameraComponent* pawnCamera;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
-        UNVShootComponent* shootComponent;
+    UNVShootComponent* shootComponent;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Health")
-        UMainPlayerHealthComponent* healtComponent;
+    UMainPlayerHealthComponent* healtComponent;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
-        UMaterialInterface* RecoverMaterial;
+    UMaterialInterface* RecoverMaterial;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
-        UParticleSystem* DestroyParticle;
+    UParticleSystem* DestroyParticle;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
+    TArray<FNWShootInfoLevel> ShootEvolution;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Controls")
-        float TouchMoveSensivity;
+    float TouchMoveSensivity;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
-        FVector2D MoveLimit;
+    FVector2D MoveLimit;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
-        float maxRotationAngle = 40;
+    float maxRotationAngle = 40;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
-        float targetInterp = 0;
+    float targetInterp = 0;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
-        float delayTimerInterp = 0.05;
+    float delayTimerInterp = 0.05;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "RotationAnimation")
-        float stepInterp = 0.05;
+    float stepInterp = 0.05;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health")
-        float pawnRecoverTime = 2;
+    float pawnRecoverTime = 2;
 
 protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
     virtual void PossessedBy(AController* NewController) override;
-    virtual float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
     void RotationAnimation(const FVector& NewLocation);
     void RotateBack();
     UFUNCTION()
-        void DestroyPlayer();
+    void DestroyPlayer();
 
     AMyPlayerController* playerController;
     FTimerHandle rotateAnimTimer;
     FTimerHandle recoverTimer;
 
 private:
+    UFUNCTION()
+    void OnHealthChnaged(int byValue);
+
+    int currentShootLevel = 0; 
     FVector2D touchLocation;
     float fromInterp;
     double currentRotation = 0;

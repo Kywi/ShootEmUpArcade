@@ -11,6 +11,7 @@
 #include "Kismet/KismetMathLibrary.h"
 
 #include "MyPlayerController.h"
+#include "NWGameState.h"
 
 #pragma region EngineEvents
 
@@ -34,9 +35,11 @@ ANWPlayerPawn::ANWPlayerPawn()
 void ANWPlayerPawn::BeginPlay()
 {
     Super::BeginPlay();
-  //  if (HasAuthority())
-   //     SetReplicates(true);
+    //  if (HasAuthority())
+    //     SetReplicates(true);
     PawnMaterial = pawnMesh->GetMaterial(0);
+    if (GetNetMode() == ENetMode::NM_ListenServer)
+        ChangeEvolutionLvl(true);
 }
 
 void ANWPlayerPawn::PossessedBy(AController* NewController)
@@ -45,20 +48,7 @@ void ANWPlayerPawn::PossessedBy(AController* NewController)
     playerController = Cast<AMyPlayerController>(NewController);
     playerController->possessedPawn = this;
     healtComponent->HealthsEnded.AddDynamic(this, &ANWPlayerPawn::DestroyPlayer);
-}
-
-float ANWPlayerPawn::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
-{
-    if (!(GetNetMode() == ENetMode::NM_ListenServer && CanBeDamaged()))
-        return 0.f;
-
-    Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
-
-    healtComponent->ChangeHealths(DamageAmount);
-
-    ExplodePawn();
-    GetWorld()->GetTimerManager().SetTimer(recoverTimer, this, &ANWPlayerPawn::RecoverPawn, pawnRecoverTime, false);
-    return DamageAmount;
+    healtComponent->HealthsChanged.AddDynamic(this, &ANWPlayerPawn::OnHealthChnaged);
 }
 
 #pragma endregion overriding engine events
@@ -94,7 +84,24 @@ void ANWPlayerPawn::OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location
 void ANWPlayerPawn::OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location)
 {
     fromInterp = currentRotation;
-    GetWorld()->GetTimerManager().SetTimer(rotateAnimTimer, this, &ANWPlayerPawn::RotateBack, delayTimerInterp, true, 0);
+    GetWorld()->GetTimerManager().SetTimer(rotateAnimTimer, this, &ANWPlayerPawn::RotateBack, delayTimerInterp, true,
+                                           0);
+}
+
+void ANWPlayerPawn::ChangeEvolutionLvl_Implementation(bool up)
+{
+    int NewLevel = FMath::Clamp(currentShootLevel + (up ? 1 : -1), 0, ShootEvolution.Num() - 1);
+
+    UE_LOG(LogTemp, Log, TEXT("NewLevel: %i, CurrentLevel: %i"), NewLevel, currentShootLevel);
+
+    if (NewLevel == currentShootLevel) return;
+
+    currentShootLevel = NewLevel;
+
+    shootComponent->ShootInfos = ShootEvolution[currentShootLevel].ShootInfos;
+    shootComponent->ShootPeriod = ShootEvolution[currentShootLevel].ShootPeriod;
+    UE_LOG(LogTemp, Log, TEXT("ChnagedShootPeriod: %i"), ShootEvolution[currentShootLevel].ShootInfos.Num());
+    if (up) shootComponent->RestartShooting();
 }
 
 #pragma endregion Moving pawn methods
@@ -154,14 +161,14 @@ void ANWPlayerPawn::RecoverPawn_Implementation()
 {
     SetActorEnableCollision(true);
 
-    shootComponent->StartShooting();
-
+    if (GetNetMode() == ENetMode::NM_ListenServer)
+        shootComponent->StartShooting();
     pawnMesh->SetMaterial(0, PawnMaterial);
 
     //  for (UActorComponent* Component : GetComponentsByClass(UParticleSystemComponent::StaticClass()))
-     // {
-      //    Component->Activate(true);
-     // }
+    // {
+    //    Component->Activate(true);
+    // }
 }
 
 void ANWPlayerPawn::ExplodePawn_Implementation()
@@ -174,11 +181,6 @@ void ANWPlayerPawn::ExplodePawn_Implementation()
 
     if (DestroyParticle)
         UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
-
-    // for (UActorComponent* Component : GetComponentsByClass(UParticleSystemComponent::StaticClass()))
-    // {
-     //    Component->Deactivate();
-    // }
 }
 
 void ANWPlayerPawn::DestroyPlayer()
@@ -186,4 +188,19 @@ void ANWPlayerPawn::DestroyPlayer()
     if (DestroyParticle)
         UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
     Destroy();
+}
+
+void ANWPlayerPawn::OnHealthChnaged(int byValue)
+{
+    if (!(GetNetMode() == ENetMode::NM_ListenServer && CanBeDamaged()))
+        return;
+
+
+    auto gameState = GetWorld()->GetGameState<ANWGameState>();
+
+    gameState->playersHealth[Cast<AMyPlayerController>(GetController())->GetPlayerID()] = healtComponent->GetHealths();
+    gameState->OnRep_playersHealth();
+
+    ExplodePawn();
+    GetWorld()->GetTimerManager().SetTimer(recoverTimer, this, &ANWPlayerPawn::RecoverPawn, pawnRecoverTime, false);
 }

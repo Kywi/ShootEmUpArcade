@@ -10,6 +10,8 @@
 
 #include "MainPlayerHealthComponent.generated.h"
 
+class AController;
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FNWHealthChnaged);
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class STREAMARCADE_API UMainPlayerHealthComponent : public UActorComponent
@@ -35,6 +37,10 @@ public:
 
 protected:
     virtual void BeginPlay() override;
+
+    UFUNCTION()
+    void OnOwnerDamaged(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* Instigator,
+                        AActor* DamageCauser);
 
     UPROPERTY(EditDefaultsOnly, Category = "Game Health")
         int Healths;

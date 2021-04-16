@@ -30,19 +30,24 @@ void UNVShootComponent::Shoot()
 
 void UNVShootComponent::StartShooting()
 {
-    GetWorld()->GetTimerManager().SetTimer(ShootingTimer, this, &UNVShootComponent::Shoot, ShootPeriod, true,
-        ShootPeriod);
+    if (GetNetMode() == NM_ListenServer)
+        GetWorld()->GetTimerManager().SetTimer(ShootingTimer, this, &UNVShootComponent::Shoot, ShootPeriod, true,
+                                               ShootPeriod);
 }
 
 void UNVShootComponent::StopShooting()
 {
-    GetWorld()->GetTimerManager().ClearTimer(ShootingTimer);
+    if (GetNetMode() == NM_ListenServer)
+        GetWorld()->GetTimerManager().ClearTimer(ShootingTimer);
 }
 
 void UNVShootComponent::RestartShooting()
 {
-    StopShooting();
-    StartShooting();
+    if (GetNetMode() == NM_ListenServer)
+    {
+        StopShooting();
+        StartShooting();
+    }
 }
 
 void UNVShootComponent::SpawnProjectile_Implementation(FNVShootInfo projectilesToShoot)
@@ -59,6 +64,8 @@ void UNVShootComponent::SpawnProjectile_Implementation(FNVShootInfo projectilesT
     FRotator SpawnRotation = GetOwner()->GetActorRotation();
     SpawnRotation.Add(0.f, projectilesToShoot.Angle, 0.f);
 
-    ANVShootProjectile* Projectile = GetWorld()->SpawnActor<ANVShootProjectile>(projectilesToShoot.ProjectileClass, SpawnLocation, SpawnRotation, SpawnParameters);
+    ANVShootProjectile* Projectile = GetWorld()->SpawnActor<ANVShootProjectile>(
+        projectilesToShoot.ProjectileClass, SpawnLocation, SpawnRotation, SpawnParameters);
+
     if (Projectile) Projectile->Damage = projectilesToShoot.Damage;
 }

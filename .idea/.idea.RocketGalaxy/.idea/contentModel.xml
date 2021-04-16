@@ -213,6 +213,12 @@
           <e p="MyPlayerController.cpp" t="Include" />
           <e p="MyPlayerController.h" t="Include" />
           <e p="NetworkBasedCode" t="Include">
+            <e p="Bonuses" t="Include">
+              <e p="NWBonus.cpp" t="Include" />
+              <e p="NWBonus.h" t="Include" />
+              <e p="NWBonusLvlUp.cpp" t="Include" />
+              <e p="NWBonusLvlUp.h" t="Include" />
+            </e>
             <e p="NWComponents" t="Include">
               <e p="CreaturesHealthComponent.cpp" t="Include" />
               <e p="CreaturesHealthComponent.h" t="Include" />

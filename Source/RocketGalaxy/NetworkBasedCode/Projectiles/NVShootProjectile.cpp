@@ -12,14 +12,14 @@
 #include "Particles/ParticleSystemComponent.h"
 #include "NetworkBasedCode/NWPawn/NWEnemyPawn.h"
 #include "TimerManager.h"
-
+#include "MyPlayerController.h"
 // Sets default values
 ANVShootProjectile::ANVShootProjectile() :
     ProjectileSpeed(1000.f)
 {
     // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
-    
+
     Collision = CreateDefaultSubobject<USphereComponent>(TEXT("ProjectileCollision"));
     RootComponent = Collision;
     Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
@@ -43,41 +43,54 @@ void ANVShootProjectile::BeginPlay()
         OwnerCollision->IgnoreComponentWhenMoving(Collision, true);
 
         Collision->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+
+        if (GetNetMode() == ENetMode::NM_ListenServer)
+        {
+            auto contr = Cast<AMyPlayerController>(Cast<APawn>(GetOwner())->GetController());
+            if (contr)
+                playerID = contr->GetPlayerID();
+        }
     }
     Collision->OnComponentBeginOverlap.AddDynamic(this, &ANVShootProjectile::OnProjectileOverlap);
 }
 
 
-void ANVShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 BodyIndex,
-    bool Sweep, const FHitResult& Hit)
+void ANVShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp, AActor* OtherActor,
+                                             UPrimitiveComponent* OtherComp, int32 BodyIndex,
+                                             bool Sweep, const FHitResult& Hit)
 {
     APawn* OtherPawn = Cast<APawn>(OtherActor);
     if (!OtherActor || !OtherPawn)
         return; // If no overlapped actor or it is not a pawn
 
-//  if (!GetOwner())
- //       return;
+    //  if (!GetOwner())
+    //       return;
 
     APawn* PawnOwner = Cast<APawn>(GetOwner());
     if (!PawnOwner)
         return;
 
-    if (GetNetMode() == ENetMode::NM_Client && Cast<ANWEnemyPawn>(PawnOwner) && Cast<ANWPlayerPawn>(PawnOwner)) {
+    if (GetNetMode() == ENetMode::NM_Client && Cast<ANWEnemyPawn>(PawnOwner) && Cast<ANWPlayerPawn>(PawnOwner))
+    {
         Destroy();
         return;
     }
 
-    if ((Cast<ANWEnemyPawn>(PawnOwner) && Cast<ANWEnemyPawn>(OtherPawn)) || (Cast<ANWPlayerPawn>(PawnOwner) && Cast<ANWPlayerPawn>(OtherPawn)))
+    if ((Cast<ANWEnemyPawn>(PawnOwner) && Cast<ANWEnemyPawn>(OtherPawn)) || (Cast<ANWPlayerPawn>(PawnOwner) && Cast<
+        ANWPlayerPawn>(OtherPawn)))
         return;
 
     if (GetNetMode() == ENetMode::NM_ListenServer)
     {
         FTimerDelegate tempTimer;
         AController* DamageInstigator = PawnOwner->GetController();
+        auto enemyPawn = Cast<ANWEnemyPawn>(OtherPawn);
+        if (enemyPawn)
+            enemyPawn->SetPlayerID(playerID);
         tempTimer.BindLambda([this, OtherActor, DamageInstigator]()
-            {
-                UGameplayStatics::ApplyDamage(OtherActor, Damage, DamageInstigator, this, UDamageType::StaticClass());
-            });
+        {
+            UGameplayStatics::ApplyDamage(OtherActor, Damage, DamageInstigator, this, UDamageType::StaticClass());
+        });
         FTimerHandle handle;
         GetWorld()->GetTimerManager().SetTimer(handle, tempTimer, 0.2, false, 0.01);
     }
