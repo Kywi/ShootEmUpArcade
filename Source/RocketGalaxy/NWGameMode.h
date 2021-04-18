@@ -31,6 +31,9 @@ public:
     UFUNCTION(BlueprintCallable)
         void TravelToAnotherMap();
 
+    UFUNCTION(BlueprintCallable)
+    int GeneratePLayerID();
+
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Actor to posses")
         TSubclassOf<APawn> ActorToPosses;
 
@@ -42,13 +45,10 @@ public:
 
 protected:
     virtual void BeginPlay() override;
-    virtual APawn* SpawnDefaultPawnFor_Implementation(AController* NewPlayer, AActor* StartSpot) override;
-
 private:
     UFUNCTION()
         void StartSpawnEnemies();
 
     int32 loginedUsers = -1;
-    FTimerHandle RecoverTimer;
     FTimerHandle IncreaseDifficultyTimer;
 };

@@ -19,5 +19,7 @@ class STREAMARCADE_API UNWGameInstance : public UGameInstance
         UNWGameInstance();
 public:
 
+    UPROPERTY(BlueprintReadWrite)
+    TArray<TSubclassOf<ANWPlayerPawn>> selectedSpaceCrafts;
 
 };

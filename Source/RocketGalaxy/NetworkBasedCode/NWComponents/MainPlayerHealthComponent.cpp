@@ -22,7 +22,8 @@ void UMainPlayerHealthComponent::BeginPlay()
 void UMainPlayerHealthComponent::OnOwnerDamaged(AActor* DamagedActor, float Damage, const UDamageType* DamageType,
                                                 AController* Instigator, AActor* DamageCauser)
 {
-    ChangeHealths(Damage);
+    if (GetOwner()->bCanBeDamaged)
+        ChangeHealths(Damage);
 }
 
 

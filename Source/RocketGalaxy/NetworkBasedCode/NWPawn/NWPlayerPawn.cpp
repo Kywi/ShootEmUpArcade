@@ -37,6 +37,7 @@ void ANWPlayerPawn::BeginPlay()
     Super::BeginPlay();
     //  if (HasAuthority())
     //     SetReplicates(true);
+    GetWorld()->GetTimerManager().ClearTimer(rotateAnimTimer);
     PawnMaterial = pawnMesh->GetMaterial(0);
     if (GetNetMode() == ENetMode::NM_ListenServer)
         ChangeEvolutionLvl(true);
@@ -162,7 +163,10 @@ void ANWPlayerPawn::RecoverPawn_Implementation()
     SetActorEnableCollision(true);
 
     if (GetNetMode() == ENetMode::NM_ListenServer)
+    {
+        bCanBeDamaged = true;
         shootComponent->StartShooting();
+    }
     pawnMesh->SetMaterial(0, PawnMaterial);
 
     //  for (UActorComponent* Component : GetComponentsByClass(UParticleSystemComponent::StaticClass()))
@@ -175,6 +179,7 @@ void ANWPlayerPawn::ExplodePawn_Implementation()
 {
     SetActorEnableCollision(false);
 
+    bCanBeDamaged = false;
     shootComponent->StopShooting();
 
     pawnMesh->SetMaterial(0, RecoverMaterial);

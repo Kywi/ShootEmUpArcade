@@ -246,6 +246,8 @@
           <e p="NWGameMode.h" t="Include" />
           <e p="NWGameState.cpp" t="Include" />
           <e p="NWGameState.h" t="Include" />
+          <e p="NWMenuGameMode.cpp" t="Include" />
+          <e p="NWMenuGameMode.h" t="Include" />
           <e p="Pawns" t="Include">
             <e p="EnemyPawn.cpp" t="Include" />
             <e p="EnemyPawn.h" t="Include" />

@@ -43,7 +43,7 @@ public:
     UFUNCTION(Server, Reliable)
     void MoveOnline(FVector Location);
 
-    UFUNCTION(Server, Reliable)
+    UFUNCTION(Server, Unreliable, BlueprintCallable)
     void RotateMeshOnline(FRotator Rotation);
 
     UFUNCTION(NetMulticast, Reliable)

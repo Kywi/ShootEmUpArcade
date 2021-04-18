@@ -20,6 +20,11 @@ void ANWGameMode::TravelToAnotherMap()
     GetWorld()->ServerTravel("M_MainMenu", true);
 }
 
+int ANWGameMode::GeneratePLayerID()
+{
+    return ++loginedUsers;
+}
+
 void ANWGameMode::IncreaseDifficulty()
 {
     EnemySpawnController->ChangeStageTimeMultiplier = FMath::Max(EnemySpawnController->ChangeStageTimeMultiplier * 0.95,
@@ -31,16 +36,7 @@ void ANWGameMode::BeginPlay()
 {
 }
 
-APawn* ANWGameMode::SpawnDefaultPawnFor_Implementation(AController* NewPlayer, AActor* StartSpot)
-{
-    const auto actor = GetWorld()->SpawnActor<APawn>(ActorToPosses, StartSpot->GetTransform());
-    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red,
-                                     FString::Printf(TEXT("Connected users , %d"), ++loginedUsers));
-    if (loginedUsers + 1 == 2)
-        playerConnnected.Broadcast();
-    Cast<AMyPlayerController>(NewPlayer)->SetPlayerID(loginedUsers);
-    return actor;
-}
+
 
 void ANWGameMode::StartSpawnEnemies()
 {
