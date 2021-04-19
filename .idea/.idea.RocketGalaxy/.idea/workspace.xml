@@ -61,57 +61,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f259940-fdc6-4e47-aeae-525d25c8a5ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusSurface.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Meshes/StarSphere/SM_Planet.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Meshes/StarSphere/SM_Planet.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_flare_flash_trs.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_lightning02_4x4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_lightningDust01_4x4_nonD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_polarG_nonD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_polar_two.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_shockwave12_4x4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_smoke01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/MI_ky_smoke01b.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/M_ky_empty.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/M_ky_flare_flash.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/M_ky_polar.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/M_ky_smoke01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/M_ky_subUV01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/M_ky_subUV_dynRGB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Materials/Mfunction/MF_ky_VectorToRadialValue.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Meshes/SM_ky_quad_centerRot.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Particles/P_ky_ThunderBallHit.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Particles/P_ky_hit2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_bg.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_bg_LC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_decoLines.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_decoLinesB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_flare_a.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_lightning02_4x4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_lightningDust01_4x4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_noise6.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_shockwave12_4x4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FXVarietyPack/Textures/T_ky_smoke1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Gameplay.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameState.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWPlayerPawn.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWEnemyPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWEnemyPawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_Host.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_Host.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWPlayerColossus.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWPlayerColossus.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_InGameUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_InGameUI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RocketGalaxy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RocketGalaxy.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RocketGalaxy.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/RocketGalaxy.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameInstance.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/MainPlayerHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/MainPlayerHealthComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,9 +111,9 @@
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameInstance.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/MainPlayerHealthComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" />
-        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.h" />
         <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" />
+        <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" />
       </list>
     </option>
   </component>
@@ -30809,7 +30768,10 @@
       <workItem from="1618666382407" duration="149000" />
       <workItem from="1618672111306" duration="2647000" />
       <workItem from="1618677456481" duration="1933000" />
-      <workItem from="1618733841992" duration="12673000" />
+      <workItem from="1618733841992" duration="12674000" />
+      <workItem from="1618781064998" duration="670000" />
+      <workItem from="1618811234472" duration="1232000" />
+      <workItem from="1618831115451" duration="5597000" />
     </task>
     <servers />
   </component>
@@ -30834,29 +30796,29 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1618763735435">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1618861221047">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618744477808" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618763735435" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618585064594" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1618763735435">
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1618861221047">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618744477808" />
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618763735435" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618585064594" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1618763735435">
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1618861221047">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618744477808" />
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618763735435" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618585064594" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1618763735435">
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1618861221047">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618744477808" />
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618763735435" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618585064594" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1618503276145">
       <screen x="0" y="0" width="1920" height="1040" />

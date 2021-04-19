@@ -15,9 +15,9 @@ ANWGameMode::ANWGameMode()
     playerConnnected.AddDynamic(this, &ANWGameMode::StartSpawnEnemies);
 }
 
-void ANWGameMode::TravelToAnotherMap()
+void ANWGameMode::TravelToAnotherMap(FString mapName)
 {
-    GetWorld()->ServerTravel("M_MainMenu", true);
+    GetWorld()->ServerTravel(mapName, true);
 }
 
 int ANWGameMode::GeneratePLayerID()
@@ -35,7 +35,6 @@ void ANWGameMode::IncreaseDifficulty()
 void ANWGameMode::BeginPlay()
 {
 }
-
 
 
 void ANWGameMode::StartSpawnEnemies()

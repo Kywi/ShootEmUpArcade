@@ -70,10 +70,10 @@ void ANWPlayerPawn::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
     if (IsValid(InputComponent))
     {
         RotationAnimation(NewLocation);
+        SetActorLocation(NewLocation);
         MoveOnline(NewLocation);
     }
 
-    SetActorLocation(NewLocation);
     touchLocation = FVector2D(Location.X, Location.Y);
 }
 
@@ -206,6 +206,7 @@ void ANWPlayerPawn::OnHealthChnaged(int byValue)
     gameState->playersHealth[Cast<AMyPlayerController>(GetController())->GetPlayerID()] = healtComponent->GetHealths();
     gameState->OnRep_playersHealth();
 
+    ChangeEvolutionLvl(false);
     ExplodePawn();
     GetWorld()->GetTimerManager().SetTimer(recoverTimer, this, &ANWPlayerPawn::RecoverPawn, pawnRecoverTime, false);
 }

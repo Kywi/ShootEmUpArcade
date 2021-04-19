@@ -29,7 +29,7 @@ public:
         UNWEnemiesSpawnController* EnemySpawnController;
 
     UFUNCTION(BlueprintCallable)
-        void TravelToAnotherMap();
+        void TravelToAnotherMap(FString mapName);
 
     UFUNCTION(BlueprintCallable)
     int GeneratePLayerID();
