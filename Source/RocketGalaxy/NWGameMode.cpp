@@ -34,6 +34,7 @@ void ANWGameMode::IncreaseDifficulty()
 
 void ANWGameMode::BeginPlay()
 {
+    Super::BeginPlay();
 }
 
 

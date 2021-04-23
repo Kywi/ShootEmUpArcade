@@ -21,7 +21,7 @@ public:
     UPROPERTY(Replicated, BlueprintReadWrite,ReplicatedUsing = OnRep_gamePoints)
     TArray<float> gamePoints;
 
-    UPROPERTY(Replicated, BlueprintReadWrite,ReplicatedUsing = OnRep_playersHealth)
+    UPROPERTY(Replicated,BlueprintReadWrite,ReplicatedUsing = OnRep_playersHealth)
     TArray<float> playersHealth;
     
     UFUNCTION(BlueprintCallable)
