@@ -12,6 +12,7 @@
 
 #include "MyPlayerController.h"
 #include "NWGameState.h"
+#include "UnrealNetwork.h"
 
 #pragma region EngineEvents
 
@@ -50,7 +51,9 @@ void ANWPlayerPawn::PossessedBy(AController* NewController)
     playerController->possessedPawn = this;
     healtComponent->HealthsEnded.AddDynamic(this, &ANWPlayerPawn::DestroyPlayer);
     healtComponent->HealthsChanged.AddDynamic(this, &ANWPlayerPawn::OnHealthChnaged);
+    InitTouchLocation();
 }
+
 
 #pragma endregion overriding engine events
 
@@ -58,6 +61,11 @@ void ANWPlayerPawn::PossessedBy(AController* NewController)
 
 void ANWPlayerPawn::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
 {
+    if (doOnce)
+    {
+        doOnce = false;
+        return;
+    }
     GetWorld()->GetTimerManager().ClearTimer(rotateAnimTimer);
     FVector2D TouchDeltaMove = FVector2D(touchLocation.X - Location.X, touchLocation.Y - Location.Y);
 
@@ -89,9 +97,14 @@ void ANWPlayerPawn::OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Locat
                                            0);
 }
 
+void ANWPlayerPawn::InitTouchLocation_Implementation()
+{
+    touchLocation = FVector2D{GetActorLocation().X, GetActorLocation().Y};
+}
+
 void ANWPlayerPawn::ChangeEvolutionLvl_Implementation(bool up)
 {
-    int NewLevel = FMath::Clamp(currentShootLevel + (up ? 1 : -1), 0, ShootEvolution.Num() - 1);
+    int NewLevel = FMath::Clamp(currentShootLevel + (up ? 1 : -1), 1, ShootEvolution.Num() - 1);
 
     UE_LOG(LogTemp, Log, TEXT("NewLevel: %i, CurrentLevel: %i"), NewLevel, currentShootLevel);
 

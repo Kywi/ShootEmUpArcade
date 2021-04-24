@@ -55,6 +55,9 @@ public:
     UFUNCTION(NetMulticast, Reliable)
     void ChangeEvolutionLvl(bool up);
 
+    UFUNCTION(Client, Reliable)
+    void InitTouchLocation();
+    
     UFUNCTION(BlueprintPure, BlueprintNativeEvent, Category = "Healths")
     bool CanBeDamaged();
 
@@ -121,8 +124,9 @@ private:
     UFUNCTION()
     void OnHealthChnaged(int byValue);
 
-    int currentShootLevel = 0; 
     FVector2D touchLocation;
+    bool doOnce = true;
+    int currentShootLevel = 0; 
     float fromInterp;
     double currentRotation = 0;
     UMaterialInterface* PawnMaterial;
