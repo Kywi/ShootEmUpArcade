@@ -30,9 +30,11 @@ public:
     UFUNCTION(BlueprintCallable)
         int GetPlayerID();
     
-
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
         ANWPlayerPawn* possessedPawn;
+
+    UPROPERTY(BlueprintReadWrite)
+    bool canReceiveInputs = false;
 
 protected:
     virtual void OnPossess(APawn* InPawn) override;

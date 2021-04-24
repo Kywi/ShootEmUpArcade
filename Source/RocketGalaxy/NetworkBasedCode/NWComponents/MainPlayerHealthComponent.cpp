@@ -16,6 +16,7 @@ void UMainPlayerHealthComponent::BeginPlay()
 {
     Super::BeginPlay();
     bReplicates = true;
+    
     GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UMainPlayerHealthComponent::OnOwnerDamaged);
 }
 

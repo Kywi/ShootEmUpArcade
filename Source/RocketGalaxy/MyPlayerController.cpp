@@ -12,23 +12,28 @@
 
 void AMyPlayerController::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
 {
-    if (possessedPawn)
+    if (possessedPawn && canReceiveInputs)
+    {
         possessedPawn->OnTouchMove(FingerIndex, Location);
+    }
     else
         possessedPawn = Cast<ANWPlayerPawn>(GetPawn());
 }
 
+
 void AMyPlayerController::OnTouchPress(ETouchIndex::Type FingerIndex, FVector Location)
 {
     if (possessedPawn)
+    {
         possessedPawn->OnTouchPress(FingerIndex, Location);
+    }
     else
         possessedPawn = Cast<ANWPlayerPawn>(GetPawn());
 }
 
 void AMyPlayerController::OnTouchReleased(ETouchIndex::Type FingerIndex, FVector Location)
 {
-    if (possessedPawn)
+    if (possessedPawn && canReceiveInputs)
         possessedPawn->OnTouchReleased(FingerIndex, Location);
     else
         possessedPawn = Cast<ANWPlayerPawn>(GetPawn());
