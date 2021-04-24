@@ -61,28 +61,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f259940-fdc6-4e47-aeae-525d25c8a5ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetAtmosphere.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetEarthSurface.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/M_PlanetSurfaceMars.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetEarthClouds.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetEarthLights.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetEarthSurface.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyNWGameInstance.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusAtmosphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusAtmosphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/MI_PlanetVenusSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/M_PlanetAtmosphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/M_PlanetAtmosphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/M_PlanetSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/M_PlanetSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/M_StarSphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/StarSphere/M_StarSphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetVenusClouds.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetVenusClouds.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetVenusLights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetVenusLights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetVenusSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Textures/StarSphere/T_PlanetVenusSurface.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MenuPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MenuPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameState.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameState.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWMenuGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWMenuGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWPlayerColossus.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWPlayerPelican.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_Connect.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_ConnectedPlayer.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_FindedServer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_FindedServer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_Host.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_InGameUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_InGameUI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_MultiplayerChooseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_MultiplayerChooseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_NWChooseMainSpaceSheep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MultiplayerTR/W_NWChooseMainSpaceSheep.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" beforeDir="false" afterPath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Blueprints/BP_Planet.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Blueprints/BP_StarSphere.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/MF_StarSphereDecal.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/MI_PlanetAtmosphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarSphere/Materials/MI_PlanetAtmosphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/MI_PlanetEarthSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarSphere/Materials/MI_PlanetEarthSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/MI_StarSphere.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/MI_StarSpherePlanet.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/M_PlanetAtmosphere.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarSphere/Materials/M_PlanetAtmosphere.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/M_PlanetSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarSphere/Materials/M_PlanetSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Materials/M_StarSphere.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Meshes/SM_Planet.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Meshes/SM_StarSphere.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_Nebulas.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_PlanetEarthClouds.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarSphere/Textures/T_PlanetEarthClouds.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_PlanetEarthLights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarSphere/Textures/T_PlanetEarthLights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_PlanetEarthSurface.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarSphere/Textures/T_PlanetEarthSurface.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_Saturn.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_StarsBig.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_StarsPoints.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarSphere/Textures/T_Sun.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30788,7 +30805,7 @@
       <workItem from="1619117094867" duration="10213000" />
       <workItem from="1619173472155" duration="1445000" />
       <workItem from="1619180058840" duration="4188000" />
-      <workItem from="1619268931597" duration="4670000" />
+      <workItem from="1619268931597" duration="6717000" />
     </task>
     <servers />
   </component>
@@ -30813,28 +30830,28 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1619275774272">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1619278269901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619275774272" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619278269901" />
     <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619190211843" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1619275774272">
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1619278269900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619275774272" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619278269900" />
     <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619190211843" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1619275774271">
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1619278269900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619275774271" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619278269900" />
     <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619190211842" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1619275774272">
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1619278269901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619275774272" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619278269901" />
     <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618861221047" />
     <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619190211843" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1618503276145">
