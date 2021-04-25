@@ -65,13 +65,7 @@ void ANWPlayerPawn::OnTouchMove(ETouchIndex::Type FingerIndex, FVector Location)
     GetWorld()->GetTimerManager().ClearTimer(rotateAnimTimer);
     FVector2D TouchDeltaMove = FVector2D(touchLocation.X - Location.X, touchLocation.Y - Location.Y);
 
-    UE_LOG(LogTemp, Log, TEXT("touchLocation: X %f, Y %f "), touchLocation.X, touchLocation.Y);
-    UE_LOG(LogTemp, Log, TEXT("Location: X %f, Y %f "), Location.X, Location.Y);
-
-
     TouchDeltaMove = TouchDeltaMove * TouchMoveSensivity;
-
-    UE_LOG(LogTemp, Log, TEXT("TouchDeltaMove: X %f, Y %f "), TouchDeltaMove.X, TouchDeltaMove.Y);
 
     FVector NewLocation = GetActorLocation();
     NewLocation.X = FMath::Clamp(NewLocation.X + TouchDeltaMove.Y, -MoveLimit.Y, MoveLimit.Y);

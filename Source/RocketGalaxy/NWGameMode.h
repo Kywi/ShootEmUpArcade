@@ -45,9 +45,11 @@ public:
 
 protected:
     virtual void BeginPlay() override;
+    
+    UFUNCTION(BlueprintCallable)
+    void StartSpawnEnemies();
+    
 private:
-    UFUNCTION()
-        void StartSpawnEnemies();
 
     int32 loginedUsers = -1;
     FTimerHandle IncreaseDifficultyTimer;
