@@ -69,6 +69,9 @@ public:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Bonuses")
     TArray<FNWBonusChance> possibleBonuses;
 
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Audio")
+    USoundBase* DestroySound;
+    
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Pawn")
     int DestroyPoints;
 

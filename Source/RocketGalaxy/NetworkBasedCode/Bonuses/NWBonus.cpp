@@ -53,5 +53,7 @@ void ANWBonus::BonusCollected_Implementation(ANWPlayerPawn* ActorThatCollectBonu
 {
     if (CollectParticle)
         UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), CollectParticle, GetActorTransform(), true);
+    if (CollectSound)
+        UGameplayStatics::SpawnSound2D(GetWorld(), CollectSound);
     Destroy();
 }

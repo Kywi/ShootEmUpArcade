@@ -109,7 +109,8 @@ void ANWEnemyPawn::DestroyPawn_Implementation()
         transform.SetScale3D(ScaleDestroyParticle);
         UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, transform, true);
     }
-    //UGameplayStatics::SpawnSound2D(GetWorld(), DestroySound);
+    if (DestroySound)
+        UGameplayStatics::SpawnSound2D(GetWorld(), DestroySound);
 
     Destroy();
 }

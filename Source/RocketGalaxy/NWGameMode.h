@@ -19,36 +19,33 @@ class STREAMARCADE_API ANWGameMode : public AGameMode
 {
     GENERATED_BODY()
 
-        ANWGameMode();
+    ANWGameMode();
+    
 public:
-
     UPROPERTY(BlueprintCallable, BlueprintAssignable)
-        FPlayerConnnected playerConnnected;
+    FPlayerConnnected playerConnnected;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Enemies")
-        UNWEnemiesSpawnController* EnemySpawnController;
+    UNWEnemiesSpawnController* EnemySpawnController;
 
     UFUNCTION(BlueprintCallable)
-        void TravelToAnotherMap(FString mapName);
+    void TravelToAnotherMap(FString mapName);
 
     UFUNCTION(BlueprintCallable)
     int GeneratePLayerID();
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Actor to posses")
-        TSubclassOf<APawn> ActorToPosses;
-
     UFUNCTION(BlueprintCallable, Category = "Game")
-        void IncreaseDifficulty();
+    void IncreaseDifficulty();
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
-        float IncreaseDifficultyPeriod;
+    float IncreaseDifficultyPeriod;
 
 protected:
     virtual void BeginPlay() override;
-    
+
     UFUNCTION(BlueprintCallable)
     void StartSpawnEnemies();
-    
+
 private:
 
     int32 loginedUsers = -1;

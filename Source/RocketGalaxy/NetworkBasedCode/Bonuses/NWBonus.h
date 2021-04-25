@@ -22,6 +22,8 @@ public:
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
     UParticleSystem* CollectParticle;
 
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Audio")
+    USoundBase* CollectSound;
 protected:
     virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
     virtual void Tick(float DeltaTime) override;
