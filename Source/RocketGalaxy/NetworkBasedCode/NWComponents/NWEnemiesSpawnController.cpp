@@ -42,8 +42,11 @@ void UNWEnemiesSpawnController::StartSpawnStage()
     SpawnEnemy();
 
     const float ChangeStageTime = Random.RandRange(StageMinDelay, StageMaxDelay) * ChangeStageTimeMultiplier;
+    UE_LOG(LogTemp, Log, TEXT("ChangeStageTimeMultiplier : %f"), ChangeStageTimeMultiplier);
+    UE_LOG(LogTemp, Log, TEXT("ChangeStageTime : %f"), ChangeStageTime);
+    
     GetWorld()->GetTimerManager().SetTimer(ChangeStageTimer, this, &UNWEnemiesSpawnController::StartSpawnStage,
-        ChangeStageTime, false);
+        ChangeStageTime, false,ChangeStageTime);
 }
 
 

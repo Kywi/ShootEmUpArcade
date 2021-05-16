@@ -41,6 +41,9 @@
     <projectFile>Intermediate/ProjectFiles/BootstrapPackagedGame.vcxproj</projectFile>
     <projectFile>Intermediate/ProjectFiles/UE4.vcxproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -61,134 +64,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f259940-fdc6-4e47-aeae-525d25c8a5ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_flare_flash_trs.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_lightning02_4x4.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_lightningDust01_4x4_nonD.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_polarG_nonD.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_polar_two.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_shockwave12_4x4.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_smoke01.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_smoke01b.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_empty.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_flare_flash.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_polar.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_smoke01.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_subUV01.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_subUV_dynRGB.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/Mfunction/MF_ky_VectorToRadialValue.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Meshes/FXVarietyPack/SM_ky_quad_centerRot.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Particles/P_ky_ThunderBallHit.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Particles/P_ky_hit2.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_bg.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_bg_LC.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_decoLines.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_decoLinesB.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_flare_a.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_lightning02_4x4.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_lightningDust01_4x4.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_noise6.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_shockwave12_4x4.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_smoke1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/BP_MenuPlayerController.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/BP_MyPlayerController.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/BP_NWGameMode.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/BP_NWGameState.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/BP_NWMenuGameMode.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Bonuses/BP_MyNWBonusLvlUp.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Other/BP_PlayerStartPoint.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn_2.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWBasePlayerPawn.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerColossusN.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerPelicanN.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerUtopiaN.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Projectiles/Enemy/BP_NVShootProjectile_Enemy1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Projectiles/Enemy/BP_NVShootProjectile_Enemy2.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Projectiles/Player/BP_NVShootProjectile.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/DerpThruster/P_RocketFlame.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/GameOverScreen/W_NWGameOver.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/LoadingScreen/W_LoadingScreen.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/LoadingScreen/W_TapToPlay.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_NWChooseMainSpaceSheep.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/NWInGameUI/W_Health.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/NWInGameUI/W_InGameUI.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/PauseMenu/W_NWPauseMenu.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/ServerFind/W_FindedServer.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/ServerFind/W_MultiplayerChooseMenu.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/ServerFind/W_RoomBrouser.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/SettingsMenu/W_NWSettings.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_flare_flash_trs.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_flare_flash_trs.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_lightning02_4x4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_lightning02_4x4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_lightningDust01_4x4_nonD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_lightningDust01_4x4_nonD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_polarG_nonD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_polarG_nonD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_polar_two.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_polar_two.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_shockwave12_4x4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_shockwave12_4x4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_smoke01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_smoke01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_smoke01b.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/MI_ky_smoke01b.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_empty.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_empty.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_flare_flash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_flare_flash.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_polar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_polar.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_smoke01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_smoke01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_subUV01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_subUV01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_subUV_dynRGB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/M_ky_subUV_dynRGB.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/Mfunction/MF_ky_VectorToRadialValue.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Materials/Mfunction/MF_ky_VectorToRadialValue.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Meshes/SM_ky_quad_centerRot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Meshes/SM_ky_quad_centerRot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Particles/P_ky_ThunderBallHit.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Particles/P_ky_ThunderBallHit.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Particles/P_ky_hit2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Particles/P_ky_hit2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_bg.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_bg.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_bg_LC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_bg_LC.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_decoLines.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_decoLines.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_decoLinesB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_decoLinesB.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_flare_a.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_flare_a.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_lightning02_4x4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_lightning02_4x4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_lightningDust01_4x4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_lightningDust01_4x4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_noise6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_noise6.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_shockwave12_4x4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_shockwave12_4x4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_smoke1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/FXVarietyPack/Textures/T_ky_smoke1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/M_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Materials/M_Shield.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ArcadeGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Projectiles/Player/BP_ShootProjectile_Pelican.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Projectiles/Player/BP_ShootProjectile_Pelican.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_Multiplayer.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MultiplayerChooseSpaceCraft_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MenuPlayerController.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWBonusLvlUp.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyNWGameMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_MyPlayerController.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NVShootProjectile.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWBasePlayerPawn.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWEnemyPawn.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWGameState.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWMenuGameMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWPLayerColossusN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWPLayerPelicanN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_NWPLayerUtopiaN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/BP_PlayerStartPoint.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_FindedServer.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_Health.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_InGameUI.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_LoadingScreen.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_MultiplayerChooseMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_NWChooseMainSpaceSheep.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_NWGameOver.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_NWPauseMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_NWSettings.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_RoomBrouser.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MultiplayerTR/W_TapToPlay.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/MainMenu/W_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Audio/A_AlienExplossion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Audio/A_AlienExplossion.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_flare_flash_trs.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_lightning02_4x4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_lightningDust01_4x4_nonD.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_polarG_nonD.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_polar_two.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_shockwave12_4x4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_smoke01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/MI_ky_smoke01b.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_empty.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_flare_flash.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_polar.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_smoke01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_subUV01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/M_ky_subUV_dynRGB.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Materials/FXVarietyPack/Mfunction/MF_ky_VectorToRadialValue.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Meshes/FXVarietyPack/SM_ky_quad_centerRot.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Particles/P_ky_ThunderBallHit.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Particles/P_ky_hit2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_bg.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_bg_LC.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_decoLines.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_decoLinesB.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_flare_a.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_lightning02_4x4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_lightningDust01_4x4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_noise6.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_shockwave12_4x4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Textures/FXVarietyPack/T_ky_smoke1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_DestroyedSheep_2021-01-31-14-33-07.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GameInstace.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/BP_NWGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/BP_NWGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerColossusN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerColossusN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerPelicanN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerPelicanN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerUtopiaN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerUtopiaN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Projectiles/Player/BP_ShootProjectile_Fury.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/DerpThruster/M_DerpThruster_Master.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/DerpThruster/P_RocketFlame.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/DerpThruster/SM_thrusterDerp01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/DerpThruster/Thruster_Derp01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/DerpThruster/Thruster_Derp02.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/BP_FunctionalTests.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FTEST_Gameplay.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tests/FTEST_Gameplay.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/Functional.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_CurectGameInstance.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_CurectGameMode.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_CurrectSpawnUtopia.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_GenerateShootInfosColosus.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_GenerateShootInfosPelican.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_GenerateShootInfosUtopia.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_GetGameInstanceAndCast.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tests/FunctionalTest_Player.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/PauseMenu/W_MainMenu.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" beforeDir="false" afterPath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketGalaxy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RocketGalaxy.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusLvlUp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusLvlUp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusLvlUp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusLvlUp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NWEnemiesSpawnController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NWEnemiesSpawnController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NWEnemiesSpawnController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NWEnemiesSpawnController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +151,12 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.h" />
       <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWPawn/NWPlayerPawn.cpp" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWComponents/NWEnemiesSpawnController.cpp" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NWGameMode.cpp" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusLvlUp.cpp" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusLvlUp.h" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/MyNWBonusPoints.h" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/MyNWBonusPoints.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qtB4dG4OIuiDW62qU3ZqIs9Mqz" />
@@ -30879,7 +30826,8 @@
       <workItem from="1621091763567" duration="2777000" />
       <workItem from="1621100970211" duration="291000" />
       <workItem from="1621102486549" duration="707000" />
-      <workItem from="1621162021982" duration="10615000" />
+      <workItem from="1621162021982" duration="11410000" />
+      <workItem from="1621184677169" duration="7601000" />
     </task>
     <servers />
   </component>

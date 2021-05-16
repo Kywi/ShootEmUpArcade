@@ -27,7 +27,7 @@ int ANWGameMode::GeneratePLayerID()
 
 void ANWGameMode::IncreaseDifficulty()
 {
-    EnemySpawnController->ChangeStageTimeMultiplier = FMath::Max(EnemySpawnController->ChangeStageTimeMultiplier * 0.95,
+    EnemySpawnController->ChangeStageTimeMultiplier = FMath::Max(EnemySpawnController->ChangeStageTimeMultiplier * 0.96,
                                                                  0.4);
     UE_LOG(LogTemp, Log, TEXT("Difficulty increased: %f"), EnemySpawnController->ChangeStageTimeMultiplier);
 }

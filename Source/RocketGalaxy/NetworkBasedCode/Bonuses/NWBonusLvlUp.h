@@ -13,10 +13,6 @@ class STREAMARCADE_API ANWBonusLvlUp : public ANWBonus
 {
     GENERATED_BODY()
 
-public:
-    // Sets default values for this actor's properties
-    ANWBonusLvlUp();
-
 protected:
     // Called when the game starts or when spawned
     virtual void BonusCollected_Implementation(ANWPlayerPawn* ActorThatCollectBonus) override;
