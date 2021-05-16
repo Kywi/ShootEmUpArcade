@@ -21,7 +21,7 @@ void UNWEnemiesSpawnController::Deactivate()
     GetWorld()->GetTimerManager().ClearTimer(EnemySpawnTimer);
 }
 
-void UNWEnemiesSpawnController::SpawnEnemy_Implementation()
+void UNWEnemiesSpawnController::SpawnEnemy()
 {
     const FActorSpawnParameters SpawnParameters;
     GetWorld()->SpawnActor<ANWEnemyPawn>(SpawnStage.EnemyClass, SpawnStage.SpawnTransform, SpawnParameters);

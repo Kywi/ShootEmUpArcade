@@ -55,7 +55,7 @@ public:
 protected:
     virtual void BeginPlay() override;
     virtual void Deactivate() override;
-    UFUNCTION(Server, Reliable)
+    //UFUNCTION(Server, Reliable)
         void SpawnEnemy();
 
     FNWEnemySpawnInfo SpawnStage;
