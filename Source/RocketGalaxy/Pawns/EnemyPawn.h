@@ -22,19 +22,6 @@ public:
 	// Sets default values for this pawn's properties
 	AEnemyPawn();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-	void SpawnBonuses();
-
-	UFUNCTION()
-	void KillPawn();
-
-	UFUNCTION()
-	void OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor);
-	
-public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -65,6 +52,21 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
 	UParticleSystem* DestroyParticle;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Visual")
+	FVector ScaleDestroyParticle;
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Audio")
 	USoundBase* DestroySound;
+	
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+	void SpawnBonuses();
+
+	UFUNCTION()
+	void KillPawn();
+
+	UFUNCTION()
+	void OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor);
 };
