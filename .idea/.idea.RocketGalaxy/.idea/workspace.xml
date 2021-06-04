@@ -64,13 +64,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f259940-fdc6-4e47-aeae-525d25c8a5ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Pawns/Enemies/BP_BaseEnemy3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" beforeDir="false" afterPath="$PROJECT_DIR$/DerivedDataCache/Boot.ddc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn_2.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30773,6 +30768,7 @@
       <workItem from="1621184677169" duration="7601000" />
       <workItem from="1621451032969" duration="528000" />
       <workItem from="1621451766662" duration="755000" />
+      <workItem from="1622209823850" duration="725000" />
     </task>
     <servers />
   </component>
