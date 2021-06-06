@@ -64,8 +64,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f259940-fdc6-4e47-aeae-525d25c8a5ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketGalaxy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Bonuses/BP_NWBonusPoints_10.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Bonuses/BP_NWBonusPoints_10.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Bonuses/BP_NWBonusPoints_30.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Bonuses/BP_NWBonusPoints_30.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Enemies/BP_NWEnemyPawn_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWBasePlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWBasePlayerPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerColossusN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerColossusN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerPelicanN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerPelicanN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerUtopiaN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Multiplayer/Pawns/Player/BP_NWPLayerUtopiaN.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/M_MainMenu_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/NWInGameUI/W_Health.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/NWInGameUI/W_Health.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/NWInGameUI/W_InGameUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/NWInGameUI/W_InGameUI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketGalaxy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RocketGalaxy.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonus.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonus.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +107,11 @@
       <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/MyNWBonusPoints.cpp" />
       <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.h" />
       <option value="$PROJECT_DIR$/Source/RocketGalaxy/Pawns/EnemyPawn.cpp" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonus.cpp" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusShield.h" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWActors/NWShield.cpp" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/NWActors/NWShield.h" />
+      <option value="$PROJECT_DIR$/Source/RocketGalaxy/NetworkBasedCode/Bonuses/NWBonusShield.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qtB4dG4OIuiDW62qU3ZqIs9Mqz" />
@@ -30769,6 +30786,7 @@
       <workItem from="1621451032969" duration="528000" />
       <workItem from="1621451766662" duration="755000" />
       <workItem from="1622209823850" duration="725000" />
+      <workItem from="1622984693850" duration="8530000" />
     </task>
     <servers />
   </component>

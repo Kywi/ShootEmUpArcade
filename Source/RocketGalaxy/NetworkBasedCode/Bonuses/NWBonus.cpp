@@ -36,7 +36,7 @@ void ANWBonus::NotifyActorBeginOverlap(AActor* OtherActor)
     if (!Cast<ANWPlayerPawn>(OtherActor)) return;
 
     UE_LOG(LogTemp, Log, TEXT("Bonus CHAR overlap"));
-    auto actorColBonus = Cast<ANWPlayerPawn>(OtherActor);
+    const auto actorColBonus = Cast<ANWPlayerPawn>(OtherActor);
     BonusCollected(actorColBonus);
 }
 
