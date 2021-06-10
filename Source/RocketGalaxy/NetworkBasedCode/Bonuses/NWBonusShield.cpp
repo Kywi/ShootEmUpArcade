@@ -6,9 +6,10 @@
 
 void ANWBonusShield::BonusCollected_Implementation(ANWPlayerPawn* ActorThatCollectBonus)
 {
+	if (!ActorThatCollectBonus->bCanBeDamaged) return;
+
 	if (GetNetMode() == ENetMode::NM_ListenServer)
 	{
-		if (!ActorThatCollectBonus->bCanBeDamaged) return;
 
 		FActorSpawnParameters SpawnParams;
 		SpawnParams.Owner = ActorThatCollectBonus;

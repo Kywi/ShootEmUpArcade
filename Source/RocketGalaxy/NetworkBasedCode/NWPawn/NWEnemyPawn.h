@@ -42,7 +42,7 @@ public:
     UFUNCTION(NetMulticast, Reliable)
     void DestroyPawn();
 
-    UFUNCTION(NetMulticast, Reliable)
+    UFUNCTION(Server, Reliable)
     void SpawnBonuses(TSubclassOf<ANWBonus> BonusClass);
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
@@ -86,7 +86,7 @@ protected:
     void KillPawn(int TplayerID);
 
     UFUNCTION()
-    void OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor);
+    void OnEnemyOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
 
     int playerID;
 };

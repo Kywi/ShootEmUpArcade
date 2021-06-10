@@ -76,8 +76,7 @@ void ANVShootProjectile::OnProjectileOverlap(UPrimitiveComponent* OpelappedComp,
         return;
     }
 
-    if ((Cast<ANWEnemyPawn>(PawnOwner) && Cast<ANWEnemyPawn>(OtherPawn)) || (Cast<ANWPlayerPawn>(PawnOwner) && Cast<
-        ANWPlayerPawn>(OtherPawn)))
+    if ((Cast<ANWEnemyPawn>(PawnOwner) && Cast<ANWEnemyPawn>(OtherPawn)) || (Cast<ANWPlayerPawn>(PawnOwner) && Cast<ANWPlayerPawn>(OtherPawn)))
         return;
 
     if (GetNetMode() == ENetMode::NM_ListenServer)

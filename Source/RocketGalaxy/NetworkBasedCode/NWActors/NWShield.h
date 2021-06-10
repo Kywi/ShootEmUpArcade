@@ -15,7 +15,7 @@ class STREAMARCADE_API ANWShield : public AActor
 	public:
 	ANWShield();
 
-	UFUNCTION(BlueprintCallable,Server, Reliable,Category = "Shield")
+	UFUNCTION(BlueprintCallable, Server, Reliable,Category = "Shield")
 	void ActivateShield(ANWPlayerPawn* PlayerPawn);
 
 	UFUNCTION(BlueprintCallable, Category = "Shield")

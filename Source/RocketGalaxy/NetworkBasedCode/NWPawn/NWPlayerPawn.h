@@ -89,7 +89,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
 	TArray<FNWShootInfoLevel> ShootEvolution;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Controls")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")
 	float TouchMoveSensivity;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controls")

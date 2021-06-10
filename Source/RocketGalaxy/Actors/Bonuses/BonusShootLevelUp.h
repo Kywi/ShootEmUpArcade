@@ -15,6 +15,5 @@ class STREAMARCADE_API ABonusShootLevelUp : public ABonus
 	GENERATED_BODY()
 	
 protected:
-
-	virtual void BonusCollected_Implementation() override;	
+	 virtual void BonusCollected_Implementation() override;	
 };

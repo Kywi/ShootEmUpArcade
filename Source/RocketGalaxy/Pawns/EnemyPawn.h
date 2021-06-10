@@ -68,5 +68,6 @@ protected:
 	void KillPawn();
 
 	UFUNCTION()
-	void OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor);
+	void OnEnemyOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
+	
 };

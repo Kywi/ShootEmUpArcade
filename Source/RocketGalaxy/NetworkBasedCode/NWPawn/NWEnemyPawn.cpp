@@ -5,6 +5,7 @@
 #include "NWGameMode.h"
 #include "NWGameState.h"
 #include "NWPlayerPawn.h"
+#include "Engine/Engine.h"
 
 ANWEnemyPawn::ANWEnemyPawn()
 {
@@ -39,8 +40,9 @@ int ANWEnemyPawn::GetPlayerID()
 void ANWEnemyPawn::BeginPlay()
 {
     Super::BeginPlay();
-
-    OnActorBeginOverlap.AddDynamic(this, &ANWEnemyPawn::OnEnemyOverlap);
+    
+	pawnCollision->OnComponentBeginOverlap.AddDynamic(this, &ANWEnemyPawn::OnEnemyOverlap);
+   // OnActorBeginOverlap.AddDynamic(this, &ANWEnemyPawn::OnEnemyOverlap);
     healthComponent->OnHealthEnded.AddDynamic(this, &ANWEnemyPawn::KillPawn);
 }
 
@@ -75,7 +77,7 @@ void ANWEnemyPawn::KillPawn(int TplayerID)
     }
 }
 
-void ANWEnemyPawn::OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor)
+void ANWEnemyPawn::OnEnemyOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
     // UE_LOG(LogTemp, Error, TEXT("Overlap cast result: %p"), OtherActor->GetClass());
     if (!Cast<ANWPlayerPawn>(OtherActor))
@@ -114,3 +116,4 @@ void ANWEnemyPawn::DestroyPawn_Implementation()
 
     Destroy();
 }
+

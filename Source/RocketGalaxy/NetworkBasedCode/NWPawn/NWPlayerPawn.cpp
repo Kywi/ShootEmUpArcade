@@ -64,10 +64,6 @@ void ANWPlayerPawn::Tick(float DeltaSeconds)
 	//	currentLocation = FMath::Lerp(currentLocation, interpToLocation, 0.9);
 }
 
-void ANWPlayerPawn::SetInterpToLocation_Implementation(FVector Location)
-{
-	interpToLocation = Location;
-}
 
 void ANWPlayerPawn::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -121,7 +117,10 @@ void ANWPlayerPawn::InitTouchLocation_Implementation()
 	touchLocation = FVector2D{GetActorLocation().X, GetActorLocation().Y};
 }
 
-
+void ANWPlayerPawn::SetInterpToLocation_Implementation(FVector Location)
+{
+	interpToLocation = Location;
+}
 #pragma endregion Moving pawn methods
 
 #pragma region RotationPawn
@@ -215,8 +214,7 @@ void ANWPlayerPawn::ExplodePawn_Implementation()
 	}
 
 	pawnMesh->SetMaterial(0, RecoverMaterial);
-
-
+	
 	if (DestroyParticle)
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
 }
@@ -231,14 +229,12 @@ bool ANWPlayerPawn::CanBeDamaged_Implementation()
 	return bCanBeDamaged;
 }
 
-
 void ANWPlayerPawn::DestroyPlayer()
 {
 	if (DestroyParticle)
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DestroyParticle, GetActorTransform(), true);
 	Destroy();
 }
-
 
 void ANWPlayerPawn::OnHealthChanged(int byValue)
 {

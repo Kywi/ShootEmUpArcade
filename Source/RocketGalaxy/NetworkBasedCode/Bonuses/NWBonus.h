@@ -32,4 +32,8 @@ protected:
     UFUNCTION(BlueprintNativeEvent)
     void BonusCollected(ANWPlayerPawn* ActorThatCollectBonus);
     virtual void BonusCollected_Implementation(ANWPlayerPawn* ActorThatCollectBonus);
+    private:
+    UFUNCTION(NetMulticast , Reliable)
+    void SpawnBonusCollectedEffects();
+
 };

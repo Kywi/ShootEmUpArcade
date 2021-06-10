@@ -37,8 +37,8 @@ void AEnemyPawn::BeginPlay()
 {
 	Super::BeginPlay();
 
+	PawnCollision->OnComponentBeginOverlap.AddDynamic(this, &AEnemyPawn::OnEnemyOverlap);
 	HealthComponent->OnHealthEnded.AddDynamic(this, &AEnemyPawn::KillPawn);
-	OnActorBeginOverlap.AddDynamic(this, &AEnemyPawn::OnEnemyOverlap);
 }
 
 void AEnemyPawn::KillPawn()
@@ -65,7 +65,7 @@ void AEnemyPawn::DestroyPawn()
 	Destroy();
 }
 
-void AEnemyPawn::OnEnemyOverlap(AActor* OverlapedActor, AActor* OtherActor)
+void AEnemyPawn::OnEnemyOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
 	if (OtherActor != UGameplayStatics::GetPlayerPawn(this, 0)) return;
 
